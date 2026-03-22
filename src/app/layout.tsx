@@ -34,9 +34,22 @@ export const metadata: Metadata = {
     description:
       "İstanbul Ataşehir'de uzman çocuk diş hekimliği. Çocuğunuzun gülüşü güvenli ellerde.",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dt. Gaye Üstüner | Çocuk Diş Hekimi - Pedodonti Uzmanı",
+    description: "İstanbul Ataşehir'de uzman çocuk diş hekimliği. Erken dönem ortodonti, genel anestezi altında diş tedavisi.",
+    site: "@drgayeustuner",
+  },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
   alternates: {
     canonical: "https://www.gayeustuner.com",

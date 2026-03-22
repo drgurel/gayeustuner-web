@@ -8,6 +8,7 @@ interface ServicePageLayoutProps {
   description: string[];
   benefits: string[];
   faq: { q: string; a: string }[];
+  canonicalSlug?: string;
 }
 
 export default function ServicePageLayout({
@@ -16,9 +17,45 @@ export default function ServicePageLayout({
   description,
   benefits,
   faq,
+  canonicalSlug,
 }: ServicePageLayoutProps) {
+  const faqSchema = faq.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faq.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.a,
+          },
+        })),
+      }
+    : null;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.gayeustuner.com" },
+      { "@type": "ListItem", position: 2, name: "Hizmetler", item: "https://www.gayeustuner.com/hizmetler" },
+      { "@type": "ListItem", position: 3, name: title, item: `https://www.gayeustuner.com/hizmetler/${canonicalSlug ?? ""}` },
+    ],
+  };
+
   return (
     <>
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
       <main>
         {/* Hero */}
