@@ -56,9 +56,10 @@ export default function BlogPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               {posts.map((post) => (
-                <article
+                <Link
                   key={post.slug}
-                  className="group rounded-2xl border border-[var(--color-border)] overflow-hidden hover:border-[var(--color-primary)]/30 hover:shadow-lg hover:shadow-[var(--color-primary)]/5 transition-all duration-300"
+                  href={`/blog/${post.slug}`}
+                  className="group rounded-2xl border border-[var(--color-border)] overflow-hidden hover:border-[var(--color-primary)]/30 hover:shadow-lg hover:shadow-[var(--color-primary)]/5 transition-all duration-300 block"
                 >
                   {/* Placeholder image */}
                   <div className="aspect-video bg-gradient-to-br from-[var(--color-primary)]/5 to-[var(--color-surface-alt)] flex items-center justify-center">
@@ -87,7 +88,7 @@ export default function BlogPage() {
                       </span>
                     </div>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
