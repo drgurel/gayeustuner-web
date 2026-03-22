@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { LocalBusinessJsonLd, PersonJsonLd } from "@/components/JsonLd";
 import "./globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({
         <PersonJsonLd />
         {children}
       </body>
+      <GoogleAnalytics gaId="G-GJVR9D42GD" />
     </html>
   );
 }
