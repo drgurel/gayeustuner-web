@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -116,19 +117,24 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Hero Visual Placeholder */}
+              {/* Hero Photo */}
               <div className="relative hidden lg:block">
-                <div className="w-full aspect-square max-w-md mx-auto rounded-3xl bg-gradient-to-br from-[var(--color-primary)]/20 to-[var(--color-primary-light)]/10 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                      <svg className="w-16 h-16 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                      </svg>
-                    </div>
-                    <p className="font-[family-name:var(--font-heading)] text-xl text-[var(--color-secondary)] font-semibold">
+                <div className="w-full max-w-md mx-auto">
+                  <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-[var(--color-primary)]/10">
+                    <Image
+                      src="/dt-gaye-ustuner.jpg"
+                      alt="Dt. Gaye Üstüner - Çocuk Diş Hekimi"
+                      fill
+                      className="object-cover object-top"
+                      priority
+                      sizes="(min-width: 1024px) 400px, 0px"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg px-6 py-3 text-center">
+                    <p className="font-[family-name:var(--font-heading)] text-lg text-[var(--color-secondary)] font-semibold">
                       Dt. Gaye Üstüner
                     </p>
-                    <p className="text-[var(--color-text-light)] text-sm mt-1">Çocuk Diş Hekimi</p>
+                    <p className="text-[var(--color-text-light)] text-sm">Çocuk Diş Hekimi</p>
                   </div>
                 </div>
               </div>
@@ -244,15 +250,14 @@ export default function Home() {
               </div>
 
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-[var(--color-primary)]/10 to-[var(--color-primary-light)]/5 border border-[var(--color-border-light)] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                      </svg>
-                    </div>
-                    <p className="text-sm text-[var(--color-text-muted)]">Doktor fotoğrafı eklenecek</p>
-                  </div>
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/dt-gaye-ustuner.jpg"
+                    alt="Dt. Gaye Üstüner"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width: 1024px) 500px, 100vw"
+                  />
                 </div>
               </div>
             </div>

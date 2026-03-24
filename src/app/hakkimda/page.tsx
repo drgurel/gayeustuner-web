@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -82,15 +83,15 @@ export default function HakkimdaPage() {
               </div>
 
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-[var(--color-primary)]/10 to-[var(--color-primary-light)]/5 border border-[var(--color-border-light)] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                      </svg>
-                    </div>
-                    <p className="text-sm text-[var(--color-text-muted)]">Doktor fotoğrafı eklenecek</p>
-                  </div>
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/dt-gaye-ustuner.jpg"
+                    alt="Dt. Gaye Üstüner - Çocuk Diş Hekimi"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                    sizes="(min-width: 1024px) 500px, 100vw"
+                  />
                 </div>
               </div>
             </div>
