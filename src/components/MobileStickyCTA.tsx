@@ -5,7 +5,7 @@ export default function MobileStickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white/95 backdrop-blur-sm border-t border-[var(--color-border)] px-4 py-3 safe-area-pb">
       <div className="flex gap-3 max-w-lg mx-auto">
         <a
-          href="tel:+905XXXXXXXXX"
+          href="tel:+905474555565"
           className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-[var(--color-primary)] text-white font-semibold rounded-full hover:bg-[var(--color-primary-dark)] transition-colors text-sm"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
