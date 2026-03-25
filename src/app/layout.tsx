@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { LocalBusinessJsonLd, PersonJsonLd } from "@/components/JsonLd";
 import MobileStickyCTA from "@/components/MobileStickyCTA";
@@ -16,14 +17,9 @@ export const metadata: Metadata = {
     "pedodonti",
     "istanbul",
     "ataşehir",
-    "çocuk diş tedavisi",
-    "erken dönem ortodonti",
-    "genel anestezi diş tedavisi",
-    "dijital anestezi",
-    "rubber dam",
-    "paslanmaz çelik kron",
-    "invisalign çocuk",
-    "Gaye Üstüner",
+    "pediatric dentist",
+    "pedodontics",
+    "children dental care",
   ],
   authors: [{ name: "Dt. Gaye Üstüner" }],
   openGraph: {
@@ -63,16 +59,24 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.gayeustuner.com",
+    languages: {
+      "tr": "https://www.gayeustuner.com",
+      "en": "https://www.gayeustuner.com/en",
+    },
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-pathname") || "/";
+  const locale = pathname.startsWith("/en") ? "en" : "tr";
+
   return (
-    <html lang="tr" className="h-full antialiased">
+    <html lang={locale} className="h-full antialiased">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -82,10 +86,10 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
-        <LocalBusinessJsonLd />
-        <PersonJsonLd />
+        <LocalBusinessJsonLd locale={locale} />
+        <PersonJsonLd locale={locale} />
         {children}
-        <MobileStickyCTA />
+        <MobileStickyCTA locale={locale} />
       </body>
       <GoogleAnalytics gaId="G-GJVR9D42GD" />
     </html>

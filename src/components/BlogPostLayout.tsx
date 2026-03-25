@@ -17,10 +17,97 @@ interface BlogPostLayoutProps {
   keyPoints?: string[];
   relatedPosts?: { title: string; slug: string; category: string }[];
   slug: string;
+  locale?: "tr" | "en";
 }
 
-function BlogPostJsonLd({ title, intro, date, slug }: { title: string; intro: string; date: string; slug: string }) {
-  const isoDate = new Date(date.split(" ").reverse().join("-").replace("Ocak","01").replace("Şubat","02").replace("Mart","03").replace("Nisan","04").replace("Mayıs","05").replace("Haziran","06").replace("Temmuz","07").replace("Ağustos","08").replace("Eylül","09").replace("Ekim","10").replace("Kasım","11").replace("Aralık","12")).toISOString();
+const blogTexts = {
+  tr: {
+    allPosts: "Tüm Yazılar",
+    readingTime: "okuma",
+    writtenBy: "Yazan",
+    authorDesc: "Pedodonti Uzmanı · Yeditepe Üniversitesi Doktora Araştırmacısı",
+    keyPoints: "Önemli Noktalar",
+    bookAppointment: "Randevu Alın",
+    bookAppointmentDesc: "Çocuğunuzun diş sağlığı için değerlendirme randevusu oluşturun.",
+    getInTouch: "İletişime Geç",
+    relatedPosts: "İlgili Yazılar",
+    authorJobTitle: "Çocuk Diş Hekimi (Pedodontist)",
+  },
+  en: {
+    allPosts: "All Posts",
+    readingTime: "read",
+    writtenBy: "Written by",
+    authorDesc: "Pediatric Dentistry Specialist · PhD Researcher at Yeditepe University",
+    keyPoints: "Key Points",
+    bookAppointment: "Book an Appointment",
+    bookAppointmentDesc: "Schedule an evaluation appointment for your child's dental health.",
+    getInTouch: "Get in Touch",
+    relatedPosts: "Related Posts",
+    authorJobTitle: "Pediatric Dentist (Pedodontist)",
+  },
+} as const;
+
+const trMonths: Record<string, string> = {
+  Ocak: "01",
+  Şubat: "02",
+  Mart: "03",
+  Nisan: "04",
+  Mayıs: "05",
+  Haziran: "06",
+  Temmuz: "07",
+  Ağustos: "08",
+  Eylül: "09",
+  Ekim: "10",
+  Kasım: "11",
+  Aralık: "12",
+};
+
+const enMonths: Record<string, string> = {
+  January: "01",
+  February: "02",
+  March: "03",
+  April: "04",
+  May: "05",
+  June: "06",
+  July: "07",
+  August: "08",
+  September: "09",
+  October: "10",
+  November: "11",
+  December: "12",
+};
+
+function BlogPostJsonLd({
+  title,
+  intro,
+  date,
+  slug,
+  locale = "tr",
+}: {
+  title: string;
+  intro: string;
+  date: string;
+  slug: string;
+  locale?: "tr" | "en";
+}) {
+  const t = blogTexts[locale];
+  const months = locale === "en" ? enMonths : trMonths;
+
+  let isoDate: string;
+  try {
+    let replaced = date;
+    for (const [name, num] of Object.entries(months)) {
+      replaced = replaced.replace(name, num);
+    }
+    isoDate = new Date(replaced.split(" ").reverse().join("-")).toISOString();
+  } catch {
+    isoDate = new Date().toISOString();
+  }
+
+  const blogBase = locale === "en" ? "/en/blog" : "/blog";
+  const aboutUrl = locale === "en"
+    ? "https://www.gayeustuner.com/en/about"
+    : "https://www.gayeustuner.com/hakkimda";
 
   const schema = {
     "@context": "https://schema.org",
@@ -30,8 +117,8 @@ function BlogPostJsonLd({ title, intro, date, slug }: { title: string; intro: st
     author: {
       "@type": "Person",
       name: "Dt. Gaye Üstüner",
-      jobTitle: "Çocuk Diş Hekimi (Pedodontist)",
-      url: "https://www.gayeustuner.com/hakkimda",
+      jobTitle: t.authorJobTitle,
+      url: aboutUrl,
     },
     publisher: {
       "@type": "Organization",
@@ -40,7 +127,7 @@ function BlogPostJsonLd({ title, intro, date, slug }: { title: string; intro: st
     },
     datePublished: isoDate,
     dateModified: isoDate,
-    mainEntityOfPage: `https://www.gayeustuner.com/blog/${slug}`,
+    mainEntityOfPage: `https://www.gayeustuner.com${blogBase}/${slug}`,
     image: "https://www.gayeustuner.com/og-image.png",
   };
 
@@ -62,30 +149,35 @@ export default function BlogPostLayout({
   keyPoints,
   relatedPosts,
   slug,
+  locale = "tr",
 }: BlogPostLayoutProps) {
+  const t = blogTexts[locale];
+  const blogBase = locale === "en" ? "/en/blog" : "/blog";
+  const ctaHref = locale === "en" ? "/en/contact#appointment" : "/iletisim#randevu";
+
   return (
     <>
-      <BlogPostJsonLd title={title} intro={intro} date={date} slug={slug} />
-      <Header />
+      <BlogPostJsonLd title={title} intro={intro} date={date} slug={slug} locale={locale} />
+      <Header locale={locale} />
       <main id="main-content">
         {/* Hero */}
         <section className="bg-[var(--color-surface-alt)] py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <Link
-                href="/blog"
+                href={blogBase}
                 className="inline-flex items-center gap-2 text-sm text-[var(--color-text-light)] hover:text-[var(--color-primary)] mb-6 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                Tüm Yazılar
+                {t.allPosts}
               </Link>
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium">
                   {category}
                 </span>
-                <span className="text-xs text-[var(--color-text-muted)]">{readTime} okuma</span>
+                <span className="text-xs text-[var(--color-text-muted)]">{readTime} {t.readingTime}</span>
                 <span className="text-xs text-[var(--color-text-muted)]">{date}</span>
               </div>
               <h1 className="font-[family-name:var(--font-heading)] text-3xl lg:text-5xl font-bold text-[var(--color-secondary)] mb-6 leading-tight">
@@ -127,10 +219,10 @@ export default function BlogPostLayout({
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs text-[var(--color-text-muted)] mb-1">Yazan</p>
+                    <p className="text-xs text-[var(--color-text-muted)] mb-1">{t.writtenBy}</p>
                     <p className="font-semibold text-[var(--color-secondary)]">Dt. Gaye Üstüner</p>
                     <p className="text-sm text-[var(--color-text-light)] mt-1">
-                      Pedodonti Uzmanı · Yeditepe Üniversitesi Doktora Araştırmacısı
+                      {t.authorDesc}
                     </p>
                   </div>
                 </div>
@@ -143,7 +235,7 @@ export default function BlogPostLayout({
                   {keyPoints && keyPoints.length > 0 && (
                     <div className="p-6 rounded-2xl bg-[var(--color-surface-alt)]">
                       <h3 className="font-[family-name:var(--font-heading)] text-base font-bold text-[var(--color-secondary)] mb-4">
-                        Önemli Noktalar
+                        {t.keyPoints}
                       </h3>
                       <ul className="space-y-3">
                         {keyPoints.map((point) => (
@@ -161,16 +253,16 @@ export default function BlogPostLayout({
                   {/* CTA */}
                   <div className="p-6 rounded-2xl bg-[var(--color-primary)] text-white">
                     <h3 className="font-[family-name:var(--font-heading)] text-base font-bold mb-2">
-                      Randevu Alın
+                      {t.bookAppointment}
                     </h3>
                     <p className="text-teal-100 text-sm mb-4">
-                      Çocuğunuzun diş sağlığı için değerlendirme randevusu oluşturun.
+                      {t.bookAppointmentDesc}
                     </p>
                     <Link
-                      href="/iletisim#randevu"
+                      href={ctaHref}
                       className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-[var(--color-primary)] font-semibold rounded-full hover:bg-teal-50 transition-colors text-sm"
                     >
-                      İletişime Geç
+                      {t.getInTouch}
                     </Link>
                   </div>
 
@@ -178,13 +270,13 @@ export default function BlogPostLayout({
                   {relatedPosts && relatedPosts.length > 0 && (
                     <div className="p-6 rounded-2xl border border-[var(--color-border)]">
                       <h3 className="font-[family-name:var(--font-heading)] text-base font-bold text-[var(--color-secondary)] mb-4">
-                        İlgili Yazılar
+                        {t.relatedPosts}
                       </h3>
                       <ul className="space-y-3">
                         {relatedPosts.map((post) => (
                           <li key={post.slug}>
                             <Link
-                              href={`/blog/${post.slug}`}
+                              href={`${blogBase}/${post.slug}`}
                               className="block group"
                             >
                               <span className="text-xs text-[var(--color-primary)] font-medium">{post.category}</span>
@@ -203,7 +295,7 @@ export default function BlogPostLayout({
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale={locale} />
     </>
   );
 }

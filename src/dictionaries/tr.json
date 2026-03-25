@@ -1,0 +1,111 @@
+{
+  "common": {
+    "appointmentCta": "Randevu Oluştur",
+    "appointmentCtaShort": "Randevu Al",
+    "allServices": "Tüm Hizmetler",
+    "allPosts": "Tüm Yazılar",
+    "readMore": "Detaylı Bilgi",
+    "learnMore": "Daha Fazla Bilgi",
+    "callNow": "Hemen Ara",
+    "whatsapp": "WhatsApp",
+    "copyright": "Tüm hakları saklıdır.",
+    "readingTime": "okuma",
+    "writtenBy": "Yazan",
+    "skipToContent": "Ana içeriğe geç",
+    "keyPoints": "Önemli Noktalar",
+    "relatedPosts": "İlgili Yazılar",
+    "advantages": "Avantajlar",
+    "faq": "Sıkça Sorulan Sorular",
+    "bookAppointment": "Randevu Alın",
+    "bookAppointmentDesc": "Çocuğunuzun diş sağlığı için değerlendirme randevusu oluşturun.",
+    "getInTouch": "İletişime Geç",
+    "readContinue": "Devamını Oku"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "services": "Hizmetler",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "home": {
+    "badge": "Pedodonti Uzmanı",
+    "heroTitle": "Çocuk Diş Hekimi",
+    "heroHighlight": "Güvenli Ellerde",
+    "heroDescription": "Modern pedodonti yaklaşımıyla çocuğunuzun diş sağlığını koruyoruz. Korkusuz, ağrısız ve eğlenceli bir tedavi deneyimi için yanınızdayız.",
+    "servicesTitle": "Çocuğunuz İçin En İyi Bakım",
+    "servicesSubtitle": "TEDAVİ HİZMETLERİMİZ",
+    "servicesDescription": "Modern pedodonti teknikleri ve çocuk dostu yaklaşımımızla, her tedaviyi güvenli ve konforlu hale getiriyoruz.",
+    "aboutSubtitle": "HAKKIMDA",
+    "aboutTitle": "Dt. Gaye Üstüner",
+    "aboutText1": "Marmara Üniversitesi Diş Hekimliği Fakültesi mezunu olarak, çocuk diş hekimliği alanında uzmanlaşmaya karar verdim. Şu anda Yeditepe Üniversitesi'nde pedodonti alanında doktora çalışmama devam ediyorum.",
+    "aboutText2": "Doktora tezim, genel anestezi altında tedavi edilen çocuk hastalar üzerinedir. Her çocuğun diş hekimi deneyiminin olumlu ve korkusuz olması için modern teknikler ve empatik bir yaklaşım benimsiyorum.",
+    "ctaTitle": "Çocuğunuzun Diş Sağlığı İçin İlk Adımı Atın",
+    "ctaDescription": "Erken dönemde yapılan doğru müdahaleler, çocuğunuzun ömür boyu sağlıklı bir gülüşe sahip olmasını sağlar. Hemen randevu oluşturun.",
+    "education": "EĞİTİM",
+    "doctorate": "DOKTORA",
+    "specialty": "UZMANLIK",
+    "location": "KONUM"
+  },
+  "contact": {
+    "subtitle": "İletişim",
+    "title": "Bize Ulaşın",
+    "description": "Çocuğunuzun diş sağlığı hakkında sorularınız veya randevu talepleriniz için bizimle iletişime geçebilirsiniz.",
+    "infoTitle": "İletişim Bilgileri",
+    "formTitle": "Randevu Formu",
+    "nameLabel": "Ad Soyad",
+    "namePlaceholder": "Adınız ve soyadınız",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "05XX XXX XX XX",
+    "emailLabel": "E-posta",
+    "emailPlaceholder": "ornek@email.com",
+    "childAgeLabel": "Çocuğunuzun Yaşı",
+    "childAgePlaceholder": "Örn: 5 yaş",
+    "appointmentTypeLabel": "Randevu Türü",
+    "appointmentTypeDefault": "Seçiniz",
+    "messageLabel": "Mesajınız",
+    "messagePlaceholder": "Tedavi ile ilgili sorularınız veya notlarınız...",
+    "submit": "Randevu Talebi Gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Talebiniz İletildi",
+    "successDescription": "E-posta uygulamanız açılacaktır. En kısa sürede sizinle iletişime geçeceğiz.",
+    "newRequest": "Yeni Talep Oluştur",
+    "errorGeneral": "Bir hata oluştu. Lütfen tekrar deneyiniz veya doğrudan e-posta ile iletişime geçiniz.",
+    "formNote": "Randevu talebiniz bize e-posta olarak iletilecektir. En kısa sürede sizinle iletişime geçeceğiz.",
+    "appointmentTypes": "Randevu Türleri",
+    "options": {
+      "firstVisit": "İlk Diş Hekimi Muayenesi (0-3 Yaş)",
+      "checkup": "Kontrol Muayenesi",
+      "examination": "Muayene Randevusu",
+      "orthodontic": "Ortodontik Muayene - Tel Tedavisi"
+    },
+    "errors": {
+      "nameMin": "Ad soyad en az 2 karakter olmalıdır.",
+      "phoneInvalid": "Geçerli bir telefon numarası giriniz. (05XX XXX XX XX)",
+      "emailInvalid": "Geçerli bir e-posta adresi giriniz."
+    },
+    "address": "Adres",
+    "email": "E-posta",
+    "googleMaps": "Google Maps",
+    "googleMapsNote": "Google Maps'te \"Dt. Gaye Üstüner\" olarak arayabilirsiniz."
+  },
+  "footer": {
+    "tagline": "Çocuğunuzun diş sağlığı ve gülüşü için güvenilir, modern ve konforlu tedavi yaklaşımı.",
+    "quickLinks": "HIZLI BAĞLANTILAR",
+    "services": "HİZMETLER",
+    "contact": "İLETİŞİM"
+  },
+  "about": {
+    "subtitle": "Hakkımda",
+    "title": "Dt. Gaye Üstüner"
+  },
+  "services": {
+    "subtitle": "Hizmetlerimiz",
+    "title": "Tedavi Hizmetlerimiz"
+  },
+  "blog": {
+    "subtitle": "Blog",
+    "title": "Sağlık Rehberi",
+    "description": "Çocuk diş sağlığı hakkında güncel bilgiler, tedavi yöntemleri ve ebeveynler için faydalı ipuçları."
+  }
+}

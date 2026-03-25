@@ -9,7 +9,31 @@ interface ServicePageLayoutProps {
   benefits: string[];
   faq: { q: string; a: string }[];
   canonicalSlug?: string;
+  locale?: "tr" | "en";
 }
+
+const serviceTexts = {
+  tr: {
+    allServices: "Tüm Hizmetler",
+    advantages: "Avantajlar",
+    faq: "Sıkça Sorulan Sorular",
+    bookAppointment: "Randevu Alın",
+    ctaDescription: "Bu tedavi hakkında daha fazla bilgi almak veya randevu oluşturmak için iletişime geçin.",
+    getInTouch: "İletişime Geç",
+    breadcrumbHome: "Ana Sayfa",
+    breadcrumbServices: "Hizmetler",
+  },
+  en: {
+    allServices: "All Services",
+    advantages: "Advantages",
+    faq: "Frequently Asked Questions",
+    bookAppointment: "Book an Appointment",
+    ctaDescription: "Contact us to learn more about this treatment or to schedule an appointment.",
+    getInTouch: "Get in Touch",
+    breadcrumbHome: "Home",
+    breadcrumbServices: "Services",
+  },
+} as const;
 
 export default function ServicePageLayout({
   title,
@@ -18,7 +42,16 @@ export default function ServicePageLayout({
   benefits,
   faq,
   canonicalSlug,
+  locale = "tr",
 }: ServicePageLayoutProps) {
+  const t = serviceTexts[locale];
+  const servicesHref = locale === "en" ? "/en/services" : "/hizmetler";
+  const ctaHref = locale === "en" ? "/en/contact#appointment" : "/iletisim#randevu";
+
+  const baseUrl = "https://www.gayeustuner.com";
+  const servicesPath = locale === "en" ? "/en/services" : "/hizmetler";
+  const homePath = locale === "en" ? "/en" : "";
+
   const faqSchema = faq.length > 0
     ? {
         "@context": "https://schema.org",
@@ -38,9 +71,9 @@ export default function ServicePageLayout({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.gayeustuner.com" },
-      { "@type": "ListItem", position: 2, name: "Hizmetler", item: "https://www.gayeustuner.com/hizmetler" },
-      { "@type": "ListItem", position: 3, name: title, item: `https://www.gayeustuner.com/hizmetler/${canonicalSlug ?? ""}` },
+      { "@type": "ListItem", position: 1, name: t.breadcrumbHome, item: `${baseUrl}${homePath}` },
+      { "@type": "ListItem", position: 2, name: t.breadcrumbServices, item: `${baseUrl}${servicesPath}` },
+      { "@type": "ListItem", position: 3, name: title, item: `${baseUrl}${servicesPath}/${canonicalSlug ?? ""}` },
     ],
   };
 
@@ -56,20 +89,20 @@ export default function ServicePageLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Header />
+      <Header locale={locale} />
       <main id="main-content">
         {/* Hero */}
         <section className="bg-[var(--color-surface-alt)] py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <Link
-                href="/hizmetler"
+                href={servicesHref}
                 className="inline-flex items-center gap-2 text-sm text-[var(--color-text-light)] hover:text-[var(--color-primary)] mb-6 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                Tüm Hizmetler
+                {t.allServices}
               </Link>
               <p className="text-sm font-medium text-[var(--color-primary)] uppercase tracking-wider mb-2">
                 {subtitle}
@@ -98,7 +131,7 @@ export default function ServicePageLayout({
                 {faq.length > 0 && (
                   <div className="mt-12">
                     <h2 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-[var(--color-secondary)] mb-6">
-                      Sıkça Sorulan Sorular
+                      {t.faq}
                     </h2>
                     <div className="space-y-4">
                       {faq.map((item) => (
@@ -125,7 +158,7 @@ export default function ServicePageLayout({
                   {/* Benefits */}
                   <div className="p-6 rounded-2xl bg-[var(--color-surface-alt)] mb-6">
                     <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-[var(--color-secondary)] mb-4">
-                      Avantajlar
+                      {t.advantages}
                     </h3>
                     <ul className="space-y-3">
                       {benefits.map((benefit) => (
@@ -142,16 +175,16 @@ export default function ServicePageLayout({
                   {/* CTA Card */}
                   <div className="p-6 rounded-2xl bg-[var(--color-primary)] text-white">
                     <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold mb-2">
-                      Randevu Alın
+                      {t.bookAppointment}
                     </h3>
                     <p className="text-teal-100 text-sm mb-4">
-                      Bu tedavi hakkında daha fazla bilgi almak veya randevu oluşturmak için iletişime geçin.
+                      {t.ctaDescription}
                     </p>
                     <Link
-                      href="/iletisim#randevu"
+                      href={ctaHref}
                       className="inline-flex items-center justify-center w-full px-6 py-3 bg-white text-[var(--color-primary)] font-semibold rounded-full hover:bg-teal-50 transition-colors text-sm"
                     >
-                      İletişime Geç
+                      {t.getInTouch}
                     </Link>
                   </div>
                 </div>
@@ -160,7 +193,7 @@ export default function ServicePageLayout({
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer locale={locale} />
     </>
   );
 }

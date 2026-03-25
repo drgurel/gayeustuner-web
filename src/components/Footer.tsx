@@ -1,6 +1,65 @@
 import Link from "next/link";
+import { routeMap } from "@/lib/i18n";
 
-export default function Footer() {
+const footerTexts = {
+  tr: {
+    subtitle: "Çocuk Diş Hekimi (Pedodonti)",
+    tagline: "Çocuğunuzun diş sağlığı ve gülüşü için güvenilir, modern ve konforlu tedavi yaklaşımı.",
+    quickLinks: "Hızlı Bağlantılar",
+    services: "Hizmetler",
+    contact: "İletişim",
+    copyright: "Tüm hakları saklıdır.",
+  },
+  en: {
+    subtitle: "Pediatric Dentist (Pedodontics)",
+    tagline: "Reliable, modern, and comfortable treatment approach for your child's dental health and smile.",
+    quickLinks: "Quick Links",
+    services: "Services",
+    contact: "Contact",
+    copyright: "All rights reserved.",
+  },
+} as const;
+
+const quickLinksMap = {
+  tr: [
+    { key: "about" as const, label: "Hakkımda" },
+    { key: "services" as const, label: "Hizmetler" },
+    { key: "blog" as const, label: "Blog" },
+    { key: "contact" as const, label: "İletişim" },
+  ],
+  en: [
+    { key: "about" as const, label: "About" },
+    { key: "services" as const, label: "Services" },
+    { key: "blog" as const, label: "Blog" },
+    { key: "contact" as const, label: "Contact" },
+  ],
+} as const;
+
+const serviceLinksMap = {
+  tr: [
+    { href: "/hizmetler/erken-donem-ortodonti", label: "Erken Dönem Ortodonti" },
+    { href: "/hizmetler/genel-anestezi-altinda-tedavi", label: "Genel Anestezi Altında Tedavi" },
+    { href: "/hizmetler/rubber-dam-izolasyonu", label: "Rubber Dam İzolasyonu" },
+    { href: "/hizmetler/dijital-anestezi", label: "Dijital Anestezi" },
+  ],
+  en: [
+    { href: "/en/services/early-orthodontics", label: "Early Orthodontics" },
+    { href: "/en/services/general-anesthesia-treatment", label: "General Anesthesia Treatment" },
+    { href: "/en/services/rubber-dam-isolation", label: "Rubber Dam Isolation" },
+    { href: "/en/services/digital-anesthesia", label: "Digital Anesthesia" },
+  ],
+} as const;
+
+interface FooterProps {
+  locale?: "tr" | "en";
+}
+
+export default function Footer({ locale = "tr" }: FooterProps) {
+  const t = footerTexts[locale];
+  const routes = routeMap[locale];
+  const quickLinks = quickLinksMap[locale];
+  const serviceLinks = serviceLinksMap[locale];
+
   return (
     <footer className="bg-[var(--color-secondary)] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -10,27 +69,22 @@ export default function Footer() {
             <h3 className="font-[family-name:var(--font-heading)] text-2xl font-bold mb-2">
               Dt. Gaye Üstüner
             </h3>
-            <p className="text-teal-200 text-sm mb-4">Çocuk Diş Hekimi (Pedodonti)</p>
+            <p className="text-teal-200 text-sm mb-4">{t.subtitle}</p>
             <p className="text-teal-100/80 text-sm leading-relaxed">
-              Çocuğunuzun diş sağlığı ve gülüşü için güvenilir, modern ve konforlu tedavi yaklaşımı.
+              {t.tagline}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-teal-200">
-              Hızlı Bağlantılar
+              {t.quickLinks}
             </h4>
             <ul className="space-y-2.5">
-              {[
-                { href: "/hakkimda", label: "Hakkımda" },
-                { href: "/hizmetler", label: "Hizmetler" },
-                { href: "/blog", label: "Blog" },
-                { href: "/iletisim", label: "İletişim" },
-              ].map((link) => (
-                <li key={link.href}>
+              {quickLinks.map((link) => (
+                <li key={link.key}>
                   <Link
-                    href={link.href}
+                    href={routes[link.key]}
                     className="text-teal-100/80 hover:text-white text-sm transition-colors"
                   >
                     {link.label}
@@ -43,15 +97,10 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-teal-200">
-              Hizmetler
+              {t.services}
             </h4>
             <ul className="space-y-2.5">
-              {[
-                { href: "/hizmetler/erken-donem-ortodonti", label: "Erken Dönem Ortodonti" },
-                { href: "/hizmetler/genel-anestezi-altinda-tedavi", label: "Genel Anestezi Altında Tedavi" },
-                { href: "/hizmetler/rubber-dam-izolasyonu", label: "Rubber Dam İzolasyonu" },
-                { href: "/hizmetler/dijital-anestezi", label: "Dijital Anestezi" },
-              ].map((link) => (
+              {serviceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -67,7 +116,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-teal-200">
-              İletişim
+              {t.contact}
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
@@ -107,7 +156,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-teal-800/50 text-center">
           <p className="text-teal-100/60 text-sm">
-            &copy; {new Date().getFullYear()} Dt. Gaye Üstüner. Tüm hakları saklıdır.
+            &copy; {new Date().getFullYear()} Dt. Gaye Üstüner. {t.copyright}
           </p>
         </div>
       </div>

@@ -1,0 +1,111 @@
+{
+  "common": {
+    "appointmentCta": "Book Appointment",
+    "appointmentCtaShort": "Book Now",
+    "allServices": "All Services",
+    "allPosts": "All Posts",
+    "readMore": "Learn More",
+    "learnMore": "Learn More",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "copyright": "All rights reserved.",
+    "readingTime": "read",
+    "writtenBy": "Written by",
+    "skipToContent": "Skip to main content",
+    "keyPoints": "Key Points",
+    "relatedPosts": "Related Posts",
+    "advantages": "Advantages",
+    "faq": "Frequently Asked Questions",
+    "bookAppointment": "Book an Appointment",
+    "bookAppointmentDesc": "Schedule an evaluation appointment for your child's dental health.",
+    "getInTouch": "Get in Touch",
+    "readContinue": "Read More"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "badge": "Pediatric Dentistry Specialist",
+    "heroTitle": "Pediatric Dentist",
+    "heroHighlight": "In Safe Hands",
+    "heroDescription": "We protect your child's dental health with a modern pediatric dentistry approach. We are here for a fearless, painless, and fun treatment experience.",
+    "servicesTitle": "The Best Care for Your Child",
+    "servicesSubtitle": "OUR TREATMENT SERVICES",
+    "servicesDescription": "With modern pediatric dentistry techniques and our child-friendly approach, we make every treatment safe and comfortable.",
+    "aboutSubtitle": "ABOUT ME",
+    "aboutTitle": "Dr. Gaye Üstüner",
+    "aboutText1": "As a graduate of Marmara University Faculty of Dentistry, I decided to specialize in pediatric dentistry. I am currently pursuing my PhD in pedodontics at Yeditepe University.",
+    "aboutText2": "My doctoral thesis focuses on child patients treated under general anesthesia. I adopt modern techniques and an empathetic approach to ensure every child's dental experience is positive and fearless.",
+    "ctaTitle": "Take the First Step for Your Child's Dental Health",
+    "ctaDescription": "Early interventions ensure your child has a healthy smile for life. Book an appointment now.",
+    "education": "EDUCATION",
+    "doctorate": "PhD",
+    "specialty": "SPECIALTY",
+    "location": "LOCATION"
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "title": "Get in Touch",
+    "description": "Contact us for questions about your child's dental health or to request an appointment.",
+    "infoTitle": "Contact Information",
+    "formTitle": "Appointment Form",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "childAgeLabel": "Child's Age",
+    "childAgePlaceholder": "e.g. 5 years old",
+    "appointmentTypeLabel": "Appointment Type",
+    "appointmentTypeDefault": "Select",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Your questions or notes about the treatment...",
+    "submit": "Send Appointment Request",
+    "sending": "Sending...",
+    "successTitle": "Request Submitted",
+    "successDescription": "Your email app will open. We will contact you as soon as possible.",
+    "newRequest": "Create New Request",
+    "errorGeneral": "An error occurred. Please try again or contact us directly via email.",
+    "formNote": "Your appointment request will be sent to us via email. We will get back to you shortly.",
+    "appointmentTypes": "Appointment Types",
+    "options": {
+      "firstVisit": "First Dental Visit (0-3 Years)",
+      "checkup": "Check-up Appointment",
+      "examination": "General Examination",
+      "orthodontic": "Orthodontic Evaluation"
+    },
+    "errors": {
+      "nameMin": "Full name must be at least 2 characters.",
+      "phoneInvalid": "Please enter a valid phone number.",
+      "emailInvalid": "Please enter a valid email address."
+    },
+    "address": "Address",
+    "email": "Email",
+    "googleMaps": "Google Maps",
+    "googleMapsNote": "Search for \"Dt. Gaye Üstüner\" on Google Maps."
+  },
+  "footer": {
+    "tagline": "Reliable, modern, and comfortable treatment approach for your child's dental health and smile.",
+    "quickLinks": "QUICK LINKS",
+    "services": "SERVICES",
+    "contact": "CONTACT"
+  },
+  "about": {
+    "subtitle": "About Me",
+    "title": "Dr. Gaye Üstüner"
+  },
+  "services": {
+    "subtitle": "Our Services",
+    "title": "Treatment Services"
+  },
+  "blog": {
+    "subtitle": "Blog",
+    "title": "Health Guide",
+    "description": "Up-to-date information on children's dental health, treatment methods, and helpful tips for parents."
+  }
+}
