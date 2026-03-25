@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default function CocuklarDaSagligiPage() {
   return (
     <BlogPostLayout
+      slug="cocuklarda-dis-sagligi"
       title="Çocuklarda Diş Sağlığı: Önemli Bilgiler"
       category="Diş Sağlığı"
       date="29 Aralık 2025"

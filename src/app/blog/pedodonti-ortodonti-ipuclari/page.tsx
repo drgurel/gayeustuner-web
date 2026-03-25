@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default function PedodontiOrtodontPage() {
   return (
     <BlogPostLayout
+      slug="pedodonti-ortodonti-ipuclari"
       title="Pedodonti ve Ortodonti: Doğru Bakımın İpuçları"
       category="Pedodonti"
       date="29 Aralık 2025"

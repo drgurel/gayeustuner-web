@@ -94,7 +94,7 @@ export default function Home() {
                   Pedodonti Uzmanı
                 </div>
                 <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--color-secondary)] leading-tight mb-6">
-                  Çocuğunuzun Gülüşü{" "}
+                  Çocuk Diş Hekimi{" "}
                   <span className="text-[var(--color-primary)]">Güvenli Ellerde</span>
                 </h1>
                 <p className="text-lg text-[var(--color-text-light)] leading-relaxed mb-8 max-w-lg">

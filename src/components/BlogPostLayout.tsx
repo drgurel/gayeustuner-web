@@ -16,6 +16,40 @@ interface BlogPostLayoutProps {
   sections: BlogSection[];
   keyPoints?: string[];
   relatedPosts?: { title: string; slug: string; category: string }[];
+  slug: string;
+}
+
+function BlogPostJsonLd({ title, intro, date, slug }: { title: string; intro: string; date: string; slug: string }) {
+  const isoDate = new Date(date.split(" ").reverse().join("-").replace("Ocak","01").replace("Şubat","02").replace("Mart","03").replace("Nisan","04").replace("Mayıs","05").replace("Haziran","06").replace("Temmuz","07").replace("Ağustos","08").replace("Eylül","09").replace("Ekim","10").replace("Kasım","11").replace("Aralık","12")).toISOString();
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: intro,
+    author: {
+      "@type": "Person",
+      name: "Dt. Gaye Üstüner",
+      jobTitle: "Çocuk Diş Hekimi (Pedodontist)",
+      url: "https://www.gayeustuner.com/hakkimda",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Dt. Gaye Üstüner",
+      url: "https://www.gayeustuner.com",
+    },
+    datePublished: isoDate,
+    dateModified: isoDate,
+    mainEntityOfPage: `https://www.gayeustuner.com/blog/${slug}`,
+    image: "https://www.gayeustuner.com/og-image.png",
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
 }
 
 export default function BlogPostLayout({
@@ -27,9 +61,11 @@ export default function BlogPostLayout({
   sections,
   keyPoints,
   relatedPosts,
+  slug,
 }: BlogPostLayoutProps) {
   return (
     <>
+      <BlogPostJsonLd title={title} intro={intro} date={date} slug={slug} />
       <Header />
       <main>
         {/* Hero */}
