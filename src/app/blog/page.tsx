@@ -35,7 +35,7 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <section className="bg-[var(--color-surface-alt)] py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">

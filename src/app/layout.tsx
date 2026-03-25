@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { LocalBusinessJsonLd, PersonJsonLd } from "@/components/JsonLd";
+import MobileStickyCTA from "@/components/MobileStickyCTA";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -84,6 +85,7 @@ export default function RootLayout({
         <LocalBusinessJsonLd />
         <PersonJsonLd />
         {children}
+        <MobileStickyCTA />
       </body>
       <GoogleAnalytics gaId="G-GJVR9D42GD" />
     </html>
