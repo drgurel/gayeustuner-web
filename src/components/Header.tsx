@@ -90,7 +90,7 @@ const headerTexts = {
 } as const;
 
 const localeList = ["tr", "en", "es"] as const;
-const localeLabelMap: Record<string, string> = { tr: "TR", en: "EN", es: "ES" };
+const localeLabelMap: Record<string, string> = { tr: "🇹🇷", en: "🇬🇧", es: "🇪🇸" };
 
 interface HeaderProps {
   locale?: "tr" | "en" | "es";
