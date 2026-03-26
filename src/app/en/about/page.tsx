@@ -162,6 +162,43 @@ export default function AboutPageEN() {
           </div>
         </section>
 
+        {/* Languages */}
+        <section className="py-16 lg:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[var(--color-secondary)] mb-8">
+                Languages
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { language: "Turkish", level: "Native", flag: "🇹🇷", percent: 100 },
+                  { language: "English", level: "B2 – Upper Intermediate", flag: "🇬🇧", percent: 70 },
+                  { language: "Spanish", level: "B2 – Upper Intermediate", flag: "🇪🇸", percent: 70 },
+                ].map((lang) => (
+                  <div
+                    key={lang.language}
+                    className="p-5 rounded-2xl border border-[var(--color-border)] bg-white"
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-2xl">{lang.flag}</span>
+                      <div>
+                        <p className="font-semibold text-[var(--color-secondary)]">{lang.language}</p>
+                        <p className="text-xs text-[var(--color-text-light)]">{lang.level}</p>
+                      </div>
+                    </div>
+                    <div className="w-full h-2 rounded-full bg-[var(--color-surface-alt)]">
+                      <div
+                        className="h-2 rounded-full bg-[var(--color-primary)]"
+                        style={{ width: `${lang.percent}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-16 bg-[var(--color-primary)]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
