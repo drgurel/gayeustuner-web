@@ -99,10 +99,54 @@ const translations = {
       none: "None",
     },
   },
+  es: {
+    formTitle: "Formulario de Cita",
+    nameLabel: "Nombre Completo",
+    namePlaceholder: "Su nombre y apellido",
+    phoneLabel: "Teléfono",
+    phonePlaceholder: "+90 5XX XXX XX XX",
+    emailLabel: "Correo Electrónico",
+    emailPlaceholder: "ejemplo@email.com",
+    childAgeLabel: "Edad del Niño/a",
+    childAgePlaceholder: "Ej: 5 años",
+    appointmentTypeLabel: "Tipo de Cita",
+    appointmentTypeDefault: "Seleccionar",
+    messageLabel: "Su Mensaje",
+    messagePlaceholder: "Sus preguntas o notas sobre el tratamiento...",
+    submit: "Enviar Solicitud de Cita",
+    sending: "Enviando...",
+    successTitle: "Solicitud Enviada",
+    successDescription: "Su aplicación de correo se abrirá. Nos pondremos en contacto con usted lo antes posible.",
+    newRequest: "Crear Nueva Solicitud",
+    errorGeneral: "Ocurrió un error. Por favor, inténtelo de nuevo o contáctenos directamente por correo electrónico.",
+    formNote: "Su solicitud de cita se enviará por correo electrónico. Nos pondremos en contacto con usted a la brevedad.",
+    options: {
+      firstVisit: "Primera Visita Dental (0-3 Años)",
+      checkup: "Cita de Control",
+      examination: "Examen General",
+      orthodontic: "Evaluación Ortodóntica",
+    },
+    errors: {
+      nameMin: "El nombre completo debe tener al menos 2 caracteres.",
+      phoneInvalid: "Por favor, introduzca un número de teléfono válido.",
+      emailInvalid: "Por favor, introduzca una dirección de correo electrónico válida.",
+    },
+    emailSubjectPrefix: "Solicitud de Cita",
+    bodyLabels: {
+      name: "Nombre Completo",
+      phone: "Teléfono",
+      email: "Correo Electrónico",
+      childAge: "Edad del Niño/a",
+      appointmentType: "Tipo de Cita",
+      message: "Mensaje",
+      notSpecified: "No especificado",
+      none: "Ninguno",
+    },
+  },
 } as const;
 
 interface ContactFormProps {
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 export default function ContactForm({ locale = "tr" }: ContactFormProps) {

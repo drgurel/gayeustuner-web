@@ -20,6 +20,13 @@ const navLabels = {
     blog: "Blog",
     contact: "Contact",
   },
+  es: {
+    home: "Inicio",
+    about: "Sobre Mí",
+    services: "Servicios",
+    blog: "Blog",
+    contact: "Contacto",
+  },
 } as const;
 
 const serviceChildren = {
@@ -38,6 +45,14 @@ const serviceChildren = {
     { href: "/en/services/stainless-steel-crowns", label: "Stainless Steel Crowns" },
     { href: "/en/services/clear-aligners", label: "Clear Aligners" },
     { href: "/en/services/digital-anesthesia", label: "Digital Anesthesia" },
+  ],
+  es: [
+    { href: "/es/services/ortodoncia-temprana", label: "Ortodoncia Temprana" },
+    { href: "/es/services/tratamiento-anestesia-general", label: "Tratamiento con Anestesia General" },
+    { href: "/es/services/aislamiento-dique-goma", label: "Aislamiento con Dique de Goma" },
+    { href: "/es/services/coronas-acero-inoxidable", label: "Coronas de Acero Inoxidable" },
+    { href: "/es/services/alineadores-transparentes", label: "Alineadores Transparentes" },
+    { href: "/es/services/anestesia-digital", label: "Anestesia Digital" },
   ],
 } as const;
 
@@ -62,10 +77,23 @@ const headerTexts = {
     mainNav: "Main menu",
     mobileNav: "Mobile menu",
   },
+  es: {
+    cta: "Reservar",
+    allServices: "Todos los Servicios",
+    skipToContent: "Ir al contenido principal",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
+    subtitle: "ODONTÓLOGA PEDIATRA",
+    mainNav: "Menú principal",
+    mobileNav: "Menú móvil",
+  },
 } as const;
 
+const localeList = ["tr", "en", "es"] as const;
+const localeLabelMap: Record<string, string> = { tr: "TR", en: "EN", es: "ES" };
+
 interface HeaderProps {
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 export default function Header({ locale = "tr" }: HeaderProps) {
@@ -92,20 +120,31 @@ export default function Header({ locale = "tr" }: HeaderProps) {
     { href: routes.contact, label: labels.contact },
   ];
 
-  const ctaHref = locale === "en" ? "/en/contact#appointment" : "/iletisim#randevu";
-  const otherLocale = locale === "tr" ? "en" : "tr";
-  const langSwitchLabel = locale === "tr" ? "EN" : "TR";
+  const ctaHref =
+    locale === "en"
+      ? "/en/contact#appointment"
+      : locale === "es"
+        ? "/es/contact#cita"
+        : "/iletisim#randevu";
 
-  // Compute the language switch href based on current path
-  function getLangSwitchHref(): string {
+  // Compute the language switch hrefs for all other locales
+  function getLangSwitchHref(targetLocale: string): string {
     if (locale === "tr") {
-      // Switch to EN: prepend /en
-      if (pathname === "/") return "/en";
-      return `/en${pathname}`;
+      // Current is TR
+      if (pathname === "/") return `/${targetLocale}`;
+      return `/${targetLocale}${pathname}`;
     }
-    // Switch to TR: remove /en prefix
-    if (pathname === "/en" || pathname === "/en/") return "/";
-    return pathname.replace(/^\/en/, "");
+    // Current is EN or ES - strip current prefix first
+    const prefix = `/${locale}`;
+    const stripped =
+      pathname === prefix || pathname === `${prefix}/`
+        ? ""
+        : pathname.replace(new RegExp(`^/${locale}`), "");
+
+    if (targetLocale === "tr") {
+      return stripped || "/";
+    }
+    return `/${targetLocale}${stripped}` || `/${targetLocale}`;
   }
 
   // Dropdown dışına tıklanınca kapat
@@ -132,9 +171,11 @@ export default function Header({ locale = "tr" }: HeaderProps) {
   }, []);
 
   function isActive(href: string) {
-    if (href === "/" || href === "/en") return pathname === href;
+    if (href === "/" || href === "/en" || href === "/es") return pathname === href;
     return pathname.startsWith(href);
   }
+
+  const otherLocales = localeList.filter((l) => l !== locale);
 
   return (
     <>
@@ -233,13 +274,16 @@ export default function Header({ locale = "tr" }: HeaderProps) {
                 )
               )}
 
-              {/* Language Switcher */}
-              <Link
-                href={getLangSwitchHref()}
-                className="px-3 py-1.5 text-xs font-bold border border-[var(--color-border)] rounded-md text-[var(--color-text)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-colors"
-              >
-                {langSwitchLabel}
-              </Link>
+              {/* Language Switcher - show all other locales */}
+              {otherLocales.map((targetLocale) => (
+                <Link
+                  key={targetLocale}
+                  href={getLangSwitchHref(targetLocale)}
+                  className="px-3 py-1.5 text-xs font-bold border border-[var(--color-border)] rounded-md text-[var(--color-text)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-colors"
+                >
+                  {localeLabelMap[targetLocale]}
+                </Link>
+              ))}
 
               <Link
                 href={ctaHref}
@@ -329,13 +373,16 @@ export default function Header({ locale = "tr" }: HeaderProps) {
               )}
 
               {/* Mobile Language Switcher */}
-              <Link
-                href={getLangSwitchHref()}
-                onClick={() => setMobileOpen(false)}
-                className="block px-3 py-2.5 text-sm font-bold text-[var(--color-text)] hover:text-[var(--color-primary)] rounded-lg"
-              >
-                {langSwitchLabel}
-              </Link>
+              {otherLocales.map((targetLocale) => (
+                <Link
+                  key={targetLocale}
+                  href={getLangSwitchHref(targetLocale)}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-3 py-2.5 text-sm font-bold text-[var(--color-text)] hover:text-[var(--color-primary)] rounded-lg"
+                >
+                  {localeLabelMap[targetLocale]}
+                </Link>
+              ))}
 
               <Link
                 href={ctaHref}

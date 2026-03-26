@@ -131,6 +131,62 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
       ],
       relatedSlugs: ["pedodontics-orthodontics-tips"],
     },
+    es: {
+      slug: "salud-dental-infantil",
+      title: "Salud Dental Infantil: Información Importante",
+      category: "Salud Dental",
+      date: "29 de diciembre de 2025",
+      readTime: "5 min",
+      intro: "Los hábitos de cuidado dental establecidos durante la infancia afectan la salud bucal durante toda la vida. El enfoque correcto desde el primer diente es vital tanto para los dientes de leche como para los permanentes.",
+      sections: [
+        {
+          heading: "¿Cuándo debe realizarse el primer examen dental?",
+          paragraphs: [
+            "De acuerdo con la recomendación de la Academia Americana de Odontología Pediátrica, el primer examen dental de su hijo debe realizarse poco después de la erupción del primer diente, o a más tardar al cumplir 1 año de edad.",
+            "El propósito de esta visita temprana no es el tratamiento, sino la presentación y la evaluación. El dentista orienta a los padres sobre el cuidado bucal del bebé, el uso del chupete y los hábitos alimenticios. El contacto temprano con el dentista reduce significativamente la ansiedad dental en los años posteriores.",
+          ],
+        },
+        {
+          heading: "¿Por qué son importantes los dientes de leche?",
+          paragraphs: [
+            "Los dientes de leche no son simplemente dientes temporales. Desempeñan un papel fundamental en la función masticatoria, el desarrollo del habla y la estética. Lo más importante es que sirven como mantenedores de espacio para la correcta posición de los dientes permanentes.",
+            "La pérdida prematura de los dientes de leche provoca que los dientes adyacentes se desplacen hacia el espacio vacío. Esto puede ocasionar apiñamiento de los dientes permanentes y la necesidad de tratamiento ortodóntico. Por esta razón, las caries en los dientes de leche siempre deben ser tratadas.",
+          ],
+        },
+        {
+          heading: "¿Cómo cambia el cepillado correcto según la edad?",
+          paragraphs: [
+            "De 0 a 2 años: La limpieza bucal debe realizarse dos veces al día utilizando un paño húmedo o un cepillo de dedo con pasta dental sin flúor o con muy bajo contenido de flúor.",
+            "De 2 a 6 años: Se utiliza un cepillo infantil con una cantidad de pasta dental con flúor del tamaño de un grano de arroz. Durante este período, el cepillado debe realizarse bajo la supervisión de los padres. Los niños aún no tienen la capacidad de enjuagarse y escupir completamente.",
+            "A partir de 6 años: Una cantidad de pasta dental con flúor del tamaño de un guisante es suficiente. Se sigue recomendando la supervisión de los padres. Los niños deben recibir ayuda con el cepillado hasta que su destreza manual esté completamente desarrollada, generalmente hasta los 7-8 años.",
+          ],
+        },
+        {
+          heading: "La relación entre la alimentación y las caries",
+          paragraphs: [
+            "La frecuencia de consumo de alimentos y bebidas azucarados es mucho más determinante que la cantidad. El consumo frecuente de dulces o bebidas ácidas a lo largo del día provoca que los dientes estén constantemente expuestos a ataques ácidos.",
+            "Un punto particularmente importante respecto al uso del chupete y el biberón es el siguiente: Dejar que un niño se duerma con líquidos azucarados (jugo de frutas, leche, fórmula) provoca una caries de avance rápido en los dientes frontales conocida como 'caries del biberón'. El contenido del biberón idealmente debe ser solo agua.",
+            "El queso, el yogur, las verduras fibrosas y las frutas son alimentos amigos de los dientes. Estos alimentos proporcionan protección natural al aumentar la producción de saliva.",
+          ],
+        },
+        {
+          heading: "Cómo abordar a los niños con fobia dental",
+          paragraphs: [
+            "El miedo al dentista es bastante común entre los niños. El factor que más alimenta este miedo suelen ser las experiencias negativas compartidas por los padres o el entorno social. En lugar de frases como 'no va a doler' o 'no tengas miedo', explique el proceso a su hijo con un lenguaje sencillo y concreto.",
+            "Los odontopediatras están especialmente formados en esta área. El tratamiento se planifica priorizando la comodidad del niño, utilizando el método Decir-Mostrar-Hacer, ejercicios de respiración, técnicas de distracción y opciones de sedación cuando sea necesario.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Primer examen dental antes del primer año de edad",
+        "Las caries en dientes de leche siempre deben ser tratadas",
+        "El cepillado debe realizarse bajo supervisión de los padres",
+        "El contenido del biberón idealmente debe ser solo agua",
+        "La frecuencia del consumo de azúcar importa más que la cantidad",
+        "El contacto temprano con el dentista reduce el miedo",
+      ],
+      relatedSlugs: ["pedodontics-orthodontics-tips"],
+    },
   },
 
   "pedodontics-orthodontics-tips": {
@@ -261,6 +317,71 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
         "Thumb sucking should be evaluated after age 3",
         "An individual treatment plan is made for each case",
         "Parental participation affects treatment success",
+      ],
+      relatedSlugs: ["childrens-dental-health"],
+    },
+    es: {
+      slug: "consejos-odontopediatria-ortodoncia",
+      title: "Odontopediatría y Ortodoncia: Consejos para el Cuidado Adecuado",
+      category: "Odontopediatría",
+      date: "29 de diciembre de 2025",
+      readTime: "7 min",
+      intro: "La evaluación ortodóntica temprana es un paso fundamental que muchas familias pasan por alto, pero que afecta de forma permanente el desarrollo facial y la salud dental del niño. Aquí encontrará lo que necesita saber para tomar las decisiones correctas en la intersección entre la odontopediatría y la ortodoncia.",
+      sections: [
+        {
+          heading: "¿Qué es la odontopediatría?",
+          paragraphs: [
+            "La odontopediatría es la especialidad odontológica que se ocupa de la salud bucal y dental de los niños de 0 a 14 años. Los odontopediatras reciben formación especializada en psicología infantil y manejo del comportamiento, planificando los tratamientos con técnicas apropiadas para la edad y el desarrollo del niño.",
+            "El alcance de la odontopediatría no se limita al tratamiento de caries y extracciones. El seguimiento del desarrollo dental, la evaluación ortodóntica temprana, el manejo de traumatismos, las aplicaciones preventivas (selladores de fisuras, flúor) y el tratamiento bajo anestesia general también forman parte de esta especialidad.",
+          ],
+        },
+        {
+          heading: "¿Por qué es importante el tratamiento ortodóntico temprano?",
+          paragraphs: [
+            "Cuanto antes se detecten los problemas ortodónticos, más eficaz y generalmente más corta será la intervención. Durante el período de crecimiento, los huesos maxilares aún se están formando; esta flexibilidad proporciona una ventaja significativa en los tratamientos ortodónticos.",
+            "La Asociación Americana de Ortodoncistas recomienda que todos los niños se sometan a una evaluación ortodóntica a los 7 años. En esta etapa, tanto los dientes posteriores como los anteriores han comenzado a erupcionar, y el potencial para guiar el desarrollo maxilar está en su punto más alto.",
+            "No todos los niños reciben tratamiento inmediato en la evaluación temprana. En muchos casos, se toma la decisión de 'observar y esperar'; sin embargo, cuando la intervención es necesaria, seleccionar el momento adecuado afecta directamente el éxito del tratamiento.",
+          ],
+        },
+        {
+          heading: "¿Qué señales requieren una evaluación temprana?",
+          paragraphs: [
+            "Recomendamos llevar a su hijo a un odontopediatra u ortodoncista si se observan las siguientes condiciones:",
+            "Respiración bucal: La respiración crónica por la boca afecta negativamente el desarrollo maxilar y facial. Puede existir un problema de amígdalas o adenoides; podría ser necesaria una evaluación conjunta con un otorrinolaringólogo.",
+            "Succión del pulgar o uso del chupete (después de los 3 años): La continuación prolongada de estos hábitos puede provocar mordida abierta anterior y estrechamiento del maxilar superior.",
+            "Los dientes apiñados o desalineados, la pérdida dental prematura y el maxilar inferior o superior excesivamente adelantado o retrasado también son señales que requieren una evaluación temprana.",
+          ],
+        },
+        {
+          heading: "¿Se puede realizar tratamiento ortodóntico en dientes de leche?",
+          paragraphs: [
+            "Sí, en algunos casos puede ser necesaria la intervención durante el período de dentición temporal (de 2 a 6 años). En particular, problemas como la mordida cruzada (los dientes superiores no se posicionan por delante de los inferiores), si no se tratan tempranamente, pueden provocar un desarrollo asimétrico de los maxilares.",
+            "Los aparatos utilizados durante este período son generalmente dispositivos funcionales removibles diseñados para guiar el crecimiento maxilar. No representan un proceso de tratamiento complejo; por el contrario, reducen la necesidad de un tratamiento ortodóntico integral en períodos posteriores.",
+          ],
+        },
+        {
+          heading: "¿Son adecuados los alineadores transparentes para niños?",
+          paragraphs: [
+            "Los alineadores transparentes se están popularizando cada vez más como alternativa al sistema tradicional de brackets y arcos. Al ser removibles, ofrecen comodidad para el cepillado y la alimentación; también son preferidos por razones estéticas.",
+            "Estos sistemas, que pueden utilizarse en pacientes jóvenes (alineadores para adolescentes), requieren cumplimiento. El uso regular de los alineadores, que deben llevarse al menos 20-22 horas al día por parte del niño o adolescente, afecta directamente el éxito del tratamiento.",
+            "No todos los casos son aptos para alineadores transparentes. La opción de tratamiento más adecuada se determina tras una evaluación ortodóntica integral.",
+          ],
+        },
+        {
+          heading: "El papel de los padres durante el tratamiento",
+          paragraphs: [
+            "El mayor apoyo en el tratamiento ortodóntico proviene de los padres. Asistir regularmente a las citas, supervisar la higiene bucal y asegurar el uso correcto de los aparatos removibles son factores críticos que determinan el éxito del tratamiento.",
+            "Hable con su hijo sobre el proceso de tratamiento en un tono positivo. El enfoque de 'lo hacemos para tener dientes más bonitos' es mucho más motivador que 'tienes que hacerlo'. La relación de confianza establecida con el dentista también moldea la actitud del niño hacia la salud bucal en los años venideros.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Se recomienda una evaluación ortodóntica a los 7 años",
+        "La intervención temprana acorta la duración del tratamiento",
+        "La respiración bucal es una señal de alerta importante",
+        "La succión del pulgar debe evaluarse después de los 3 años",
+        "Se elabora un plan de tratamiento individual para cada caso",
+        "La participación de los padres afecta el éxito del tratamiento",
       ],
       relatedSlugs: ["childrens-dental-health"],
     },
@@ -401,6 +522,73 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
       ],
       relatedSlugs: ["childrens-dental-health"],
     },
+    es: {
+      slug: "guia-denticion-bebes",
+      title: "Guía de Dentición en Bebés: Síntomas y Recomendaciones",
+      category: "Salud del Bebé",
+      date: "25 de marzo de 2026",
+      readTime: "6 min",
+      intro: "La dentición en los bebés es un hito importante del desarrollo que todos los padres esperan con entusiasmo. Sin embargo, este proceso puede resultar incómodo para los bebés y genera muchas preguntas en los padres. Contar con información precisa sobre el momento de la dentición, los síntomas y los métodos para aliviar el dolor hace que este período sea mucho más fácil tanto para usted como para su bebé.",
+      sections: [
+        {
+          heading: "¿Cuándo comienza la dentición?",
+          paragraphs: [
+            "La dentición en los bebés generalmente comienza entre los 6 y los 12 meses de edad. En la mayoría de los bebés, los primeros dientes en aparecer son los incisivos frontales inferiores, seguidos por los incisivos frontales superiores. Sin embargo, esta secuencia puede variar de un bebé a otro, y esto es completamente normal. Algunos bebés cortan su primer diente a los 4 meses, mientras que otros pueden no mostrar su primer diente hasta los 13-14 meses.",
+            "El orden general de la dentición es el siguiente: Primero, los incisivos frontales inferiores y superiores (6-12 meses), luego los incisivos laterales (9-16 meses), los primeros molares (13-19 meses), los caninos (16-23 meses) y finalmente los segundos molares (23-33 meses). Aproximadamente a los 3 años, se espera que los 20 dientes de leche estén completos.",
+            "Cada bebé se desarrolla a un ritmo diferente, y las variaciones individuales en el momento de la dentición son bastante comunes. Los factores genéticos familiares, el estado nutricional y la salud general pueden afectar el momento de la dentición. Si su bebé tiene 12 meses y aún no le ha salido ningún diente, no hay motivo de preocupación; sin embargo, si no han erupcionado dientes a los 18 meses, se recomienda consultar a su odontopediatra.",
+          ],
+        },
+        {
+          heading: "¿Cuáles son los síntomas de la dentición?",
+          paragraphs: [
+            "Los síntomas de la dentición en los bebés suelen comenzar unos días antes de que el diente erupcione. Uno de los síntomas más comunes es el babeo excesivo. Su bebé produce mucha más saliva de lo habitual, lo que puede causar enrojecimiento en la zona del mentón y el cuello. Además, se observa una hinchazón y enrojecimiento notables en las encías. Al tocar suavemente con el dedo, puede sentir un bulto duro.",
+            "La irritabilidad y el llanto se encuentran entre los síntomas más comúnmente observados durante el período de dentición. El bebé puede estar más irritable de lo habitual, los patrones de sueño pueden alterarse y puede despertarse con frecuencia durante la noche. Tiende a morder y masticar todo lo que tiene a su alcance; esto es un instinto natural para aliviar la presión en las encías. La pérdida de apetito también es común porque los movimientos de succión y masticación pueden causar molestias en las encías.",
+            "El tema de la fiebre leve es controvertido. Las investigaciones sugieren que la dentición puede causar un ligero aumento de temperatura por debajo de 38°C; sin embargo, la fiebre por encima de 38°C no debe atribuirse a la dentición. Síntomas como fiebre alta, diarrea, vómitos o sarpullido no deben asociarse con la dentición y siempre debe consultarse al pediatra. Estos síntomas pueden ser indicativos de otra infección.",
+          ],
+        },
+        {
+          heading: "Métodos para aliviar el dolor de la dentición",
+          paragraphs: [
+            "Uno de los métodos más seguros para aliviar el dolor de dentición de su bebé son los mordedores refrigerados. Los mordedores de silicona o caucho enfriados en el refrigerador (no en el congelador) reducen la hinchazón y el dolor en las encías. Puede darle a su bebé un trozo de tela limpio, húmedo y frío para que lo muerda. Además, masajear suavemente las encías con el dedo limpio alivia la presión y calma al bebé.",
+            "Los alimentos fríos también pueden ser útiles. Para los bebés que ya han comenzado con la alimentación complementaria, el puré de frutas refrigerado, el yogur o las barras de zanahoria frías (teniendo en cuenta el riesgo de asfixia) pueden ser reconfortantes. Sin embargo, se deben evitar los alimentos muy duros o congelados, ya que pueden dañar las encías.",
+            "También existen métodos que definitivamente deben evitarse. Los collares de ámbar para la dentición no tienen evidencia científica y presentan riesgos de asfixia y aspiración. Los geles y cremas que contienen benzocaína no deben utilizarse en bebés menores de 2 años, ya que pueden causar efectos secundarios graves. Los métodos antiguos como frotar alcohol en las encías son extremadamente peligrosos. Si el dolor es muy intenso, se pueden utilizar dosis apropiadas para la edad de paracetamol o ibuprofeno con la recomendación de su pediatra.",
+          ],
+        },
+        {
+          heading: "Cuidado de los primeros dientes",
+          paragraphs: [
+            "El cuidado bucal en realidad debe comenzar antes de que erupcionen los dientes. Después de amamantar, limpie suavemente las encías de su bebé con un paño de muselina o una gasa limpia y húmeda. Este hábito garantiza la higiene bucal y prepara al bebé para el cepillado dental en el futuro. Cuando erupcione el primer diente, comience a usar un cepillo de dedo o un pequeño cepillo de dientes para bebés con cerdas suaves.",
+            "En cuanto al uso de flúor, las guías actuales indican que se puede utilizar una cantidad de pasta dental con flúor del tamaño de un grano de arroz desde el primer diente. El flúor fortalece el esmalte dental y proporciona protección contra las caries. Sin embargo, preste atención a usar una cantidad muy pequeña; dado que su bebé aún no puede escupir, tragará la pasta dental. Establecer el hábito de cepillarse dos veces al día, por la mañana y antes de acostarse, es lo ideal.",
+            "Al elegir el primer cepillo de dientes, se deben preferir cepillos de cabeza pequeña con cerdas suaves. La cabeza del cepillo debe ser lo suficientemente pequeña como para entrar fácilmente en la boca del bebé. Los modelos antideslizantes con mangos fáciles de agarrar facilitan el uso por parte de los padres. Recuerde reemplazar el cepillo de dientes cada 3 meses o cuando las cerdas estén desgastadas.",
+          ],
+        },
+        {
+          heading: "¿Cuándo debe ser la primera visita al dentista?",
+          paragraphs: [
+            "Las asociaciones internacionales de odontología pediátrica recomiendan que la primera visita dental del bebé se realice después de la erupción del primer diente o a más tardar al cumplir 1 año. El propósito de esta visita temprana no es el tratamiento, sino la presentación y la evaluación preventiva. El odontopediatra verifica el desarrollo bucal de su bebé, realiza una evaluación del riesgo de caries y orienta a los padres sobre nutrición y cuidado bucal.",
+            "En la primera visita, la boca del bebé generalmente se evalúa con un examen breve. Se examinan el número de dientes, el patrón de erupción, la salud de las encías y la estructura bucal. Se brinda información sobre temas como los hábitos del biberón o el chupete, los patrones dietéticos y las necesidades de flúor. Esta visita también ayuda al bebé a familiarizarse con el entorno clínico y a formar una primera impresión positiva con el dentista.",
+            "Los niños que conocen al dentista tempranamente tienen muchas menos probabilidades de experimentar miedo dental en los años posteriores. Mediante revisiones regulares, los problemas potenciales se detectan tempranamente y pueden resolverse con intervenciones simples. Esto protege tanto al niño como a la familia de tratamientos más extensos y estresantes en el futuro.",
+          ],
+        },
+        {
+          heading: "Problemas frecuentes",
+          paragraphs: [
+            "Los dientes natales son dientes que están presentes al nacer o aparecen poco después del nacimiento. Ocurren aproximadamente en 1 de cada 2.000-3.000 nacimientos. Estos dientes generalmente se ubican en la zona frontal inferior y su desarrollo radicular puede no estar completo. Si causan lesiones en la lengua del bebé o están muy flojos, pueden necesitar ser extraídos debido al riesgo de aspiración. Sin embargo, los dientes natales estables generalmente se dejan en su lugar y se controlan.",
+            "La dentición tardía debe evaluarse si no han erupcionado dientes después de los 18 meses. Esta condición suele ser un rasgo familiar y no requiere preocupación. Sin embargo, en algunos casos raros, puede estar asociada con deficiencia de vitamina D, hipotiroidismo o síndromes genéticos. El odontopediatra puede verificar la presencia y posición de los gérmenes dentales con una radiografía panorámica si lo considera necesario.",
+            "Las erupciones ectópicas, es decir, dientes que emergen en una ubicación diferente a la esperada, también son una condición que puede presentarse. Por ejemplo, un diente que erupciona en un ángulo inusual o en una zona diferente puede deberse a falta de espacio o a la posición de los dientes adyacentes. Estas situaciones generalmente no requieren intervención durante el período de dentición temporal; sin embargo, con un seguimiento regular, se pueden proporcionar las orientaciones necesarias de manera oportuna durante el proceso de erupción de los dientes permanentes.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "La dentición generalmente comienza entre los 6 y 12 meses",
+        "La fiebre por encima de 38°C no debe atribuirse a la dentición",
+        "Los mordedores refrigerados son el método más seguro para aliviar el dolor",
+        "No deben utilizarse collares de ámbar ni geles con benzocaína",
+        "La primera visita al dentista debe realizarse a más tardar al cumplir 1 año",
+        "La pasta dental con flúor puede usarse desde el primer diente",
+      ],
+      relatedSlugs: ["childrens-dental-health"],
+    },
   },
 
   "child-afraid-of-dentist": {
@@ -519,6 +707,65 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
         "Plan the first visit as a preventive check-up, not an emergency",
         "Laughing gas and sedation are safe options",
         "Build positive habits through regular visits",
+      ],
+      relatedSlugs: ["childrens-dental-health", "pedodontics-orthodontics-tips"],
+    },
+    es: {
+      slug: "nino-miedo-al-dentista",
+      title: "Mi hijo tiene miedo al dentista: ¿Qué debo hacer?",
+      category: "Psicología Infantil",
+      date: "25 de marzo de 2026",
+      readTime: "6 min",
+      intro: "Si usted dice 'mi hijo tiene miedo al dentista', no está solo. El miedo dental es una de las ansiedades más comunes en los niños. Sin embargo, con los enfoques adecuados, este miedo puede gestionarse y las visitas regulares al dentista para la salud bucal de su hijo pueden transformarse en experiencias positivas.",
+      sections: [
+        {
+          heading: "¿Por qué se desarrolla el miedo al dentista?",
+          paragraphs: [
+            "Puede haber muchas razones para el miedo dental en los niños. Una de las más comunes es una experiencia negativa previa. Un tratamiento doloroso, una intervención forzada o un momento incómodo en la clínica puede dejar una impresión duradera en la mente del niño. Incluso una sola experiencia puede crear una fuerte resistencia a todas las visitas posteriores.",
+            "Los propios miedos dentales de los padres también se transmiten directamente a los niños. La ansiedad que muestra una madre o un padre antes de una visita al dentista, las expresiones negativas utilizadas, o el uso del dentista como herramienta de amenaza, como 'si no te cepillas los dientes, el dentista te castigará', crean un miedo subconsciente profundo en el niño.",
+            "El miedo a lo desconocido también es un factor importante. Especialmente los niños que visitarán al dentista por primera vez luchan con la ansiedad creada por no saber qué sucederá en la clínica. Además, la etapa del desarrollo también es un factor determinante: los niños entre 2 y 4 años naturalmente se alejan de los entornos desconocidos y de las personas que no conocen. Las intervenciones forzadas durante este período pueden provocar traumas duraderos.",
+          ],
+        },
+        {
+          heading: "Lo que los padres deben hacer",
+          paragraphs: [
+            "Lo más importante que pueden hacer como padres es posicionar la visita al dentista como una experiencia positiva y natural. Frases como 'no va a doler' o 'no tengas miedo' activan los conceptos de dolor y miedo en la mente del niño. En su lugar, utilice expresiones positivas y concretas como 'el doctor de los dientes va a contar tus dientes y los va a dejar brillantes'.",
+            "Jugar al dentista en casa es un método de preparación muy eficaz. Juegue a roles con su hijo examinando los dientes de sus muñecos o animales de peluche. Examinen las bocas del otro frente a un espejo. Este tipo de juegos ayudan al niño a familiarizarse con el entorno que encontrará en la clínica y a experimentar una sensación de control. Además, los libros infantiles y las caricaturas sobre visitas al dentista también son beneficiosos.",
+            "El día de la cita, mantenga una actitud tranquila y segura. Procure no reflejar sus propias ansiedades en su hijo. Programe la cita en un momento en que el niño esté descansado y alimentado, ya que es mucho más difícil para un niño cansado y hambriento cooperar. Después de la visita, felicite a su hijo por su valentía, pero prefiera el reconocimiento verbal y las pequeñas sorpresas en lugar de recompensas exageradas.",
+          ],
+        },
+        {
+          heading: "El enfoque de los odontopediatras",
+          paragraphs: [
+            "Los odontopediatras son especialistas que han recibido formación especial en la comunicación con niños. Una de las técnicas más utilizadas es el método Decir-Mostrar-Hacer. En esta técnica, primero se explica el procedimiento al niño con palabras sencillas, luego se le muestran los instrumentos que se utilizarán y finalmente se realiza el procedimiento. Este enfoque gradual permite que el niño experimente una sensación de control y elimina la sorpresa.",
+            "Los métodos de distracción también se utilizan con frecuencia durante el tratamiento. Mostrar dibujos animados en pantallas instaladas en el techo, reproducir música, contar historias o conversar con el niño redirige la atención lejos del tratamiento. Las clínicas dentales pediátricas modernas están diseñadas para minimizar el miedo con sus decoraciones coloridas, áreas de juego y ambientes amigables para los niños.",
+            "El método de desensibilización gradual se prefiere especialmente para los niños con miedo intenso. Durante la primera visita, solo se recorre la clínica; durante la segunda visita, el niño se sienta en el sillón; durante la tercera visita, se realiza un examen simple. Este enfoque paciente construye la confianza del niño paso a paso y produce resultados mucho más exitosos a largo plazo.",
+          ],
+        },
+        {
+          heading: "Sedación y métodos alternativos",
+          paragraphs: [
+            "En algunos casos, las técnicas de manejo conductual pueden resultar insuficientes. En tales situaciones, entran en juego los métodos de sedación seguros. El óxido nitroso, comúnmente conocido como gas de la risa, es el método más suave y más ampliamente utilizado. Este gas, inhalado a través de la nariz, calma y relaja al niño pero no causa pérdida de conciencia. Su efecto desaparece completamente pocos minutos después de que termina el procedimiento.",
+            "La sedación consciente, proporcionada mediante medicamentos orales o intravenosos, ofrece un nivel más intenso de relajación. El niño está despierto pero en un estado muy tranquilo y cooperativo. Los sistemas de anestesia digital pueden proporcionar adormecimiento indoloro incluso en niños con fobia a las agujas. Esta tecnología administra el agente anestésico de manera controlada y lenta, eliminando virtualmente el dolor de la inyección.",
+            "En niños muy pequeños o aquellos con dificultades serias de cooperación, se puede realizar el tratamiento bajo anestesia general. Este método se lleva a cabo en un entorno hospitalario bajo la supervisión de un anestesiólogo y permite completar todos los tratamientos en una sola sesión. El odontopediatra decide qué método utilizar según la edad del niño, el nivel de miedo y el alcance del tratamiento requerido.",
+          ],
+        },
+        {
+          heading: "Convertir la primera visita en una experiencia positiva",
+          paragraphs: [
+            "El momento de la primera visita al dentista es de gran importancia. Si es posible, planifique la primera visita como una revisión preventiva en lugar de que sea motivada por una queja o dolor. Las primeras visitas realizadas en situaciones de emergencia pueden convertir el primer encuentro del niño con el dentista en una experiencia negativa. Programe la cita en las horas de la mañana, durante el momento en que su hijo está más enérgico y cooperativo.",
+            "Cuando acuda a la visita, permita que su hijo lleve su juguete favorito o su objeto de apego. Esto le ayuda a sentirse seguro. Llegue unos minutos antes para que se acostumbre a la sala de espera. Dé a su hijo explicaciones sencillas y honestas; evite promesas poco realistas como 'no va a pasar nada'.",
+            "La constancia es muy importante. Después de una primera experiencia positiva, continúe con visitas de revisión regulares a intervalos regulares, generalmente cada 6 meses. Cada visita exitosa aumenta la confianza del niño y convierte las visitas al dentista en un hábito rutinario. Recuerde, las experiencias positivas creadas pacientemente hoy forman la base de hábitos saludables de cuidado dental en la edad adulta de su hijo.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "La ansiedad de los padres se refleja directamente en el niño, mantenga la calma",
+        "Nunca use al dentista como herramienta de amenaza",
+        "El método Decir-Mostrar-Hacer es muy eficaz para manejar el miedo",
+        "Planifique la primera visita como una revisión preventiva, no como una emergencia",
+        "El gas de la risa y la sedación son opciones seguras",
+        "Construya hábitos positivos mediante visitas regulares",
       ],
       relatedSlugs: ["childrens-dental-health", "pedodontics-orthodontics-tips"],
     },
@@ -659,6 +906,73 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
       ],
       relatedSlugs: ["childrens-dental-health", "baby-teething-guide"],
     },
+    es: {
+      slug: "tratamiento-caries-infantil",
+      title: "Caries Infantil: Síntomas, Tratamiento y Prevención",
+      category: "Salud Dental",
+      date: "25 de marzo de 2026",
+      readTime: "7 min",
+      intro: "La caries dental es la enfermedad crónica más común de la infancia y afecta a millones de niños en todo el mundo. Con un diagnóstico temprano y las medidas preventivas adecuadas, la gran mayoría de las caries pueden prevenirse. Conocer el tratamiento y los métodos de prevención de la caries infantil es responsabilidad de todos los padres.",
+      sections: [
+        {
+          heading: "¿Cómo se forman las caries en los niños?",
+          paragraphs: [
+            "La caries dental es un proceso que comienza cuando las bacterias de la boca fermentan los alimentos azucarados y con almidón para producir ácido. Las bacterias causantes de caries, principalmente Streptococcus mutans, viven en la placa dental, una capa pegajosa sobre la superficie del diente. Después de cada comida o refrigerio, estas bacterias producen ácido y comienzan a erosionar químicamente el esmalte dental.",
+            "Este proceso se denomina 'desmineralización'. En condiciones normales, la saliva neutraliza el ambiente ácido y restaura los minerales en la superficie del diente (remineralización). Sin embargo, cuando el consumo de azúcar es frecuente y regular, la capacidad de reparación de la saliva se vuelve insuficiente y se produce un daño permanente en la capa de esmalte.",
+            "Inicialmente se manifiesta como manchas blancas y calcáreas en la superficie del diente; si no se trata, la caries penetra a través del esmalte para alcanzar la capa de dentina. Dado que la dentina es un tejido mucho más blando que el esmalte, la caries progresa rápidamente desde esta etapa y eventualmente puede convertirse en una condición dolorosa que afecta al nervio dental (pulpa).",
+          ],
+        },
+        {
+          heading: "Síntomas de la caries dental",
+          paragraphs: [
+            "El síntoma más temprano de la caries dental son manchas opacas de color blanco o crema visibles en la superficie del diente. Estas manchas indican que el esmalte ha comenzado a perder minerales y aún se encuentra en una etapa reversible. Los padres deben prestar especial atención a estas manchas en la línea de las encías de los dientes frontales superiores. En esta etapa, la aplicación de flúor y los ajustes en la higiene pueden detener la progresión de la caries.",
+            "A medida que la caries progresa, aparecen decoloraciones marrones o negras en la superficie del diente. El niño comienza a experimentar molestias con alimentos calientes, fríos o dulces. En etapas más avanzadas, se forman agujeros visibles en los dientes, comienza el dolor espontáneo y el niño puede tener dificultad para comer. En algunos casos, el mal aliento también acompaña la condición.",
+            "En casos avanzados donde la caries ha alcanzado el nervio dental, puede notar que el niño se despierta por dolor nocturno, hinchazón facial o temperatura elevada. Estos síntomas indican infección y requieren intervención dental de urgencia. Mediante revisiones regulares, las caries pueden tratarse con métodos mucho más simples antes de llegar a esta etapa.",
+          ],
+        },
+        {
+          heading: "¿Por qué es importante tratar las caries en los dientes de leche?",
+          paragraphs: [
+            "Muchos padres pueden considerar innecesario el tratamiento de caries, pensando que los dientes de leche se caerán de todos modos. Sin embargo, los dientes de leche desempeñan varias funciones críticas para el desarrollo saludable del niño. Una de sus funciones más importantes es el mantenimiento de espacio: los dientes de leche sirven como guías para los dientes permanentes que se desarrollan debajo de ellos. Un diente de leche perdido prematuramente puede causar que los dientes adyacentes se desplacen hacia el espacio vacío y que los dientes permanentes erupcionen torcidos o queden impactados.",
+            "Los dientes de leche también desempeñan un papel determinante en el desarrollo de las habilidades de habla del niño. La pérdida de los dientes frontales superiores en particular dificulta la correcta pronunciación de ciertos sonidos. Además, la masticación inadecuada debido a dientes cariados o faltantes afecta negativamente la nutrición del niño y, en consecuencia, su desarrollo general.",
+            "Las caries no tratadas en los dientes de leche pueden provocar infecciones y dañar el germen del diente permanente en desarrollo que se encuentra debajo. Además, los dientes cariados y rotos pueden minar la autoestima del niño y afectar negativamente sus relaciones sociales. Por esta razón, cada caries en los dientes de leche debe tomarse tan en serio como las de los dientes permanentes y tratarse en consecuencia.",
+          ],
+        },
+        {
+          heading: "Opciones de tratamiento",
+          paragraphs: [
+            "En la etapa temprana de la caries, cuando aún se encuentra en la fase de mancha blanca, la aplicación profesional de barniz de flúor es el método de tratamiento más eficaz. El flúor penetra en la superficie del esmalte para compensar la pérdida de minerales y fortalece la estructura dental. En esta etapa, no es necesario ningún procedimiento de perforación u obturación en la superficie del diente. Las aplicaciones regulares de flúor combinadas con una mejora en el cuidado domiciliario pueden detener la progresión de la caries.",
+            "Cuando la caries penetra a través del esmalte y alcanza la dentina, el tejido cariado debe limpiarse y reemplazarse con material de obturación. En odontología pediátrica, generalmente se prefieren materiales de obturación de composite del color del diente. En casos donde la caries se acerca o alcanza el nervio dental, se realiza una pulpotomía (tratamiento parcial del nervio) para preservar la vitalidad del diente. Luego se coloca una corona de acero inoxidable en el diente para aumentar su durabilidad.",
+            "En dientes demasiado dañados para ser tratados, la extracción se aplica como último recurso. Es importante colocar un aparato mantenedor de espacio en el lugar del diente de leche extraído hasta que erupcione el diente permanente. Este aparato evita que los dientes adyacentes se desplacen hacia el espacio vacío, asegurando que el diente permanente erupcione en la posición correcta.",
+          ],
+        },
+        {
+          heading: "Caries del biberón (caries de la primera infancia)",
+          paragraphs: [
+            "La caries del biberón, o caries de la primera infancia como se conoce médicamente, es un tipo de caries rápido y destructivo que se observa particularmente en niños de 1 a 3 años. La causa más común es acostar al niño con un biberón que contiene líquidos azucarados durante toda la noche. Los líquidos como la leche, la fórmula, el jugo de frutas o el agua azucarada permanecen en la superficie del diente durante horas mientras el flujo de saliva disminuye durante el sueño, creando un entorno ideal para las bacterias.",
+            "La caries del biberón típicamente comienza en los dientes frontales superiores y se extiende rápidamente a otros dientes. La caries a nivel de la línea de las encías, la decoloración marrón-negra y los dientes que se descomponen dejando solo fragmentos de raíz son hallazgos característicos de este tipo de caries. En casos avanzados, puede producirse la pérdida de todos los dientes frontales superiores.",
+            "La forma más eficaz de prevenir la caries del biberón es desarrollar el hábito de no acostar al niño con el biberón. Si se da un biberón nocturno, el contenido debe ser solo agua. Después de los 12 meses, se debe fomentar la transición al vaso, y el consumo de jugo de frutas debe limitarse. Después de que erupcionen los dientes, deben limpiarse cada noche con un paño húmedo o un cepillo suave. Si se detecta tempranamente, los dientes pueden salvarse con tratamiento de flúor y métodos restaurativos apropiados.",
+          ],
+        },
+        {
+          heading: "Métodos de prevención de caries",
+          paragraphs: [
+            "La base de la prevención de caries en los niños son los hábitos de cepillado correctos. Desde la erupción del primer diente, el cepillado debe realizarse dos veces al día, especialmente antes de acostarse, con pasta dental con flúor apropiada para la edad. Hasta los 6 años, el cepillado debe hacerse bajo la supervisión de los padres, asegurando que el niño no trague la pasta dental. El uso de hilo dental también es un paso importante para prevenir caries en los puntos de contacto entre los dientes.",
+            "Los selladores de fisuras son un tratamiento preventivo extremadamente eficaz, particularmente para proteger de la caries los molares permanentes recién erupcionados. Este material fluido aplicado en los surcos y fosas finos de la superficie masticatoria del diente previene físicamente el asentamiento de bacterias. El procedimiento es completamente indoloro y se completa en pocos minutos. El riesgo de caries en dientes con selladores de fisuras se reduce hasta en un 80 por ciento.",
+            "La modificación de la dieta es un factor tan crítico como el cepillado en la prevención de caries. El consumo de alimentos y bebidas que contienen azúcar entre comidas debe limitarse. Los caramelos pegajosos, las bebidas ácidas y los hábitos de picar entre horas aumentan significativamente el riesgo de caries. En su lugar, se deben preferir alimentos amigos de los dientes como queso, yogur, verduras crudas y frutas. Las revisiones dentales regulares cada 6 meses garantizan el diagnóstico temprano de posibles caries, haciendo que el proceso de tratamiento sea más fácil y menos costoso.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "La caries dental es la enfermedad crónica infantil más común",
+        "En la etapa de mancha blanca, la caries puede revertirse con flúor",
+        "Las caries en dientes de leche también afectan negativamente a los dientes permanentes",
+        "El hábito de dormir con biberón causa caries graves",
+        "Los selladores de fisuras reducen el riesgo de caries en un 80 por ciento",
+        "Las revisiones dentales regulares cada 6 meses garantizan un diagnóstico temprano",
+      ],
+      relatedSlugs: ["childrens-dental-health", "baby-teething-guide"],
+    },
   },
 
   "general-anesthesia-child-dental": {
@@ -793,6 +1107,73 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
         "Administered by an experienced pediatric anesthesia team",
         "Complication risk is very low with modern anesthesia techniques",
         "Most children are discharged the same day and return to normal life the next day",
+      ],
+      relatedSlugs: ["childrens-dental-health", "child-afraid-of-dentist"],
+    },
+    es: {
+      slug: "anestesia-general-odontologia-infantil",
+      title: "Tratamiento Dental Bajo Anestesia General para Niños: Preguntas Frecuentes",
+      category: "Métodos de Tratamiento",
+      date: "25 de marzo de 2026",
+      readTime: "8 min",
+      intro: "El tratamiento dental bajo anestesia general es una opción segura y eficaz para los niños que necesitan una intervención dental integral o que tienen dificultad para cooperar. Este método, que permite completar todos los tratamientos en una sola sesión, prioriza la comodidad tanto del niño como de la familia.",
+      sections: [
+        {
+          heading: "¿Qué es la anestesia general y por qué se prefiere?",
+          paragraphs: [
+            "La anestesia general es un procedimiento médico en el que el paciente es dormido de manera controlada, eliminando completamente el dolor y la conciencia. En odontología pediátrica, el tratamiento dental bajo anestesia general es un método confiable que se prefiere especialmente en casos que requieren una intervención integral en múltiples dientes. Dado que el niño está inconsciente, todos los procedimientos pueden realizarse en una sola sesión sin que el niño experimente miedo, dolor o incomodidad.",
+            "Una de las ventajas más importantes de la anestesia general es que elimina la necesidad de sesiones repetidas en el sillón dental. Un proceso de tratamiento que normalmente tomaría varias semanas puede completarse en una sola sesión. Esto previene la ansiedad y el estrés que el niño experimenta antes de cada sesión, al tiempo que minimiza las ausencias laborales y escolares para los padres.",
+            "Además, bajo anestesia general, el dentista tiene la oportunidad de realizar el tratamiento más preciso y de mayor calidad independientemente de los movimientos del paciente. La calidad del tratamiento aumenta significativamente, especialmente en procedimientos que requieren precisión como el tratamiento de conductos, las coronas o las extracciones.",
+          ],
+        },
+        {
+          heading: "¿Para qué niños es adecuada?",
+          paragraphs: [
+            "El tratamiento dental bajo anestesia general no se recomienda para todos los niños, sino para pacientes que cumplen ciertas indicaciones. Los bebés y niños pequeños menores de 3 años, que por su desarrollo no tienen la capacidad de permanecer quietos en el sillón dental durante períodos prolongados, son un grupo para el que la anestesia general se prefiere con frecuencia. Especialmente cuando se necesita tratar simultáneamente múltiples dientes cariados, la anestesia general es el enfoque más seguro para este grupo de edad.",
+            "Los niños que experimentan fobia dental severa también se encuentran entre los candidatos para la anestesia general. Los pacientes en los que se ha intentado el tratamiento en sillón varias veces sin éxito pueden resolver todos sus problemas con un solo procedimiento en lugar de experimentar un trauma en cada sesión. De manera similar, la anestesia general ofrece una solución segura para niños con necesidades especiales como trastorno del espectro autista, parálisis cerebral o discapacidades del desarrollo intelectual.",
+            "La anestesia general también puede estar indicada para niños con infección o absceso generalizado en la boca, dificultad para abrir la boca o un reflejo nauseoso fuerte. En todas estas situaciones, el odontopediatra realiza una evaluación integral para decidir si la anestesia general es apropiada.",
+          ],
+        },
+        {
+          heading: "Preparación previa al tratamiento",
+          paragraphs: [
+            "Antes de la anestesia general, se evalúa de manera integral el estado de salud general del niño. Durante el examen realizado por el anestesiólogo pediátrico, se revisan la historia médica del niño, los medicamentos actuales, el estado alérgico y las cirugías previas. Se realizan un hemograma completo, pruebas de coagulación y otros análisis de sangre que se consideren necesarios.",
+            "Es extremadamente importante que el niño cumpla las reglas de ayuno antes del día del tratamiento. Generalmente, los alimentos sólidos y los productos lácteos deben suspenderse 6-8 horas antes del procedimiento, y los líquidos claros 2-4 horas antes. Estas reglas son de vital importancia para prevenir el riesgo de vómitos y aspiración durante la anestesia. El día del tratamiento, se anima al niño a vestir ropa cómoda y traer un juguete o manta favorita.",
+            "La preparación mental del niño también es una parte importante del proceso. Utilizando un lenguaje apropiado para su edad, se le debe explicar al niño que irá al hospital, que dormirá y que cuando despierte sus dientes estarán mejor. Deben evitarse expresiones negativas como 'aguja', 'dolor' o 'miedo'. La actitud tranquila y reconfortante de los padres afecta directamente la ansiedad del niño.",
+          ],
+        },
+        {
+          heading: "¿Cómo funciona el proceso de tratamiento?",
+          paragraphs: [
+            "El tratamiento dental pediátrico bajo anestesia general se realiza en un entorno hospitalario completamente equipado o en clínicas privadas con condiciones de quirófano. El día del procedimiento, después de que el niño es admitido, el equipo de anestesia realiza las comprobaciones finales. Se establece una vía intravenosa y se administran los medicamentos anestésicos para que el niño entre en un estado de sueño controlado. En algunos casos, se puede aplicar anestesia con gas mediante mascarilla para calmar al niño antes de establecer la vía intravenosa.",
+            "Después de que el niño se duerme, el anestesiólogo monitoriza continuamente la frecuencia cardíaca, la saturación de oxígeno, la presión arterial y los parámetros respiratorios durante todo el período de tratamiento. El odontopediatra entonces realiza secuencialmente todos los tratamientos preplanificados: obturaciones, tratamientos de conductos, extracciones, coronas u otros procedimientos necesarios. El objetivo es resolver todos los problemas en una sola sesión.",
+            "La duración del tratamiento generalmente varía de 1 a 3 horas dependiendo del alcance de los procedimientos a realizar. Una vez completados los procedimientos, los medicamentos anestésicos se reducen gradualmente y el niño es despertado de manera segura. Los padres son mantenidos informados en el área de espera durante todo el proceso.",
+          ],
+        },
+        {
+          heading: "Proceso de recuperación después del tratamiento",
+          paragraphs: [
+            "El proceso de despertar de la anestesia general tiene lugar en la sala de recuperación bajo monitorización cercana. Se prefiere que un padre esté presente cuando el niño comience a despertar. Los síntomas temporales como inquietud, llanto o confusión durante el período de despertar son completamente normales. Esta condición generalmente se resuelve por sí sola en 15-30 minutos.",
+            "Las náuseas y los vómitos posanestesia pueden presentarse en algunos niños. Por esta razón, se recomienda que el niño comience la ingesta de líquidos gradualmente. Durante las primeras horas, se deben preferir líquidos claros (agua, jugo de manzana), seguidos de alimentos ligeros. Si el labio o la mejilla están adormecidos, se debe advertir al niño sobre el riesgo de morderse.",
+            "La mayoría de los niños son dados de alta el mismo día y pueden regresar a sus actividades normales al día siguiente. Durante las primeras 24 horas, se aconseja que el niño descanse y evite actividades físicas intensas. Los analgésicos recetados por el dentista y cualquier antibiótico deben tomarse regularmente. Se programa un examen de seguimiento 1-2 semanas después del tratamiento para evaluar el proceso de recuperación.",
+          ],
+        },
+        {
+          heading: "Seguridad y riesgos",
+          paragraphs: [
+            "La anestesia pediátrica moderna se ha vuelto extremadamente segura gracias a los medicamentos avanzados y las tecnologías de monitorización de alto nivel. En niños sanos (clase ASA I-II), el riesgo de complicaciones graves por la anestesia general es muy bajo. Según los datos de la Sociedad Americana de Anestesiólogos, la tasa de complicaciones graves en anestesia pediátrica es inferior a uno en cien mil.",
+            "La base de la seguridad radica en un enfoque de equipo experimentado. El equipo compuesto por un anestesiólogo pediátrico, un odontopediatra, una enfermera de anestesia y personal auxiliar de salud prioriza la seguridad del niño en cada etapa. La disponibilidad completa de equipos de intervención de emergencia en el quirófano garantiza la preparación para todo escenario posible.",
+            "Una de las preguntas más frecuentes de los padres es si la anestesia general afecta el desarrollo cerebral del niño. Las investigaciones científicas actuales demuestran que las aplicaciones de anestesia general de corta duración y sesión única no dejan efectos neurológicos permanentes en los niños. No obstante, como en todo procedimiento médico, la decisión sobre la anestesia general se toma evaluando conjuntamente los beneficios y los riesgos del tratamiento.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Todos los tratamientos se completan en una sola sesión bajo anestesia general",
+        "Es una opción segura para niños menores de 3 años y con necesidades especiales",
+        "Las reglas de ayuno deben cumplirse estrictamente antes del tratamiento",
+        "Es administrada por un equipo experimentado de anestesia pediátrica",
+        "El riesgo de complicaciones es muy bajo con las técnicas de anestesia modernas",
+        "La mayoría de los niños son dados de alta el mismo día y regresan a su vida normal al día siguiente",
       ],
       relatedSlugs: ["childrens-dental-health", "child-afraid-of-dentist"],
     },

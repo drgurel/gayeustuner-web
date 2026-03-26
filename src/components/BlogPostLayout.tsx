@@ -17,7 +17,7 @@ interface BlogPostLayoutProps {
   keyPoints?: string[];
   relatedPosts?: { title: string; slug: string; category: string }[];
   slug: string;
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 const blogTexts = {
@@ -44,6 +44,18 @@ const blogTexts = {
     getInTouch: "Get in Touch",
     relatedPosts: "Related Posts",
     authorJobTitle: "Pediatric Dentist (Pedodontist)",
+  },
+  es: {
+    allPosts: "Todos los Artículos",
+    readingTime: "lectura",
+    writtenBy: "Escrito por",
+    authorDesc: "Especialista en Odontopediatría · Investigadora de Doctorado en la Universidad de Yeditepe",
+    keyPoints: "Puntos Clave",
+    bookAppointment: "Reservar una Cita",
+    bookAppointmentDesc: "Programe una cita de evaluación para la salud dental de su hijo.",
+    getInTouch: "Contáctenos",
+    relatedPosts: "Artículos Relacionados",
+    authorJobTitle: "Odontóloga Pediatra (Odontopediatra)",
   },
 } as const;
 
@@ -77,6 +89,21 @@ const enMonths: Record<string, string> = {
   December: "12",
 };
 
+const esMonths: Record<string, string> = {
+  enero: "01",
+  febrero: "02",
+  marzo: "03",
+  abril: "04",
+  mayo: "05",
+  junio: "06",
+  julio: "07",
+  agosto: "08",
+  septiembre: "09",
+  octubre: "10",
+  noviembre: "11",
+  diciembre: "12",
+};
+
 function BlogPostJsonLd({
   title,
   intro,
@@ -88,10 +115,11 @@ function BlogPostJsonLd({
   intro: string;
   date: string;
   slug: string;
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }) {
   const t = blogTexts[locale];
-  const months = locale === "en" ? enMonths : trMonths;
+  const months =
+    locale === "en" ? enMonths : locale === "es" ? esMonths : trMonths;
 
   let isoDate: string;
   try {
@@ -104,10 +132,14 @@ function BlogPostJsonLd({
     isoDate = new Date().toISOString();
   }
 
-  const blogBase = locale === "en" ? "/en/blog" : "/blog";
-  const aboutUrl = locale === "en"
-    ? "https://www.gayeustuner.com/en/about"
-    : "https://www.gayeustuner.com/hakkimda";
+  const blogBase =
+    locale === "en" ? "/en/blog" : locale === "es" ? "/es/blog" : "/blog";
+  const aboutUrl =
+    locale === "en"
+      ? "https://www.gayeustuner.com/en/about"
+      : locale === "es"
+        ? "https://www.gayeustuner.com/es/about"
+        : "https://www.gayeustuner.com/hakkimda";
 
   const schema = {
     "@context": "https://schema.org",
@@ -152,8 +184,14 @@ export default function BlogPostLayout({
   locale = "tr",
 }: BlogPostLayoutProps) {
   const t = blogTexts[locale];
-  const blogBase = locale === "en" ? "/en/blog" : "/blog";
-  const ctaHref = locale === "en" ? "/en/contact#appointment" : "/iletisim#randevu";
+  const blogBase =
+    locale === "en" ? "/en/blog" : locale === "es" ? "/es/blog" : "/blog";
+  const ctaHref =
+    locale === "en"
+      ? "/en/contact#appointment"
+      : locale === "es"
+        ? "/es/contact#cita"
+        : "/iletisim#randevu";
 
   return (
     <>

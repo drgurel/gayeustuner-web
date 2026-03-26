@@ -1,5 +1,5 @@
 interface JsonLdProps {
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 const localBusinessTexts = {
@@ -65,6 +65,37 @@ const localBusinessTexts = {
       },
     ],
   },
+  es: {
+    name: "Dra. Gaye Üstüner - Odontóloga Pediatra",
+    description:
+      "Servicios de odontología pediátrica (odontopediatría) en Ataşehir, Estambul. Ortodoncia temprana, tratamiento dental con anestesia general, anestesia digital.",
+    services: [
+      {
+        name: "Tratamientos de Ortodoncia Temprana",
+        description: "Tratamiento temprano de trastornos del desarrollo maxilar y dental en niños.",
+      },
+      {
+        name: "Tratamiento Dental con Anestesia General",
+        description: "Tratamiento seguro en entorno hospitalario para niños que requieren atención integral.",
+      },
+      {
+        name: "Anestesia Digital",
+        description: "Aplicación de anestesia indolora controlada por computadora.",
+      },
+      {
+        name: "Aislamiento con Dique de Goma",
+        description: "Método de aislamiento dental para un tratamiento seguro e higiénico.",
+      },
+      {
+        name: "Coronas de Acero Inoxidable",
+        description: "Aplicación de coronas duraderas para dientes de leche.",
+      },
+      {
+        name: "Alineadores Transparentes (Invisalign)",
+        description: "Tratamiento estético de alineación dental con alineadores invisibles.",
+      },
+    ],
+  },
 } as const;
 
 const personTexts = {
@@ -79,6 +110,12 @@ const personTexts = {
     description:
       "Graduate of Marmara University Faculty of Dentistry, PhD student in Pedodontics at Yeditepe University.",
     worksForName: "Dr. Gaye Üstüner - Pediatric Dentist",
+  },
+  es: {
+    jobTitle: "Odontóloga Pediatra",
+    description:
+      "Graduada de la Facultad de Odontología de la Universidad de Mármara, estudiante de doctorado en Odontopediatría en la Universidad de Yeditepe.",
+    worksForName: "Dra. Gaye Üstüner - Odontóloga Pediatra",
   },
 } as const;
 

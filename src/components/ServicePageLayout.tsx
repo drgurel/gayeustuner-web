@@ -9,7 +9,7 @@ interface ServicePageLayoutProps {
   benefits: string[];
   faq: { q: string; a: string }[];
   canonicalSlug?: string;
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 const serviceTexts = {
@@ -33,6 +33,16 @@ const serviceTexts = {
     breadcrumbHome: "Home",
     breadcrumbServices: "Services",
   },
+  es: {
+    allServices: "Todos los Servicios",
+    advantages: "Ventajas",
+    faq: "Preguntas Frecuentes",
+    bookAppointment: "Reservar una Cita",
+    ctaDescription: "Contáctenos para obtener más información sobre este tratamiento o para programar una cita.",
+    getInTouch: "Contáctenos",
+    breadcrumbHome: "Inicio",
+    breadcrumbServices: "Servicios",
+  },
 } as const;
 
 export default function ServicePageLayout({
@@ -45,12 +55,28 @@ export default function ServicePageLayout({
   locale = "tr",
 }: ServicePageLayoutProps) {
   const t = serviceTexts[locale];
-  const servicesHref = locale === "en" ? "/en/services" : "/hizmetler";
-  const ctaHref = locale === "en" ? "/en/contact#appointment" : "/iletisim#randevu";
+  const servicesHref =
+    locale === "en"
+      ? "/en/services"
+      : locale === "es"
+        ? "/es/services"
+        : "/hizmetler";
+  const ctaHref =
+    locale === "en"
+      ? "/en/contact#appointment"
+      : locale === "es"
+        ? "/es/contact#cita"
+        : "/iletisim#randevu";
 
   const baseUrl = "https://www.gayeustuner.com";
-  const servicesPath = locale === "en" ? "/en/services" : "/hizmetler";
-  const homePath = locale === "en" ? "/en" : "";
+  const servicesPath =
+    locale === "en"
+      ? "/en/services"
+      : locale === "es"
+        ? "/es/services"
+        : "/hizmetler";
+  const homePath =
+    locale === "en" ? "/en" : locale === "es" ? "/es" : "";
 
   const faqSchema = faq.length > 0
     ? {

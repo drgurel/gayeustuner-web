@@ -93,6 +93,47 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       shortDescription:
         "A treatment approach that detects and addresses jaw and dental development issues in children during their growth period.",
     },
+    es: {
+      slug: "ortodoncia-temprana",
+      title: "Tratamiento de Ortodoncia Temprana",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "El tratamiento de ortodoncia temprana permite la detección e intervención de problemas en el desarrollo maxilar y dental durante el período de crecimiento infantil. Este enfoque permite resolver problemas ortodóncicos potencialmente graves con intervenciones menos invasivas antes de que se desarrollen por completo.",
+        "La Asociación Americana de Ortodoncistas recomienda que todos los niños se sometan a una evaluación ortodóncica antes de los 7 años. A esta edad, el período de dentición mixta ya ha comenzado y los problemas potenciales pueden identificarse en una etapa temprana.",
+        "Los dientes apiñados, la mordida cruzada, el maxilar superior estrecho y la protrusión o retrusión mandibular pueden tratarse de manera mucho más fácil y eficaz durante el período temprano. Las intervenciones realizadas durante la fase de crecimiento permiten guiar adecuadamente el desarrollo óseo.",
+        "Los hábitos nocivos como la succión del pulgar, la succión labial y la respiración bucal también pueden afectar negativamente la estructura dental y maxilar. Controlar estos hábitos de forma temprana es de vital importancia para prevenir deformidades permanentes.",
+      ],
+      benefits: [
+        "Prevención de problemas ortodóncicos graves",
+        "Proceso de tratamiento más corto y sencillo",
+        "Aprovechamiento del potencial de crecimiento",
+        "Reducción de la necesidad de intervención quirúrgica",
+        "Mejora de la autoestima del niño",
+        "Corrección de hábitos nocivos",
+      ],
+      faq: [
+        {
+          question:
+            "¿A qué edad debo llevar a mi hijo a una revisión ortodóncica?",
+          answer:
+            "Los 7 años es la edad ideal para una primera evaluación ortodóncica. En esta etapa, la dentición mixta ya ha comenzado y los problemas potenciales pueden detectarse de forma temprana.",
+        },
+        {
+          question: "¿Cuánto dura el tratamiento de ortodoncia temprana?",
+          answer:
+            "La duración del tratamiento varía según el tipo y la gravedad del problema, pero generalmente dura entre 6 y 18 meses.",
+        },
+        {
+          question:
+            "¿Qué sucede si no se realiza el tratamiento de ortodoncia temprana?",
+          answer:
+            "Los problemas ortodóncicos no tratados pueden empeorar con el tiempo y requerir tratamientos más extensos y prolongados, o incluso intervención quirúrgica en el futuro.",
+        },
+      ],
+      canonicalSlug: "ortodoncia-temprana",
+      shortDescription:
+        "Un enfoque terapéutico que detecta y aborda los problemas de desarrollo maxilar y dental en los niños durante su período de crecimiento.",
+    },
   },
 
   "general-anesthesia": {
@@ -190,6 +231,48 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       shortDescription:
         "Safe dental treatment in a hospital setting for children who require extensive procedures or have difficulty cooperating.",
     },
+    es: {
+      slug: "tratamiento-anestesia-general",
+      title: "Tratamiento Dental Bajo Anestesia General",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "El tratamiento dental bajo anestesia general es un procedimiento que se realiza de forma segura en un entorno hospitalario para niños que requieren tratamientos extensos, son muy pequeños o tienen dificultades para cooperar. Mi investigación de tesis doctoral continúa en este campo.",
+        "Algunos niños pueden tener dificultades para recibir tratamiento en un entorno clínico debido a su edad, nivel de miedo o condiciones de salud especiales. En estos casos, todos los tratamientos se completan en una sola sesión bajo condiciones hospitalarias con la supervisión de un anestesiólogo.",
+        "El procedimiento de anestesia general es dirigido por un anestesiólogo experimentado. Se realiza una evaluación detallada antes del tratamiento y se valora el estado general de salud del niño. Todas las funciones vitales se monitorizan de forma continua durante todo el procedimiento.",
+        "Con este método, el niño no experimenta ningún dolor ni molestia durante el proceso de tratamiento. Todos los tratamientos dentales (obturaciones, extracciones, endodoncias, colocación de coronas) se completan en una sola sesión, liberando al niño del estrés de sentarse repetidamente en el sillón dental.",
+      ],
+      benefits: [
+        "Seguridad total en entorno hospitalario",
+        "Procedimiento supervisado por un anestesiólogo",
+        "Todos los tratamientos completados en una sola sesión",
+        "Experiencia sin dolor y sin estrés",
+        "Solución para dificultades de cooperación",
+        "Posibilidad de tratamiento integral",
+        "Monitorización continua de signos vitales",
+      ],
+      faq: [
+        {
+          question: "¿Es segura la anestesia general para los niños?",
+          answer:
+            "Sí, los procedimientos realizados con técnicas modernas de anestesia y supervisados por anestesiólogos experimentados son muy seguros. Se realiza una evaluación de salud detallada antes del tratamiento.",
+        },
+        {
+          question:
+            "¿En qué situaciones se prefiere la anestesia general?",
+          answer:
+            "La anestesia general puede preferirse para niños muy pequeños, cuando se necesita un tratamiento extenso, para niños con dificultades de cooperación y para pacientes con condiciones de salud especiales.",
+        },
+        {
+          question:
+            "¿Cuándo puede mi hijo volver a su vida normal después del tratamiento?",
+          answer:
+            "La mayoría de los niños reciben el alta el mismo día y generalmente pueden volver a sus actividades normales al día siguiente. La somnolencia breve y las náuseas leves después de la anestesia se consideran normales.",
+        },
+      ],
+      canonicalSlug: "tratamiento-anestesia-general",
+      shortDescription:
+        "Tratamiento dental seguro en entorno hospitalario para niños que requieren procedimientos extensos o tienen dificultades para cooperar.",
+    },
   },
 
   "rubber-dam": {
@@ -271,6 +354,45 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       shortDescription:
         "A method that provides a safe and hygienic treatment environment by isolating the tooth to be treated with a special rubber sheet.",
     },
+    es: {
+      slug: "aislamiento-dique-goma",
+      title: "Aislamiento con Dique de Goma",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "El dique de goma (cofferdam) es un método de aislamiento del diente a tratar de la cavidad oral mediante una lámina especial de goma. Esto mantiene el área de tratamiento seca y limpia, impidiendo que la saliva y las bacterias lleguen a la zona de trabajo.",
+        "El uso del dique de goma en odontopediatría es de gran importancia. Especialmente en procedimientos como obturaciones y tratamientos de conducto, el aislamiento del diente tratado de la saliva afecta directamente la calidad y la durabilidad del tratamiento.",
+        "El dique de goma también es una aplicación crítica en términos de seguridad. Se elimina el riesgo de que pequeños instrumentos, sustancias químicas o materiales de tratamiento utilizados durante el procedimiento caigan en la boca del niño, sean ingeridos o aspirados.",
+        "Los niños generalmente se adaptan al dique de goma con mucha facilidad. El hecho de que solo el diente tratado sea visible en su boca distrae al niño y hace que el proceso de tratamiento sea más cómodo.",
+      ],
+      benefits: [
+        "Aislamiento completo del área de tratamiento",
+        "Prevención de riesgos de deglución y aspiración",
+        "Obturaciones de mayor calidad y durabilidad",
+        "Entorno de tratamiento higiénico",
+        "Mayor seguridad para el niño",
+        "Reducción del tiempo de tratamiento",
+      ],
+      faq: [
+        {
+          question: "¿Es incómodo el dique de goma para los niños?",
+          answer:
+            "No, la mayoría de los niños se adaptan fácilmente al dique de goma. Aunque al principio puede sentirse una ligera molestia, en realidad ofrece una experiencia más cómoda al reducir la necesidad de mantener la boca abierta durante todo el tratamiento.",
+        },
+        {
+          question: "¿Se utiliza el dique de goma en todos los tratamientos?",
+          answer:
+            "El uso del dique de goma es el estándar de oro en tratamientos como obturaciones, endodoncias y aplicaciones de selladores de fisuras. Sin embargo, puede no ser necesario en todas las situaciones; su odontólogo determinará el método de tratamiento adecuado.",
+        },
+        {
+          question: "¿Puede haber alergia al dique de goma?",
+          answer:
+            "En casos raros, los pacientes con alergia al látex pueden experimentar una reacción. En tales casos, se utilizan materiales alternativos de dique de goma libres de látex.",
+        },
+      ],
+      canonicalSlug: "aislamiento-dique-goma",
+      shortDescription:
+        "Un método que proporciona un entorno de tratamiento seguro e higiénico al aislar el diente a tratar con una lámina especial de goma.",
+    },
   },
 
   "steel-crowns": {
@@ -351,6 +473,45 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       canonicalSlug: "stainless-steel-crowns",
       shortDescription:
         "A durable, long-lasting prefabricated crown application preferred over fillings for advanced decay in primary teeth.",
+    },
+    es: {
+      slug: "coronas-acero-inoxidable",
+      title: "Coronas de Acero Inoxidable",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "Las coronas de acero inoxidable son aplicaciones de coronas prefabricadas utilizadas para proteger los dientes temporales que no pueden restaurarse adecuadamente con obturaciones debido a caries avanzadas.",
+        "Los dientes temporales son de gran importancia para la función masticatoria del niño, el desarrollo del habla y la erupción correcta de los dientes permanentes. En lugar de la pérdida prematura de los dientes temporales con caries avanzada, se prefiere su conservación mediante coronas de acero inoxidable.",
+        "El procedimiento generalmente se completa en una sola sesión. Después de preparar el diente adecuadamente, se selecciona la corona del tamaño correcto, se adapta al diente y se cementa con un cemento dental especial. La corona permanece en su lugar hasta que el diente temporal se exfolia de forma natural.",
+        "Las coronas de acero inoxidable son extremadamente duraderas y pueden resistir fácilmente las fuerzas masticatorias diarias. Su mayor durabilidad en comparación con las obturaciones y su capacidad para reducir la necesidad de tratamientos repetidos son sus ventajas más significativas.",
+      ],
+      benefits: [
+        "Alta durabilidad y larga vida útil",
+        "Aplicación en una sola sesión",
+        "Preservación de la función del diente temporal",
+        "Reducción de la necesidad de retratamiento",
+        "Conservación de la vía de erupción del diente permanente",
+        "Mantenimiento de la función masticatoria",
+      ],
+      faq: [
+        {
+          question: "¿Cuánto dura una corona de acero inoxidable?",
+          answer:
+            "La corona de acero inoxidable permanece en su lugar hasta que el diente temporal se cae de forma natural. Este período puede variar desde unos pocos años hasta 5-6 años, dependiendo de la posición del diente.",
+        },
+        {
+          question: "¿Es doloroso el procedimiento de colocación de la corona?",
+          answer:
+            "El procedimiento se realiza bajo anestesia local y el niño no siente dolor durante el proceso. Puede haber una ligera sensibilidad después del procedimiento, pero desaparece rápidamente.",
+        },
+        {
+          question: "¿Por qué se prefiere una corona en lugar de una obturación?",
+          answer:
+            "En casos de caries avanzada, las obturaciones pueden no proporcionar la durabilidad adecuada y el riesgo de desprendimiento es alto. La corona envuelve completamente el diente y proporciona una restauración mucho más duradera.",
+        },
+      ],
+      canonicalSlug: "coronas-acero-inoxidable",
+      shortDescription:
+        "Aplicación de coronas prefabricadas duraderas y de larga vida útil, preferidas sobre las obturaciones para caries avanzadas en dientes temporales.",
     },
   },
 
@@ -435,6 +596,47 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       shortDescription:
         "A clear, removable aligner system offering a modern and aesthetic alternative to traditional metal braces.",
     },
+    es: {
+      slug: "alineadores-transparentes",
+      title: "Ortodoncia con Alineadores Transparentes",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "La terapia con alineadores transparentes (Invisalign) ofrece una alternativa moderna y estética a los brackets metálicos tradicionales. Con alineadores transparentes y removibles fabricados a medida, los dientes se mueven gradualmente hacia la posición deseada.",
+        "Los sistemas Invisalign First e Invisalign Teen, diseñados para niños y adolescentes, ofrecen soluciones especializadas para pacientes en su período de crecimiento. Dado que los alineadores son prácticamente invisibles, pueden utilizarse cómodamente en entornos sociales y en la vida escolar.",
+        "Durante el proceso de tratamiento, se utilizan nuevos juegos de alineadores a intervalos regulares, y cada alineador mueve suavemente los dientes hacia la siguiente posición. Gracias a la planificación digital, todo el proceso desde el inicio hasta el resultado del tratamiento puede visualizarse previamente.",
+        "Como los alineadores son removibles, los hábitos de cepillado y alimentación no se ven afectados negativamente. Esto proporciona una ventaja significativa sobre los brackets tradicionales, especialmente en términos de higiene oral.",
+      ],
+      benefits: [
+        "Estéticos y prácticamente invisibles",
+        "Alineadores removibles",
+        "Fácil mantenimiento de la higiene oral",
+        "Uso cómodo y confortable",
+        "Planificación digital del tratamiento",
+        "Menos visitas clínicas",
+      ],
+      faq: [
+        {
+          question:
+            "¿Es adecuado el tratamiento con alineadores transparentes para mi hijo?",
+          answer:
+            "El tratamiento con alineadores transparentes puede ser adecuado para niños que cumplan ciertos criterios de edad y desarrollo dental. El método de tratamiento más apropiado para su hijo se determinará después de un examen.",
+        },
+        {
+          question:
+            "¿Cuántas horas al día deben usarse los alineadores?",
+          answer:
+            "Para obtener los mejores resultados, se recomienda usar los alineadores de 20 a 22 horas al día. Solo deben retirarse al comer y al cepillarse los dientes.",
+        },
+        {
+          question: "¿Cuánto dura el tratamiento?",
+          answer:
+            "La duración del tratamiento varía según el caso, pero generalmente oscila entre 6 y 24 meses. La duración estimada se proporcionará durante la fase de planificación del tratamiento.",
+        },
+      ],
+      canonicalSlug: "alineadores-transparentes",
+      shortDescription:
+        "Un sistema de alineadores transparentes y removibles que ofrece una alternativa moderna y estética a los brackets metálicos tradicionales.",
+    },
   },
 
   "digital-anesthesia": {
@@ -517,6 +719,47 @@ const services: Record<string, Record<Locale, ServiceData>> = {
       canonicalSlug: "digital-anesthesia",
       shortDescription:
         "Modern technology offering a painless and comfortable anesthesia experience with computer-controlled precise dosing.",
+    },
+    es: {
+      slug: "anestesia-digital",
+      title: "Anestesia Digital",
+      subtitle: "Servicio de Odontopediatría",
+      description: [
+        "La anestesia digital (sistema WAND/STA) es una aplicación de anestesia local controlada por ordenador. Ofrece una experiencia anestésica mucho más precisa, controlada e indolora en comparación con las jeringas tradicionales.",
+        "El sistema controla la velocidad de administración y la presión del agente anestésico mediante ordenador. Esto minimiza el daño tisular y hace que la aplicación de la anestesia sea prácticamente imperceptible. Es una solución ideal para los niños que tienen miedo a las agujas.",
+        "La causa principal del dolor en las inyecciones tradicionales es la velocidad y presión incontroladas con las que el agente anestésico se administra en el tejido. El sistema de anestesia digital elimina completamente este problema; el agente se administra a una presión muy lenta y constante.",
+        "El dispositivo de anestesia digital también difiere en apariencia de una jeringa tradicional. Su diseño en forma de bolígrafo resulta menos intimidante para los niños y mejora la cooperación durante el tratamiento. Esto hace que la experiencia dental de su hijo sea mucho más positiva.",
+      ],
+      benefits: [
+        "Aplicación prácticamente indolora",
+        "Dosificación precisa controlada por ordenador",
+        "Solución eficaz para la fobia a las agujas",
+        "Daño tisular mínimo",
+        "Diseño del dispositivo adaptado a los niños",
+        "Inicio de acción más rápido",
+      ],
+      faq: [
+        {
+          question: "¿Es realmente indolora la anestesia digital?",
+          answer:
+            "Aunque no puede decirse que sea completamente indolora, es significativamente menos dolorosa en comparación con las inyecciones tradicionales. La mayoría de los pacientes pediátricos ni siquiera notan que se les ha administrado la anestesia.",
+        },
+        {
+          question:
+            "¿Se puede utilizar la anestesia digital en todos los tratamientos?",
+          answer:
+            "Sí, el sistema de anestesia digital puede utilizarse en prácticamente cualquier tratamiento que requiera anestesia local. Se aplica cómodamente en procedimientos como obturaciones, endodoncias y extracciones.",
+        },
+        {
+          question:
+            "¿Tiene la anestesia digital algún efecto secundario?",
+          answer:
+            "La anestesia digital utiliza los mismos medicamentos que la anestesia tradicional; la única diferencia está en el método de administración. Por lo tanto, no existen efectos secundarios adicionales.",
+        },
+      ],
+      canonicalSlug: "anestesia-digital",
+      shortDescription:
+        "Tecnología moderna que ofrece una experiencia anestésica indolora y confortable con dosificación precisa controlada por ordenador.",
     },
   },
 };

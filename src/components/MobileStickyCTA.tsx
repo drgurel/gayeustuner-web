@@ -1,15 +1,22 @@
 "use client";
 
 interface MobileStickyCTAProps {
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 export default function MobileStickyCTA({ locale = "tr" }: MobileStickyCTAProps) {
-  const callText = locale === "en" ? "Call Now" : "Hemen Ara";
+  const callText =
+    locale === "en"
+      ? "Call Now"
+      : locale === "es"
+        ? "Llamar Ahora"
+        : "Hemen Ara";
   const whatsappMessage =
     locale === "en"
       ? "Hello%2C%20I%27d%20like%20to%20book%20an%20appointment."
-      : "Merhaba%2C%20randevu%20almak%20istiyorum.";
+      : locale === "es"
+        ? "Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20cita."
+        : "Merhaba%2C%20randevu%20almak%20istiyorum.";
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white/95 backdrop-blur-sm border-t border-[var(--color-border)] px-4 py-3 safe-area-pb">

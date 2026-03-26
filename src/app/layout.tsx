@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     languages: {
       "tr": "https://www.gayeustuner.com",
       "en": "https://www.gayeustuner.com/en",
+      "es": "https://www.gayeustuner.com/es",
     },
   },
 };
@@ -73,7 +74,7 @@ export default async function RootLayout({
 }>) {
   const headersList = await headers();
   const pathname = headersList.get("x-pathname") || "/";
-  const locale = pathname.startsWith("/en") ? "en" : "tr";
+  const locale = pathname.startsWith("/en") ? "en" : pathname.startsWith("/es") ? "es" : "tr";
 
   return (
     <html lang={locale} className="h-full antialiased">

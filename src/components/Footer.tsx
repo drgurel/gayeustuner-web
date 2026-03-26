@@ -18,6 +18,14 @@ const footerTexts = {
     contact: "Contact",
     copyright: "All rights reserved.",
   },
+  es: {
+    subtitle: "Odontóloga Pediatra (Odontopediatría)",
+    tagline: "Enfoque de tratamiento confiable, moderno y cómodo para la salud dental y la sonrisa de su hijo.",
+    quickLinks: "ENLACES RÁPIDOS",
+    services: "SERVICIOS",
+    contact: "CONTACTO",
+    copyright: "Todos los derechos reservados.",
+  },
 } as const;
 
 const quickLinksMap = {
@@ -32,6 +40,12 @@ const quickLinksMap = {
     { key: "services" as const, label: "Services" },
     { key: "blog" as const, label: "Blog" },
     { key: "contact" as const, label: "Contact" },
+  ],
+  es: [
+    { key: "about" as const, label: "Sobre Mí" },
+    { key: "services" as const, label: "Servicios" },
+    { key: "blog" as const, label: "Blog" },
+    { key: "contact" as const, label: "Contacto" },
   ],
 } as const;
 
@@ -48,10 +62,16 @@ const serviceLinksMap = {
     { href: "/en/services/rubber-dam-isolation", label: "Rubber Dam Isolation" },
     { href: "/en/services/digital-anesthesia", label: "Digital Anesthesia" },
   ],
+  es: [
+    { href: "/es/services/ortodoncia-temprana", label: "Ortodoncia Temprana" },
+    { href: "/es/services/tratamiento-anestesia-general", label: "Tratamiento con Anestesia General" },
+    { href: "/es/services/aislamiento-dique-goma", label: "Aislamiento con Dique de Goma" },
+    { href: "/es/services/anestesia-digital", label: "Anestesia Digital" },
+  ],
 } as const;
 
 interface FooterProps {
-  locale?: "tr" | "en";
+  locale?: "tr" | "en" | "es";
 }
 
 export default function Footer({ locale = "tr" }: FooterProps) {

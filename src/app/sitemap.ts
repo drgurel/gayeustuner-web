@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "seffaf-plaklar-ortodonti",
     "dijital-anestezi",
   ];
-
   const enServices = [
     "early-orthodontics",
     "general-anesthesia-treatment",
@@ -20,6 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "stainless-steel-crowns",
     "clear-aligners",
     "digital-anesthesia",
+  ];
+  const esServices = [
+    "ortodoncia-temprana",
+    "tratamiento-anestesia-general",
+    "aislamiento-dique-goma",
+    "coronas-acero-inoxidable",
+    "alineadores-transparentes",
+    "anestesia-digital",
   ];
 
   const trBlogs = [
@@ -30,7 +37,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cocuklarda-dis-curugu-tedavisi",
     "genel-anestezi-cocuk-dis-tedavisi",
   ];
-
   const enBlogs = [
     "childrens-dental-health",
     "pedodontics-orthodontics-tips",
@@ -39,133 +45,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "childhood-cavity-treatment",
     "general-anesthesia-child-dental",
   ];
+  const esBlogs = [
+    "salud-dental-infantil",
+    "consejos-odontopediatria-ortodoncia",
+    "guia-denticion-bebes",
+    "nino-miedo-al-dentista",
+    "tratamiento-caries-infantil",
+    "anestesia-general-odontologia-infantil",
+  ];
+
+  const langs = (tr: string, en: string, es: string) => ({ tr, en, es });
 
   return [
-    // Homepage
-    {
-      url: base,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 1,
-      alternates: { languages: { tr: base, en: `${base}/en` } },
-    },
-    // About
-    {
-      url: `${base}/hakkimda`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: { languages: { tr: `${base}/hakkimda`, en: `${base}/en/about` } },
-    },
-    // Services
-    {
-      url: `${base}/hizmetler`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-      alternates: { languages: { tr: `${base}/hizmetler`, en: `${base}/en/services` } },
-    },
-    // Service detail pages
+    // --- TR pages ---
+    { url: base, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
+    { url: `${base}/hakkimda`, lastModified: now, changeFrequency: "monthly", priority: 0.8, alternates: { languages: langs(`${base}/hakkimda`, `${base}/en/about`, `${base}/es/about`) } },
+    { url: `${base}/hizmetler`, lastModified: now, changeFrequency: "monthly", priority: 0.9, alternates: { languages: langs(`${base}/hizmetler`, `${base}/en/services`, `${base}/es/services`) } },
     ...trServices.map((slug, i) => ({
-      url: `${base}/hizmetler/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-      alternates: {
-        languages: {
-          tr: `${base}/hizmetler/${slug}`,
-          en: `${base}/en/services/${enServices[i]}`,
-        },
-      },
+      url: `${base}/hizmetler/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8,
+      alternates: { languages: langs(`${base}/hizmetler/${slug}`, `${base}/en/services/${enServices[i]}`, `${base}/es/services/${esServices[i]}`) },
     })),
-    // Blog
-    {
-      url: `${base}/blog`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-      alternates: { languages: { tr: `${base}/blog`, en: `${base}/en/blog` } },
-    },
-    // Blog posts
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8, alternates: { languages: langs(`${base}/blog`, `${base}/en/blog`, `${base}/es/blog`) } },
     ...trBlogs.map((slug, i) => ({
-      url: `${base}/blog/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-      alternates: {
-        languages: {
-          tr: `${base}/blog/${slug}`,
-          en: `${base}/en/blog/${enBlogs[i]}`,
-        },
-      },
+      url: `${base}/blog/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7,
+      alternates: { languages: langs(`${base}/blog/${slug}`, `${base}/en/blog/${enBlogs[i]}`, `${base}/es/blog/${esBlogs[i]}`) },
     })),
-    // Contact
-    {
-      url: `${base}/iletisim`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.6,
-      alternates: { languages: { tr: `${base}/iletisim`, en: `${base}/en/contact` } },
-    },
-    // EN pages (standalone entries)
-    {
-      url: `${base}/en`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 1,
-      alternates: { languages: { tr: base, en: `${base}/en` } },
-    },
-    {
-      url: `${base}/en/about`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-      alternates: { languages: { tr: `${base}/hakkimda`, en: `${base}/en/about` } },
-    },
-    {
-      url: `${base}/en/services`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-      alternates: { languages: { tr: `${base}/hizmetler`, en: `${base}/en/services` } },
-    },
+    { url: `${base}/iletisim`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
+
+    // --- EN pages ---
+    { url: `${base}/en`, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
+    { url: `${base}/en/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8, alternates: { languages: langs(`${base}/hakkimda`, `${base}/en/about`, `${base}/es/about`) } },
+    { url: `${base}/en/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9, alternates: { languages: langs(`${base}/hizmetler`, `${base}/en/services`, `${base}/es/services`) } },
     ...enServices.map((slug, i) => ({
-      url: `${base}/en/services/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-      alternates: {
-        languages: {
-          tr: `${base}/hizmetler/${trServices[i]}`,
-          en: `${base}/en/services/${slug}`,
-        },
-      },
+      url: `${base}/en/services/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8,
+      alternates: { languages: langs(`${base}/hizmetler/${trServices[i]}`, `${base}/en/services/${slug}`, `${base}/es/services/${esServices[i]}`) },
     })),
-    {
-      url: `${base}/en/blog`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-      alternates: { languages: { tr: `${base}/blog`, en: `${base}/en/blog` } },
-    },
+    { url: `${base}/en/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8, alternates: { languages: langs(`${base}/blog`, `${base}/en/blog`, `${base}/es/blog`) } },
     ...enBlogs.map((slug, i) => ({
-      url: `${base}/en/blog/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-      alternates: {
-        languages: {
-          tr: `${base}/blog/${trBlogs[i]}`,
-          en: `${base}/en/blog/${slug}`,
-        },
-      },
+      url: `${base}/en/blog/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7,
+      alternates: { languages: langs(`${base}/blog/${trBlogs[i]}`, `${base}/en/blog/${slug}`, `${base}/es/blog/${esBlogs[i]}`) },
     })),
-    {
-      url: `${base}/en/contact`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.6,
-      alternates: { languages: { tr: `${base}/iletisim`, en: `${base}/en/contact` } },
-    },
+    { url: `${base}/en/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
+
+    // --- ES pages ---
+    { url: `${base}/es`, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
+    { url: `${base}/es/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8, alternates: { languages: langs(`${base}/hakkimda`, `${base}/en/about`, `${base}/es/about`) } },
+    { url: `${base}/es/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9, alternates: { languages: langs(`${base}/hizmetler`, `${base}/en/services`, `${base}/es/services`) } },
+    ...esServices.map((slug, i) => ({
+      url: `${base}/es/services/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8,
+      alternates: { languages: langs(`${base}/hizmetler/${trServices[i]}`, `${base}/en/services/${enServices[i]}`, `${base}/es/services/${slug}`) },
+    })),
+    { url: `${base}/es/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8, alternates: { languages: langs(`${base}/blog`, `${base}/en/blog`, `${base}/es/blog`) } },
+    ...esBlogs.map((slug, i) => ({
+      url: `${base}/es/blog/${slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7,
+      alternates: { languages: langs(`${base}/blog/${trBlogs[i]}`, `${base}/en/blog/${enBlogs[i]}`, `${base}/es/blog/${slug}`) },
+    })),
+    { url: `${base}/es/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
   ];
 }
