@@ -279,7 +279,7 @@ export default function Header({ locale = "tr" }: HeaderProps) {
                 <Link
                   key={targetLocale}
                   href={getLangSwitchHref(targetLocale)}
-                  className="px-3 py-1.5 text-xs font-bold border border-[var(--color-border)] rounded-md text-[var(--color-text)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-colors"
+                  className="px-2 py-1 text-xl border border-[var(--color-border)] rounded-md hover:border-[var(--color-primary)] transition-colors leading-none"
                 >
                   {localeLabelMap[targetLocale]}
                 </Link>
@@ -378,7 +378,7 @@ export default function Header({ locale = "tr" }: HeaderProps) {
                   key={targetLocale}
                   href={getLangSwitchHref(targetLocale)}
                   onClick={() => setMobileOpen(false)}
-                  className="block px-3 py-2.5 text-sm font-bold text-[var(--color-text)] hover:text-[var(--color-primary)] rounded-lg"
+                  className="block px-3 py-2.5 text-2xl hover:text-[var(--color-primary)] rounded-lg leading-none"
                 >
                   {localeLabelMap[targetLocale]}
                 </Link>
