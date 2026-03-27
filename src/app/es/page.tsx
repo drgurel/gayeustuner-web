@@ -91,10 +91,10 @@ export default function HomeES() {
               <div>
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-sm font-medium mb-6">
                   <span className="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span>
-                  Especialista en Odontopediatría
+                  Ataşehir, İstanbul · Especialista en Odontopediatría
                 </div>
                 <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--color-secondary)] leading-tight mb-6">
-                  Odontóloga Pediatra{" "}
+                  Ataşehir Odontóloga Pediatra{" "}
                   <span className="text-[var(--color-primary)]">En Manos Seguras</span>
                 </h1>
                 <p className="text-lg text-[var(--color-text-light)] leading-relaxed mb-8 max-w-lg">

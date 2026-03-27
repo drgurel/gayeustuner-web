@@ -128,6 +128,7 @@ export function LocalBusinessJsonLd({ locale = "tr" }: JsonLdProps) {
     name: t.name,
     description: t.description,
     url: "https://www.gayeustuner.com",
+    telephone: "+905472666204",
     email: "gayeustuner@gmail.com",
     address: {
       "@type": "PostalAddress",

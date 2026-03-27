@@ -56,6 +56,27 @@ export default function IletisimPage() {
                     </div>
                   </div>
 
+                  {/* Phone */}
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-[var(--color-surface-alt)] flex items-center justify-center shrink-0">
+                      <svg className="w-6 h-6 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-[var(--color-secondary)] mb-1">Telefon / WhatsApp</h3>
+                      <a
+                        href="tel:+905472666204"
+                        className="text-[var(--color-primary)] hover:underline"
+                      >
+                        +90 547 266 62 04
+                      </a>
+                      <p className="text-[var(--color-text-light)] text-sm mt-1">
+                        Arama ve WhatsApp
+                      </p>
+                    </div>
+                  </div>
+
                   {/* Email */}
                   <div className="flex gap-4">
                     <div className="w-12 h-12 rounded-xl bg-[var(--color-surface-alt)] flex items-center justify-center shrink-0">
@@ -102,12 +123,31 @@ export default function IletisimPage() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[var(--color-secondary)] mb-1">Google Maps</h3>
-                      <p className="text-[var(--color-text-light)] text-sm">
-                        Google Maps&apos;te &quot;Dt. Gaye Üstüner&quot; olarak arayabilirsiniz.
-                      </p>
+                      <h3 className="font-semibold text-[var(--color-secondary)] mb-1">Konum</h3>
+                      <a
+                        href="https://maps.google.com/?q=40.9923,29.1244"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--color-primary)] hover:underline text-sm"
+                      >
+                        Google Maps&apos;te Görüntüle →
+                      </a>
                     </div>
                   </div>
+                </div>
+
+                {/* Maps Embed */}
+                <div className="mt-6 rounded-xl overflow-hidden border border-[var(--color-border)]">
+                  <iframe
+                    src="https://www.google.com/maps?q=40.9923,29.1244&z=16&output=embed"
+                    width="100%"
+                    height="280"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Dt. Gaye Üstüner - Çocuk Diş Hekimi Konumu"
+                  />
                 </div>
 
                 {/* Appointment Types */}
