@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAllServices } from "@/data/services";
 
 interface ServicePageLayoutProps {
   title: string;
@@ -22,6 +23,8 @@ const serviceTexts = {
     getInTouch: "İletişime Geç",
     breadcrumbHome: "Ana Sayfa",
     breadcrumbServices: "Hizmetler",
+    otherServices: "Diğer Hizmetlerimiz",
+    moreInfo: "Detaylı Bilgi",
   },
   en: {
     allServices: "All Services",
@@ -32,6 +35,8 @@ const serviceTexts = {
     getInTouch: "Get in Touch",
     breadcrumbHome: "Home",
     breadcrumbServices: "Services",
+    otherServices: "Our Other Services",
+    moreInfo: "Learn More",
   },
   es: {
     allServices: "Todos los Servicios",
@@ -42,6 +47,8 @@ const serviceTexts = {
     getInTouch: "Contáctenos",
     breadcrumbHome: "Inicio",
     breadcrumbServices: "Servicios",
+    otherServices: "Nuestros Otros Servicios",
+    moreInfo: "Más Información",
   },
 } as const;
 
@@ -215,6 +222,39 @@ export default function ServicePageLayout({
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Other Services */}
+        <section className="py-16 lg:py-24 bg-[var(--color-surface-alt)]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-[family-name:var(--font-heading)] text-2xl lg:text-3xl font-bold text-[var(--color-secondary)] mb-8 text-center">
+              {t.otherServices}
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {getAllServices(locale)
+                .filter((s) => s.title !== title)
+                .map((service) => (
+                  <Link
+                    key={service.slug}
+                    href={`${servicesPath}/${service.slug}`}
+                    className="group p-6 rounded-2xl border border-[var(--color-border)] bg-white hover:border-[var(--color-primary)]/30 hover:shadow-lg transition-all"
+                  >
+                    <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-[var(--color-secondary)] mb-2 group-hover:text-[var(--color-primary)] transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-[var(--color-text-light)] mb-3 line-clamp-2">
+                      {service.shortDescription}
+                    </p>
+                    <span className="inline-flex items-center text-sm font-medium text-[var(--color-primary)]">
+                      {t.moreInfo}
+                      <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </Link>
+                ))}
             </div>
           </div>
         </section>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAllServices } from "@/data/services";
 
 interface BlogSection {
   heading: string;
@@ -31,6 +32,7 @@ const blogTexts = {
     bookAppointmentDesc: "Çocuğunuzun diş sağlığı için değerlendirme randevusu oluşturun.",
     getInTouch: "İletişime Geç",
     relatedPosts: "İlgili Yazılar",
+    relatedServices: "Hizmetlerimiz",
     authorJobTitle: "Çocuk Diş Hekimi (Pedodontist)",
   },
   en: {
@@ -43,6 +45,7 @@ const blogTexts = {
     bookAppointmentDesc: "Schedule an evaluation appointment for your child's dental health.",
     getInTouch: "Get in Touch",
     relatedPosts: "Related Posts",
+    relatedServices: "Our Services",
     authorJobTitle: "Pediatric Dentist (Pedodontist)",
   },
   es: {
@@ -55,6 +58,7 @@ const blogTexts = {
     bookAppointmentDesc: "Programe una cita de evaluación para la salud dental de su hijo.",
     getInTouch: "Contáctenos",
     relatedPosts: "Artículos Relacionados",
+    relatedServices: "Nuestros Servicios",
     authorJobTitle: "Odontóloga Pediatra (Odontopediatra)",
   },
 } as const;
@@ -327,6 +331,31 @@ export default function BlogPostLayout({
                       </ul>
                     </div>
                   )}
+
+                  {/* Related Services */}
+                  <div className="p-6 rounded-2xl border border-[var(--color-border)]">
+                    <h3 className="font-[family-name:var(--font-heading)] text-base font-bold text-[var(--color-secondary)] mb-4">
+                      {t.relatedServices}
+                    </h3>
+                    <ul className="space-y-3">
+                      {getAllServices(locale).slice(0, 4).map((service) => {
+                        const servicesPath = locale === "en" ? "/en/services" : locale === "es" ? "/es/services" : "/hizmetler";
+                        return (
+                          <li key={service.slug}>
+                            <Link
+                              href={`${servicesPath}/${service.slug}`}
+                              className="flex items-center gap-2 text-sm text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors"
+                            >
+                              <svg className="w-4 h-4 text-[var(--color-primary)] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                              {service.title}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </div>
               </aside>
             </div>

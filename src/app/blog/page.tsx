@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAllBlogPosts } from "@/data/blog-posts";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -10,28 +11,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.gayeustuner.com/blog" },
 };
 
-const posts = [
-  {
-    title: "Çocuklarda Diş Sağlığı: Önemli Bilgiler",
-    excerpt:
-      "Çocuğunuzun diş sağlığını korumak için bilmeniz gereken temel bilgiler. İlk dişten itibaren doğru bakım ve beslenme alışkanlıkları.",
-    date: "29 Aralık 2025",
-    category: "Diş Sağlığı",
-    readTime: "5 dk",
-    slug: "cocuklarda-dis-sagligi",
-  },
-  {
-    title: "Pedodonti ve Ortodonti: Doğru Bakımın İpuçları",
-    excerpt:
-      "Çocuk diş hekimliği ve ortodontik tedaviler hakkında ailelerin bilmesi gereken ipuçları. Erken müdahalenin önemi ve tedavi süreçleri.",
-    date: "29 Aralık 2025",
-    category: "Pedodonti",
-    readTime: "7 dk",
-    slug: "pedodonti-ortodonti-ipuclari",
-  },
-];
-
 export default function BlogPage() {
+  const posts = getAllBlogPosts("tr");
   return (
     <>
       <Header />
@@ -70,13 +51,13 @@ export default function BlogPage() {
                       <span className="px-3 py-1 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium">
                         {post.category}
                       </span>
-                      <span className="text-xs text-[var(--color-text-muted)]">{post.readTime} okuma</span>
+                      <span className="text-xs text-[var(--color-text-muted)]">{post.readTime} okuma süresi</span>
                     </div>
                     <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold text-[var(--color-secondary)] mb-3 group-hover:text-[var(--color-primary)] transition-colors">
                       {post.title}
                     </h2>
                     <p className="text-sm text-[var(--color-text-light)] leading-relaxed mb-4">
-                      {post.excerpt}
+                      {post.intro.substring(0, 150)}...
                     </p>
                     <div className="flex items-center justify-between">
                       <time className="text-xs text-[var(--color-text-muted)]">{post.date}</time>
