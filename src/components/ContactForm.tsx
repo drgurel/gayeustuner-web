@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackFormSubmission } from "@/lib/analytics";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -198,6 +199,8 @@ export default function ContactForm({ locale = "tr" }: ContactFormProps) {
       const body = encodeURIComponent(
         `${bl.name}: ${name}\n${bl.phone}: ${phone}\n${bl.email}: ${email || bl.notSpecified}\n${bl.childAge}: ${childAge || bl.notSpecified}\n${bl.appointmentType}: ${appointmentType || bl.notSpecified}\n\n${bl.message}:\n${message || bl.none}`
       );
+
+      trackFormSubmission(appointmentType);
 
       window.location.href = `mailto:gayeustuner@gmail.com?subject=${subject}&body=${body}`;
 

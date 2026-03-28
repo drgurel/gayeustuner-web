@@ -1,5 +1,7 @@
 "use client";
 
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
+
 interface MobileStickyCTAProps {
   locale?: "tr" | "en" | "es";
 }
@@ -22,7 +24,8 @@ export default function MobileStickyCTA({ locale = "tr" }: MobileStickyCTAProps)
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white/95 backdrop-blur-sm border-t border-[var(--color-border)] px-4 py-3 safe-area-pb">
       <div className="flex gap-3 max-w-lg mx-auto">
         <a
-          href="tel:+905474555565"
+          href="tel:+905472666204"
+          onClick={() => trackPhoneClick("mobile_sticky_cta")}
           className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-[var(--color-primary)] text-white font-semibold rounded-full hover:bg-[var(--color-primary-dark)] transition-colors text-sm"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -31,7 +34,8 @@ export default function MobileStickyCTA({ locale = "tr" }: MobileStickyCTAProps)
           {callText}
         </a>
         <a
-          href={`https://wa.me/905XXXXXXXXX?text=${whatsappMessage}`}
+          href={`https://wa.me/905472666204?text=${whatsappMessage}`}
+          onClick={() => trackWhatsAppClick("mobile_sticky_cta")}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-[#25D366] text-white font-semibold rounded-full hover:bg-[#20BD5A] transition-colors text-sm"
