@@ -161,8 +161,8 @@ export function LocalBusinessJsonLd({ locale = "tr" }: JsonLdProps) {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "40.9923",
-      longitude: "29.1244",
+      latitude: "40.9806031",
+      longitude: "29.1031155",
     },
     medicalSpecialty: "Pediatric Dentistry",
     availableService: t.services.map((s) => ({

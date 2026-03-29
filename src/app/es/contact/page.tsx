@@ -118,7 +118,7 @@ export default function ContactPageES() {
                     <div>
                       <h3 className="font-semibold text-[var(--color-secondary)] mb-1">Ubicación</h3>
                       <a
-                        href="https://maps.google.com/?q=40.9923,29.1244"
+                        href="https://maps.google.com/?q=Dt.+Gaye+%C3%9Cst%C3%BCner+%C3%87ocuk+Di%C5%9F+Hekimli%C4%9Fi"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[var(--color-primary)] hover:underline text-sm"
@@ -132,7 +132,7 @@ export default function ContactPageES() {
                 {/* Maps Embed */}
                 <div className="mt-6 rounded-xl overflow-hidden border border-[var(--color-border)]">
                   <iframe
-                    src="https://www.google.com/maps?q=40.9923,29.1244&z=16&output=embed"
+                    src="https://www.google.com/maps?q=Dt.+Gaye+%C3%9Cst%C3%BCner&z=16&output=embed"
                     width="100%"
                     height="280"
                     style={{ border: 0 }}

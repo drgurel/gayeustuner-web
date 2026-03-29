@@ -178,7 +178,7 @@ export default async function LocationPage({
                 {/* Maps */}
                 <div className="mt-6 rounded-xl overflow-hidden border border-[var(--color-border)]">
                   <iframe
-                    src="https://www.google.com/maps?q=40.9923,29.1244&z=14&output=embed"
+                    src="https://www.google.com/maps?q=Dt.+Gaye+%C3%9Cst%C3%BCner&z=14&output=embed"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
