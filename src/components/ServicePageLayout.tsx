@@ -100,6 +100,29 @@ export default function ServicePageLayout({
       }
     : null;
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name: title,
+    description: description[0],
+    procedureType: "http://schema.org/NoninvasiveProcedure",
+    bodyLocation: "Mouth",
+    provider: {
+      "@type": "Dentist",
+      name: locale === "en" ? "Dr. Gaye Üstüner" : locale === "es" ? "Dra. Gaye Üstüner" : "Dt. Gaye Üstüner",
+      url: "https://www.gayeustuner.com",
+      telephone: "+905472666204",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Flora Residence",
+        addressLocality: "Ataşehir",
+        addressRegion: "İstanbul",
+        addressCountry: "TR",
+      },
+    },
+    inLanguage: locale,
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -112,6 +135,10 @@ export default function ServicePageLayout({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       {faqSchema && (
         <script
           type="application/ld+json"

@@ -140,8 +140,18 @@ export function LocalBusinessJsonLd({ locale = "tr" }: JsonLdProps) {
     name: t.name,
     description: t.description,
     url: "https://www.gayeustuner.com",
+    image: "https://www.gayeustuner.com/dt-gaye-ustuner.jpg",
     telephone: "+905472666204",
     email: "gayeustuner@gmail.com",
+    priceRange: "₺₺-₺₺₺",
+    isAcceptingNewPatients: true,
+    areaServed: [
+      { "@type": "City", name: "İstanbul" },
+      { "@type": "AdministrativeArea", name: "Ataşehir" },
+      { "@type": "AdministrativeArea", name: "Kadıköy" },
+      { "@type": "AdministrativeArea", name: "Maltepe" },
+      { "@type": "AdministrativeArea", name: "Ümraniye" },
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Flora Residence",
@@ -184,9 +194,11 @@ export function PersonJsonLd({ locale = "tr" }: JsonLdProps) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Dt. Gaye Üstüner",
+    image: "https://www.gayeustuner.com/dt-gaye-ustuner.jpg",
     jobTitle: t.jobTitle,
     description: t.description,
     url: "https://www.gayeustuner.com",
+    telephone: "+905472666204",
     email: "gayeustuner@gmail.com",
     alumniOf: [
       {

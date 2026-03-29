@@ -165,6 +165,7 @@ function BlogPostJsonLd({
     dateModified: isoDate,
     mainEntityOfPage: `https://www.gayeustuner.com${blogBase}/${slug}`,
     image: "https://www.gayeustuner.com/og-image.png",
+    inLanguage: locale,
   };
 
   return (
