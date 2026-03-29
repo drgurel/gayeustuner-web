@@ -39,6 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "cocugum-disciden-korkuyor",
     "cocuklarda-dis-curugu-tedavisi",
     "genel-anestezi-cocuk-dis-tedavisi",
+    "cocuklarda-dis-teli-ne-zaman",
+    "cocuklarda-bruksizm-dis-sikma",
+    "sut-disi-dustu-kalici-dis-cikmiyor",
+    "parmak-emme-dis-yapisina-etkileri",
+    "invisalign-first-cocuklar-seffaf-plak",
   ];
   const enBlogs = [
     "childrens-dental-health",
@@ -47,6 +52,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "child-afraid-of-dentist",
     "childhood-cavity-treatment",
     "general-anesthesia-child-dental",
+    "when-should-children-get-braces",
+    "childhood-bruxism-teeth-grinding",
+    "baby-tooth-fell-permanent-not-coming",
+    "thumb-sucking-dental-effects",
+    "invisalign-first-children-clear-aligners",
   ];
   const esBlogs = [
     "salud-dental-infantil",
@@ -55,6 +65,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "nino-miedo-al-dentista",
     "tratamiento-caries-infantil",
     "anestesia-general-odontologia-infantil",
+    "cuando-poner-brackets-ninos",
+    "bruxismo-infantil",
+    "diente-leche-cayo-permanente-no-sale",
+    "succion-pulgar-efectos-dentales",
+    "invisalign-first-ninos-alineadores",
   ];
 
   const langs = (tr: string, en: string, es: string) => ({ tr, en, es });

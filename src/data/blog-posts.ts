@@ -1178,6 +1178,762 @@ const blogPosts: Record<string, Record<Locale, BlogPostData>> = {
       relatedSlugs: ["childrens-dental-health", "child-afraid-of-dentist"],
     },
   },
+  "when-to-get-braces": {
+    tr: {
+      slug: "cocuklarda-dis-teli-ne-zaman",
+      title: "Çocuklarda Diş Teli Ne Zaman Takılmalı?",
+      category: "Ortodonti",
+      date: "29 Mart 2026",
+      readTime: "8 dk",
+      intro: "Çocuğunuzun dişleri çapraşık mı, kapanışı düzensiz mi? Pek çok ebeveynin aklındaki en önemli soru 'Çocuğuma ne zaman tel takılmalı?' sorusudur. Doğru zamanlama, tedavi süresini kısaltır ve sonuçları iyileştirir.",
+      sections: [
+        {
+          heading: "İlk Ortodontik Muayene Kaç Yaşında Yapılmalı?",
+          paragraphs: [
+            "Amerikan Ortodonti Derneği (AAO) ve Avrupa Ortodonti Derneği, her çocuğun 7 yaşına kadar bir ortodontik değerlendirmeden geçmesini önermektedir. Bu yaşta karışık dişlenme dönemi başlamış olup, potansiyel sorunlar erken aşamada tespit edilebilir.",
+            "7 yaşında yapılan muayene, tedavi gerekliliğini belirlemek içindir; her çocuğa bu yaşta tel takılacağı anlamına gelmez. Çoğu durumda hekim takip önerir ve ideal tedavi zamanını belirler.",
+          ],
+        },
+        {
+          heading: "Tel Tedavisi İçin İdeal Yaş Aralığı",
+          paragraphs: [
+            "Geleneksel tel tedavisi (braket tedavisi) için en uygun yaş, tüm kalıcı dişlerin çıktığı 11-14 yaş aralığıdır. Bu dönemde kemik yapısı hâlâ büyüme aşamasında olduğundan, dişler daha kolay hareket ettirilebilir.",
+            "Ancak bazı vakalarda erken müdahale (Faz 1 tedavisi) 7-10 yaş arasında gerekli olabilir. Çapraz kapanış, üst çene darlığı veya ciddi alt-üst çene uyumsuzlukları erken dönemde müdahale edilmesi gereken durumlardır.",
+          ],
+        },
+        {
+          heading: "Faz 1 ve Faz 2 Ortodonti Nedir?",
+          paragraphs: [
+            "Faz 1 tedavisi (erken müdahale): 7-10 yaş arası uygulanan, çene gelişimini yönlendirmeye ve ciddi sorunları önlemeye yönelik kısa süreli tedavilerdir. Genişletici apareyler, yer tutucular ve fonksiyonel apareyler bu dönemde kullanılır.",
+            "Faz 2 tedavisi: Tüm kalıcı dişler çıktıktan sonra (11-14 yaş) uygulanan kapsamlı braket tedavisidir. Bu aşamada tüm dişlerin hizalanması ve kapanışın düzeltilmesi hedeflenir. Faz 1 tedavisi alan çocuklarda Faz 2 genellikle daha kısa sürer.",
+          ],
+        },
+        {
+          heading: "Çocuğunuzun Tel Tedavisine İhtiyacı Olduğunun Belirtileri",
+          paragraphs: [
+            "Aşağıdaki belirtilerden biri veya birkaçı varsa ortodontik değerlendirme yaptırmanız önerilir: çapraşık veya birbiri üzerine binen dişler, erken veya geç düşen süt dişleri, ağızdan nefes alma alışkanlığı, parmak emme alışkanlığının devam etmesi.",
+            "Ayrıca kapanış sorunları (üst dişlerin alt dişleri tamamen örtmesi veya alt çenenin önde olması), çiğneme güçlüğü, konuşma bozuklukları ve çene eklem ağrıları da ortodontik tedavi gerekliliğine işaret edebilir.",
+          ],
+        },
+        {
+          heading: "Tel Tedavisi Sürecinde Neler Beklenmeli?",
+          paragraphs: [
+            "Tel tedavisi genellikle 12-24 ay sürer. İlk birkaç gün hafif ağrı ve hassasiyet normal olup, yumuşak gıdalar ve ağrı kesicilerle yönetilebilir. Ayda bir kontrol randevusu ile teller ayarlanır.",
+            "Tedavi süresince ağız hijyenine özel dikkat gösterilmelidir. Sert, yapışkan gıdalardan kaçınılmalıdır. Tedavi sonrasında pekiştirme (retansiyon) apareylerinin kullanılması, sonuçların kalıcılığı için kritik öneme sahiptir.",
+          ],
+        },
+        {
+          heading: "Metal Tel mi, Seramik Braket mi, Şeffaf Plak mı?",
+          paragraphs: [
+            "Metal braketler en dayanıklı ve ekonomik seçenektir. Seramik (şeffaf) braketler estetik açıdan daha az dikkat çeker ancak biraz daha kırılgandır. Şeffaf plaklar (Invisalign) çıkarılabilir olması nedeniyle hijyen avantajı sunar.",
+            "Çocuğunuzun yaşı, ortodontik sorunun türü ve aile tercihleri doğrultusunda en uygun yöntemi birlikte belirleriz. Her yöntemin kendine özgü avantajları vardır ve doğru seçim kişiye özel yapılmalıdır.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "İlk ortodontik muayene 7 yaşında yapılmalıdır",
+        "Geleneksel tel tedavisi için ideal yaş 11-14'tür",
+        "Erken müdahale (Faz 1) bazı vakalarda 7-10 yaş arası gereklidir",
+        "Tel tedavisi genellikle 12-24 ay sürer",
+        "Metal, seramik ve şeffaf plak seçenekleri mevcuttur",
+      ],
+      relatedSlugs: ["pedodonti-ortodonti-ipuclari", "cocuklarda-dis-sagligi"],
+    },
+    en: {
+      slug: "when-should-children-get-braces",
+      title: "When Should Children Get Braces?",
+      category: "Orthodontics",
+      date: "March 29, 2026",
+      readTime: "8 min",
+      intro: "Are your child's teeth crooked or is their bite uneven? The most important question on many parents' minds is 'When should my child get braces?' Proper timing shortens treatment duration and improves results.",
+      sections: [
+        {
+          heading: "When Should the First Orthodontic Examination Be Done?",
+          paragraphs: [
+            "The American Association of Orthodontists (AAO) recommends that every child receive an orthodontic evaluation by age 7. At this age, the mixed dentition period has begun, and potential issues can be detected at an early stage.",
+            "An examination at age 7 is to determine treatment necessity; it does not mean every child will get braces at this age. In most cases, the dentist recommends monitoring and determines the ideal treatment time.",
+          ],
+        },
+        {
+          heading: "Ideal Age Range for Braces Treatment",
+          paragraphs: [
+            "The most suitable age for traditional braces is 11-14, when all permanent teeth have erupted. During this period, the bone structure is still in the growth phase, making it easier to move teeth.",
+            "However, early intervention (Phase 1 treatment) may be necessary between ages 7-10 in some cases. Crossbite, narrow upper jaw, or severe jaw discrepancies are conditions that require early intervention.",
+          ],
+        },
+        {
+          heading: "What Are Phase 1 and Phase 2 Orthodontics?",
+          paragraphs: [
+            "Phase 1 treatment (early intervention): Short-term treatments applied between ages 7-10, aimed at guiding jaw development and preventing serious problems. Expanders, space maintainers, and functional appliances are used during this period.",
+            "Phase 2 treatment: Comprehensive braces treatment applied after all permanent teeth have erupted (ages 11-14). This stage aims to align all teeth and correct the bite. Children who received Phase 1 treatment typically have a shorter Phase 2.",
+          ],
+        },
+        {
+          heading: "Signs Your Child May Need Braces",
+          paragraphs: [
+            "An orthodontic evaluation is recommended if your child shows one or more of the following signs: crowded or overlapping teeth, early or late loss of baby teeth, mouth breathing habit, or continued thumb sucking.",
+            "Additionally, bite problems (upper teeth completely covering lower teeth or the lower jaw being forward), chewing difficulties, speech disorders, and jaw joint pain may also indicate the need for orthodontic treatment.",
+          ],
+        },
+        {
+          heading: "What to Expect During Braces Treatment",
+          paragraphs: [
+            "Braces treatment typically lasts 12-24 months. Mild pain and sensitivity in the first few days is normal and can be managed with soft foods and pain relievers. Monthly check-up appointments are used to adjust the wires.",
+            "Special attention must be paid to oral hygiene during treatment. Hard, sticky foods should be avoided. Using retention appliances after treatment is critically important for ensuring permanent results.",
+          ],
+        },
+        {
+          heading: "Metal Braces, Ceramic Brackets, or Clear Aligners?",
+          paragraphs: [
+            "Metal brackets are the most durable and economical option. Ceramic (clear) brackets are less noticeable aesthetically but slightly more fragile. Clear aligners (Invisalign) offer hygiene advantages due to being removable.",
+            "We will determine the most suitable method together based on your child's age, the type of orthodontic issue, and family preferences. Each method has its own unique advantages and the right choice should be personalized.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "The first orthodontic examination should be done at age 7",
+        "The ideal age for traditional braces is 11-14",
+        "Early intervention (Phase 1) is needed between ages 7-10 in some cases",
+        "Braces treatment typically lasts 12-24 months",
+        "Metal, ceramic, and clear aligner options are available",
+      ],
+      relatedSlugs: ["pedodontics-orthodontics-tips", "childrens-dental-health"],
+    },
+    es: {
+      slug: "cuando-poner-brackets-ninos",
+      title: "¿Cuándo Deben los Niños Ponerse Brackets?",
+      category: "Ortodoncia",
+      date: "29 de marzo de 2026",
+      readTime: "8 min",
+      intro: "¿Los dientes de su hijo están torcidos o su mordida es desigual? La pregunta más importante en la mente de muchos padres es '¿Cuándo debería mi hijo ponerse brackets?' El momento adecuado acorta la duración del tratamiento y mejora los resultados.",
+      sections: [
+        {
+          heading: "¿Cuándo Debe Realizarse el Primer Examen Ortodóntico?",
+          paragraphs: [
+            "La Asociación Americana de Ortodoncistas recomienda que cada niño reciba una evaluación ortodóntica a los 7 años. A esta edad, el período de dentición mixta ha comenzado y los problemas potenciales pueden detectarse en una etapa temprana.",
+            "Un examen a los 7 años es para determinar la necesidad de tratamiento; no significa que todos los niños recibirán brackets a esta edad.",
+          ],
+        },
+        {
+          heading: "Rango de Edad Ideal para el Tratamiento con Brackets",
+          paragraphs: [
+            "La edad más adecuada para los brackets tradicionales es entre 11 y 14 años, cuando han erupcionado todos los dientes permanentes. Durante este período, la estructura ósea aún está en fase de crecimiento, facilitando el movimiento dental.",
+            "Sin embargo, la intervención temprana (tratamiento de Fase 1) puede ser necesaria entre los 7 y 10 años en algunos casos. La mordida cruzada, el maxilar estrecho o las discrepancias maxilares severas requieren intervención temprana.",
+          ],
+        },
+        {
+          heading: "¿Qué Son la Fase 1 y la Fase 2 de Ortodoncia?",
+          paragraphs: [
+            "Tratamiento de Fase 1 (intervención temprana): Tratamientos a corto plazo aplicados entre los 7 y 10 años, destinados a guiar el desarrollo maxilar y prevenir problemas graves.",
+            "Tratamiento de Fase 2: Tratamiento integral con brackets aplicado después de que han erupcionado todos los dientes permanentes (11-14 años). Los niños que recibieron tratamiento de Fase 1 generalmente tienen una Fase 2 más corta.",
+          ],
+        },
+        {
+          heading: "Señales de que Su Hijo Puede Necesitar Brackets",
+          paragraphs: [
+            "Se recomienda una evaluación ortodóntica si su hijo muestra: dientes apiñados o superpuestos, pérdida temprana o tardía de dientes de leche, respiración bucal o succión del pulgar continua.",
+            "Además, los problemas de mordida, dificultades para masticar, trastornos del habla y dolor en la articulación mandibular también pueden indicar la necesidad de tratamiento ortodóntico.",
+          ],
+        },
+        {
+          heading: "Qué Esperar Durante el Tratamiento con Brackets",
+          paragraphs: [
+            "El tratamiento con brackets generalmente dura de 12 a 24 meses. El dolor leve y la sensibilidad en los primeros días son normales. Se deben evitar alimentos duros y pegajosos durante el tratamiento.",
+            "El uso de aparatos de retención después del tratamiento es críticamente importante para asegurar resultados permanentes.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "El primer examen ortodóntico debe realizarse a los 7 años",
+        "La edad ideal para brackets tradicionales es 11-14",
+        "La intervención temprana (Fase 1) se necesita entre 7-10 años en algunos casos",
+        "El tratamiento con brackets dura generalmente 12-24 meses",
+      ],
+      relatedSlugs: ["consejos-odontopediatria-ortodoncia", "salud-dental-infantil"],
+    },
+  },
+  "childhood-bruxism": {
+    tr: {
+      slug: "cocuklarda-bruksizm-dis-sikma",
+      title: "Çocuklarda Bruksizm (Diş Sıkma): Belirtiler ve Tedavi",
+      category: "Diş Sağlığı",
+      date: "29 Mart 2026",
+      readTime: "6 dk",
+      intro: "Çocuğunuz gece uyurken dişlerini sıkıyor veya gıcırdatıyor mu? Çocuklarda bruksizm (diş sıkma/gıcırdatma) oldukça yaygın bir durumdur. Nedenleri, belirtileri ve tedavi seçenekleri hakkında bilmeniz gerekenleri bu yazıda bulabilirsiniz.",
+      sections: [
+        {
+          heading: "Bruksizm Nedir?",
+          paragraphs: [
+            "Bruksizm, dişlerin bilinçsizce sıkılması veya gıcırdatılmasıdır. Çocuklarda genellikle gece uykusunda görülür, ancak gündüz saatlerinde de ortaya çıkabilir. Araştırmalar, çocukların yaklaşık %15-33'ünün bruksizm yaşadığını göstermektedir.",
+            "Süt dişlenme ve karışık dişlenme dönemlerinde bruksizm sıklıkla görülür ve çoğu durumda kalıcı dişler çıktığında kendiliğinden azalır. Ancak bazı vakalarda tedavi gerektirebilir.",
+          ],
+        },
+        {
+          heading: "Çocuklarda Bruksizmin Nedenleri",
+          paragraphs: [
+            "Bruksizmin tek bir nedeni yoktur; genellikle birden fazla faktör bir arada rol oynar. En yaygın nedenler arasında stres ve kaygı, uyku bozuklukları (horlama, uyku apnesi), kapanış bozuklukları ve diş çıkarma ağrısı yer alır.",
+            "Dikkat eksikliği ve hiperaktivite bozukluğu (DEHB) olan çocuklarda bruksizm daha sık görülebilir. Ayrıca bazı ilaçlar da bruksizmi tetikleyebilir.",
+          ],
+        },
+        {
+          heading: "Bruksizmin Belirtileri Nelerdir?",
+          paragraphs: [
+            "Çocuğunuzda şu belirtiler varsa bruksizmden şüphelenebilirsiniz: gece uyurken dişlerinden gelen gıcırdama sesi, sabah kalktığında çene ağrısı veya baş ağrısı, dişlerde aşınma veya düzleşme, diş hassasiyeti.",
+            "Ayrıca kulak ağrısı, yüz kaslarında gerginlik ve uyku kalitesinde bozulma da bruksizmin göstergeleri olabilir. Bu belirtilerden birini fark ederseniz diş hekiminize danışmanız önerilir.",
+          ],
+        },
+        {
+          heading: "Tedavi Seçenekleri",
+          paragraphs: [
+            "Tedavi, altta yatan nedene göre şekillenir. Hafif vakalarda takip yeterlidir; çoğu çocuk büyüdükçe bruksizmden kurtulur. Stres kaynaklı durumlarda rahatlama teknikleri ve uyku hijyeni düzenlemesi önerilir.",
+            "Dişlerde ciddi aşınma varsa gece plağı (splint) kullanılabilir. Kapanış bozukluğu tespit edilirse ortodontik tedavi planlanabilir. Uyku apnesi şüphesinde ise kulak burun boğaz uzmanına yönlendirme yapılır.",
+          ],
+        },
+        {
+          heading: "Ebeveynler İçin Öneriler",
+          paragraphs: [
+            "Yatmadan önce sakin bir ortam oluşturun: ekran süresini azaltın, ılık banyo veya hafif müzik ile gevşemeyi destekleyin. Kafein içeren yiyecek ve içeceklerden kaçının.",
+            "Çocuğunuzun dişlerini düzenli kontrol ettirin. Erken tespit, olası hasarı önlemek açısından çok önemlidir. Endişelerinizi diş hekiminizle paylaşmaktan çekinmeyin.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Çocukların %15-33'ünde bruksizm görülür",
+        "Genellikle kalıcı dişler çıkınca kendiliğinden azalır",
+        "Stres, uyku bozuklukları ve kapanış sorunları ana nedenlerdir",
+        "Ciddi vakalarda gece plağı veya ortodontik tedavi gerekebilir",
+        "Düzenli diş kontrolü erken teşhis için önemlidir",
+      ],
+      relatedSlugs: ["cocuklarda-dis-sagligi", "cocuklarda-dis-teli-ne-zaman"],
+    },
+    en: {
+      slug: "childhood-bruxism-teeth-grinding",
+      title: "Childhood Bruxism (Teeth Grinding): Symptoms and Treatment",
+      category: "Dental Health",
+      date: "March 29, 2026",
+      readTime: "6 min",
+      intro: "Does your child grind or clench their teeth during sleep? Bruxism in children is quite common. Learn about the causes, symptoms, and treatment options in this article.",
+      sections: [
+        {
+          heading: "What Is Bruxism?",
+          paragraphs: [
+            "Bruxism is the unconscious clenching or grinding of teeth. In children, it usually occurs during nighttime sleep but can also happen during the day. Research shows that approximately 15-33% of children experience bruxism.",
+            "Bruxism is frequently seen during primary and mixed dentition periods and in most cases naturally decreases when permanent teeth emerge.",
+          ],
+        },
+        {
+          heading: "Causes of Bruxism in Children",
+          paragraphs: [
+            "Bruxism doesn't have a single cause; usually multiple factors play a role. The most common causes include stress and anxiety, sleep disorders (snoring, sleep apnea), bite disorders, and teething pain.",
+            "Children with ADHD may experience bruxism more frequently. Certain medications can also trigger bruxism.",
+          ],
+        },
+        {
+          heading: "Symptoms of Bruxism",
+          paragraphs: [
+            "You may suspect bruxism if your child shows: grinding sounds from teeth during sleep, jaw pain or headache upon waking, tooth wear or flattening, and tooth sensitivity.",
+            "Ear pain, facial muscle tension, and disrupted sleep quality can also be indicators. If you notice any of these symptoms, consult your dentist.",
+          ],
+        },
+        {
+          heading: "Treatment Options",
+          paragraphs: [
+            "Treatment is shaped by the underlying cause. In mild cases, monitoring is sufficient; most children outgrow bruxism. For stress-related cases, relaxation techniques and sleep hygiene improvements are recommended.",
+            "If there is significant tooth wear, a night guard (splint) may be used. If a bite disorder is detected, orthodontic treatment can be planned.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "15-33% of children experience bruxism",
+        "Usually resolves naturally when permanent teeth emerge",
+        "Stress, sleep disorders, and bite issues are main causes",
+        "Night guards or orthodontic treatment may be needed in severe cases",
+      ],
+      relatedSlugs: ["childrens-dental-health", "when-should-children-get-braces"],
+    },
+    es: {
+      slug: "bruxismo-infantil",
+      title: "Bruxismo Infantil: Síntomas y Tratamiento",
+      category: "Salud Dental",
+      date: "29 de marzo de 2026",
+      readTime: "6 min",
+      intro: "¿Su hijo rechina o aprieta los dientes durante el sueño? El bruxismo en niños es bastante común. Conozca las causas, síntomas y opciones de tratamiento.",
+      sections: [
+        {
+          heading: "¿Qué Es el Bruxismo?",
+          paragraphs: [
+            "El bruxismo es el rechinar o apretar inconsciente de los dientes. En los niños, generalmente ocurre durante el sueño nocturno. Las investigaciones muestran que aproximadamente el 15-33% de los niños experimentan bruxismo.",
+            "Se observa frecuentemente durante los períodos de dentición primaria y mixta, y en la mayoría de los casos disminuye naturalmente cuando emergen los dientes permanentes.",
+          ],
+        },
+        {
+          heading: "Causas del Bruxismo en Niños",
+          paragraphs: [
+            "El bruxismo no tiene una causa única. Las causas más comunes incluyen estrés y ansiedad, trastornos del sueño, trastornos de mordida y dolor por dentición.",
+            "Los niños con TDAH pueden experimentar bruxismo con mayor frecuencia. Ciertos medicamentos también pueden desencadenar bruxismo.",
+          ],
+        },
+        {
+          heading: "Síntomas del Bruxismo",
+          paragraphs: [
+            "Puede sospechar bruxismo si su hijo muestra: sonidos de rechinar durante el sueño, dolor mandibular o de cabeza al despertar, desgaste dental y sensibilidad dental.",
+            "El dolor de oído, la tensión en los músculos faciales y la calidad del sueño alterada también pueden ser indicadores.",
+          ],
+        },
+        {
+          heading: "Opciones de Tratamiento",
+          paragraphs: [
+            "El tratamiento se determina según la causa subyacente. En casos leves, el seguimiento es suficiente. Para casos relacionados con el estrés, se recomiendan técnicas de relajación.",
+            "Si hay desgaste dental significativo, se puede usar un protector nocturno. Si se detecta un trastorno de mordida, se puede planificar un tratamiento ortodóntico.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "El 15-33% de los niños experimentan bruxismo",
+        "Generalmente se resuelve cuando emergen los dientes permanentes",
+        "Estrés, trastornos del sueño y problemas de mordida son causas principales",
+      ],
+      relatedSlugs: ["salud-dental-infantil", "cuando-poner-brackets-ninos"],
+    },
+  },
+  "baby-tooth-fell-permanent-not-coming": {
+    tr: {
+      slug: "sut-disi-dustu-kalici-dis-cikmiyor",
+      title: "Süt Dişi Düştü Ama Kalıcı Diş Çıkmıyor: Ne Yapmalı?",
+      category: "Diş Sağlığı",
+      date: "29 Mart 2026",
+      readTime: "5 dk",
+      intro: "Çocuğunuzun süt dişi düştü ama yerine kalıcı diş bir türlü çıkmıyor mu? Bu durum ebeveynleri endişelendirebilir. Ancak çoğu durumda endişelenecek bir şey yoktur. İşte bilmeniz gerekenler.",
+      sections: [
+        {
+          heading: "Kalıcı Dişlerin Normal Çıkış Takvimi",
+          paragraphs: [
+            "Kalıcı dişler genellikle süt dişi düştükten sonra 1-6 ay içinde çıkar. Ancak bu süre çocuktan çocuğa büyük farklılıklar gösterebilir. Kız çocuklarında genellikle erkeklere göre biraz daha erken çıkma eğilimi vardır.",
+            "Alt ön kesici dişler (6-7 yaş) ilk çıkan kalıcı dişlerdir, ardından üst ön kesiciler (7-8 yaş) gelir. Azı dişleri ve köpek dişleri ise 9-12 yaş arasında tamamlanır.",
+          ],
+        },
+        {
+          heading: "Kalıcı Diş Neden Gecikmeli Çıkabilir?",
+          paragraphs: [
+            "En yaygın neden yetersiz alandır. Çene kemik yapısı yeterince gelişmemişse veya komşu dişler boşluğu daraltmışsa, kalıcı diş çıkmakta zorlanabilir. Bu duruma 'gömük diş' denir.",
+            "Diğer nedenler arasında kalıcı diş tomurcuğunun yokluğu (agenezi), süpernümerer (fazla) dişlerin yol kapatması, kistik oluşumlar ve travma sonrası diş tomurcuğu hasarı sayılabilir.",
+          ],
+        },
+        {
+          heading: "Ne Zaman Endişelenmeli?",
+          paragraphs: [
+            "Süt dişi düştükten sonra 6 aydan fazla süre geçmesine rağmen kalıcı diş çıkmıyorsa, diş hekiminize danışmanız önerilir. Panoramik röntgen ile kalıcı diş tomurcuğunun varlığı ve konumu değerlendirilir.",
+            "Ayrıca her iki tarafta simetrik olmayan çıkış (bir taraftaki diş çıktı, diğer taraftaki çıkmadı) da değerlendirilmesi gereken bir durumdur.",
+          ],
+        },
+        {
+          heading: "Tedavi Seçenekleri",
+          paragraphs: [
+            "Çoğu durumda sabırla beklemek yeterlidir. Ancak gömük diş tespit edilirse, cerrahi olarak dişin açığa çıkarılması ve ortodontik olarak yerine çekilmesi gerekebilir.",
+            "Kalıcı diş tomurcuğu hiç oluşmamışsa (agenezi), süt dişinin mümkün olduğunca uzun süre korunması, implant veya köprü gibi protetik çözümler ileri yaşlarda değerlendirilir.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Kalıcı dişler süt dişi düştükten 1-6 ay sonra çıkar",
+        "6 aydan fazla gecikme varsa diş hekimine başvurun",
+        "Panoramik röntgen ile diş tomurcuğu değerlendirilir",
+        "Gömük diş veya agenezi durumunda tedavi planlanır",
+      ],
+      relatedSlugs: ["bebeklerde-dis-cikarma-rehberi", "cocuklarda-dis-sagligi"],
+    },
+    en: {
+      slug: "baby-tooth-fell-permanent-not-coming",
+      title: "Baby Tooth Fell Out But Permanent Tooth Is Not Coming In: What to Do?",
+      category: "Dental Health",
+      date: "March 29, 2026",
+      readTime: "5 min",
+      intro: "Did your child's baby tooth fall out but the permanent tooth just won't come in? This can worry parents, but in most cases there's nothing to be concerned about. Here's what you need to know.",
+      sections: [
+        {
+          heading: "Normal Timeline for Permanent Teeth",
+          paragraphs: [
+            "Permanent teeth typically emerge 1-6 months after the baby tooth falls out. However, this timeframe can vary greatly from child to child. Girls generally tend to get their teeth slightly earlier than boys.",
+            "Lower front incisors (ages 6-7) are the first permanent teeth to emerge, followed by upper incisors (ages 7-8). Molars and canines are completed between ages 9-12.",
+          ],
+        },
+        {
+          heading: "Why Might a Permanent Tooth Be Delayed?",
+          paragraphs: [
+            "The most common reason is insufficient space. If the jaw bone structure hasn't developed enough or neighboring teeth have narrowed the gap, the permanent tooth may struggle to emerge. This is called an 'impacted tooth.'",
+            "Other reasons include absence of the permanent tooth bud (agenesis), supernumerary teeth blocking the path, cystic formations, and tooth bud damage from trauma.",
+          ],
+        },
+        {
+          heading: "When Should You Be Concerned?",
+          paragraphs: [
+            "If more than 6 months have passed since the baby tooth fell out and the permanent tooth still hasn't emerged, consult your dentist. A panoramic X-ray can evaluate the presence and position of the permanent tooth bud.",
+            "Asymmetric eruption (one side came in but the other didn't) is also a situation that should be evaluated.",
+          ],
+        },
+        {
+          heading: "Treatment Options",
+          paragraphs: [
+            "In most cases, patient waiting is sufficient. If an impacted tooth is detected, surgical exposure and orthodontic guidance may be needed.",
+            "If the permanent tooth bud never formed (agenesis), preserving the baby tooth as long as possible is prioritized, with prosthetic solutions considered at a later age.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Permanent teeth emerge 1-6 months after baby teeth fall out",
+        "Consult a dentist if there's more than 6 months delay",
+        "Panoramic X-ray evaluates the tooth bud",
+        "Treatment is planned for impacted teeth or agenesis",
+      ],
+      relatedSlugs: ["baby-teething-guide", "childrens-dental-health"],
+    },
+    es: {
+      slug: "diente-leche-cayo-permanente-no-sale",
+      title: "El Diente de Leche Se Cayó Pero el Permanente No Sale: ¿Qué Hacer?",
+      category: "Salud Dental",
+      date: "29 de marzo de 2026",
+      readTime: "5 min",
+      intro: "¿El diente de leche de su hijo se cayó pero el diente permanente no sale? Esto puede preocupar a los padres, pero en la mayoría de los casos no hay de qué preocuparse.",
+      sections: [
+        {
+          heading: "Cronología Normal de los Dientes Permanentes",
+          paragraphs: [
+            "Los dientes permanentes generalmente emergen 1-6 meses después de que se cae el diente de leche. Sin embargo, este plazo puede variar considerablemente de un niño a otro.",
+            "Los incisivos frontales inferiores (6-7 años) son los primeros dientes permanentes en emerger, seguidos por los incisivos superiores (7-8 años).",
+          ],
+        },
+        {
+          heading: "¿Por Qué Puede Retrasarse un Diente Permanente?",
+          paragraphs: [
+            "La razón más común es el espacio insuficiente. Si la estructura ósea maxilar no se ha desarrollado lo suficiente, el diente permanente puede tener dificultades para emerger.",
+            "Otras razones incluyen la ausencia del germen dental permanente (agenesia), dientes supernumerarios que bloquean el camino y formaciones quísticas.",
+          ],
+        },
+        {
+          heading: "¿Cuándo Debe Preocuparse?",
+          paragraphs: [
+            "Si han pasado más de 6 meses desde que se cayó el diente de leche y el permanente aún no ha emergido, consulte a su dentista.",
+            "La erupción asimétrica también es una situación que debe ser evaluada.",
+          ],
+        },
+        {
+          heading: "Opciones de Tratamiento",
+          paragraphs: [
+            "En la mayoría de los casos, esperar pacientemente es suficiente. Si se detecta un diente impactado, puede ser necesaria la exposición quirúrgica.",
+            "Si el germen del diente permanente nunca se formó (agenesia), se prioriza preservar el diente de leche el mayor tiempo posible.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Los dientes permanentes emergen 1-6 meses después de los dientes de leche",
+        "Consulte al dentista si hay más de 6 meses de retraso",
+        "La radiografía panorámica evalúa el germen dental",
+      ],
+      relatedSlugs: ["guia-denticion-bebes", "salud-dental-infantil"],
+    },
+  },
+  "thumb-sucking-effects": {
+    tr: {
+      slug: "parmak-emme-dis-yapisina-etkileri",
+      title: "Çocuklarda Parmak Emme ve Diş Yapısına Etkileri",
+      category: "Koruyucu Tedavi",
+      date: "29 Mart 2026",
+      readTime: "5 dk",
+      intro: "Parmak emme, bebeklerde doğal bir reflekstir. Ancak uzun süre devam etmesi durumunda diş ve çene yapısını olumsuz etkileyebilir. Peki hangi yaşta bırakılması gerekir ve nasıl müdahale edilmelidir?",
+      sections: [
+        {
+          heading: "Parmak Emme Normal midir?",
+          paragraphs: [
+            "Evet, parmak emme bebeklik döneminde tamamen normal bir davranıştır. Emme refleksi bebeğin kendini sakinleştirmesine ve güven hissetmesine yardımcı olur. Çoğu çocuk 2-4 yaş arasında parmak emmeyi kendiliğinden bırakır.",
+            "Sorun, alışkanlığın 4 yaşından sonra devam etmesidir. Bu yaştan itibaren kalıcı dişler sürmeye başlar ve sürekli parmak emme basıncı diş ve çene yapısını kalıcı olarak bozabilir.",
+          ],
+        },
+        {
+          heading: "Parmak Emmenin Diş ve Çene Yapısına Etkileri",
+          paragraphs: [
+            "Uzun süreli parmak emme şu sorunlara yol açabilir: açık kapanış (ön dişler kapanmaz), üst çene daralması, üst ön dişlerin öne eğilmesi, alt çenenin geriye kayması ve damak yapısının yükselmesi.",
+            "Bu deformiteler sadece estetik değil, fonksiyonel sorunlara da neden olur. Yutkunma bozuklukları, konuşma güçlükleri (özellikle 's', 't', 'd' sesleri) ve ağızdan nefes alma alışkanlığı sık görülen sonuçlardır.",
+          ],
+        },
+        {
+          heading: "Hangi Yaşta Bırakılması Gerekir?",
+          paragraphs: [
+            "İdeal olarak 3-4 yaşına kadar bırakılmalıdır. 4 yaşından sonra devam eden parmak emme alışkanlığı, ortodontik müdahale gerektiren kalıcı deformitelere neden olabilir.",
+            "Alışkanlığın yoğunluğu, süresi ve sıklığı da belirleyicidir. Gün içinde uzun süre ve şiddetli emen çocuklarda hasar riski, sadece uyurken hafifçe emen çocuklara göre çok daha yüksektir.",
+          ],
+        },
+        {
+          heading: "Ebeveynler İçin Bıraktırma Stratejileri",
+          paragraphs: [
+            "Pozitif pekiştirme en etkili yöntemdir. Çocuğunuz emmediği günleri ödüllendirin, takvim tutun. Cezalandırma veya utandırma kesinlikle önerilmez; bu yaklaşım alışkanlığı pekiştirebilir.",
+            "Tetikleyicileri belirleyin: can sıkıntısı, stres, uyku öncesi gibi durumları fark edin ve alternatif sakinleşme yöntemleri sunun. Gerektiğinde parmağa sürülen tırnak ojesi (acı tatlı) kullanılabilir.",
+          ],
+        },
+        {
+          heading: "Ortodontik Müdahale Ne Zaman Gerekir?",
+          paragraphs: [
+            "Davranışsal yöntemlerle bırakılamayan vakalarda, diş hekimi tarafından damak apareyı (alışkanlık kırıcı) kullanılabilir. Bu cihaz, parmağın damağa temas etmesini engelleyerek emme hazzını ortadan kaldırır.",
+            "Parmak emme nedeniyle oluşmuş çene ve diş bozuklukları, erken dönem ortodontik tedavi ile düzeltilebilir. Büyüme döneminde yapılan müdahaleler çok daha etkili sonuçlar verir.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Parmak emme 3-4 yaşına kadar normaldir",
+        "4 yaşından sonra devam ederse diş ve çene yapısını bozar",
+        "Pozitif pekiştirme en etkili bıraktırma yöntemidir",
+        "Gerekirse ortodontik aparey (alışkanlık kırıcı) kullanılabilir",
+        "Erken müdahale ile deformiteler düzeltilebilir",
+      ],
+      relatedSlugs: ["cocuklarda-dis-teli-ne-zaman", "cocuklarda-dis-sagligi"],
+    },
+    en: {
+      slug: "thumb-sucking-dental-effects",
+      title: "Thumb Sucking in Children and Its Effects on Dental Structure",
+      category: "Preventive Care",
+      date: "March 29, 2026",
+      readTime: "5 min",
+      intro: "Thumb sucking is a natural reflex in babies. However, prolonged continuation can negatively affect dental and jaw structure. At what age should it stop and how should it be addressed?",
+      sections: [
+        {
+          heading: "Is Thumb Sucking Normal?",
+          paragraphs: [
+            "Yes, thumb sucking is completely normal in infancy. The sucking reflex helps babies self-soothe and feel secure. Most children naturally stop thumb sucking between ages 2-4.",
+            "The problem arises when the habit continues past age 4. From this age, permanent teeth begin to erupt and continuous thumb sucking pressure can permanently damage dental and jaw structure.",
+          ],
+        },
+        {
+          heading: "Effects on Dental and Jaw Structure",
+          paragraphs: [
+            "Prolonged thumb sucking can cause: open bite, upper jaw narrowing, forward tilting of upper front teeth, backward displacement of the lower jaw, and raised palate.",
+            "These deformities cause not only aesthetic but also functional problems. Swallowing disorders, speech difficulties, and mouth breathing are common consequences.",
+          ],
+        },
+        {
+          heading: "When Should It Stop?",
+          paragraphs: [
+            "Ideally, it should stop by age 3-4. Thumb sucking continuing after age 4 can cause permanent deformities requiring orthodontic intervention.",
+            "The intensity, duration, and frequency also matter. Children who suck vigorously for long periods have much higher damage risk than those who lightly suck only while sleeping.",
+          ],
+        },
+        {
+          heading: "Strategies for Parents",
+          paragraphs: [
+            "Positive reinforcement is the most effective method. Reward your child for days without sucking, keep a calendar. Punishment or shaming is never recommended.",
+            "Identify triggers: boredom, stress, or bedtime. Offer alternative soothing methods. Bitter nail polish can be used if needed.",
+          ],
+        },
+        {
+          heading: "When Is Orthodontic Intervention Needed?",
+          paragraphs: [
+            "In cases where behavioral methods fail, a palatal appliance (habit breaker) can be used by the dentist. This device prevents the finger from contacting the palate.",
+            "Jaw and dental deformities caused by thumb sucking can be corrected with early orthodontic treatment. Interventions during the growth period yield much more effective results.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Thumb sucking is normal up to age 3-4",
+        "If it continues after 4, it damages dental and jaw structure",
+        "Positive reinforcement is the most effective cessation method",
+        "Orthodontic appliances can help in persistent cases",
+      ],
+      relatedSlugs: ["when-should-children-get-braces", "childrens-dental-health"],
+    },
+    es: {
+      slug: "succion-pulgar-efectos-dentales",
+      title: "Succión del Pulgar en Niños y Sus Efectos en la Estructura Dental",
+      category: "Cuidado Preventivo",
+      date: "29 de marzo de 2026",
+      readTime: "5 min",
+      intro: "La succión del pulgar es un reflejo natural en los bebés. Sin embargo, la continuación prolongada puede afectar negativamente la estructura dental y maxilar.",
+      sections: [
+        {
+          heading: "¿Es Normal la Succión del Pulgar?",
+          paragraphs: [
+            "Sí, la succión del pulgar es completamente normal en la infancia. La mayoría de los niños dejan de succionar naturalmente entre los 2 y 4 años.",
+            "El problema surge cuando el hábito continúa después de los 4 años, cuando los dientes permanentes comienzan a erupcionar.",
+          ],
+        },
+        {
+          heading: "Efectos en la Estructura Dental y Maxilar",
+          paragraphs: [
+            "La succión prolongada puede causar: mordida abierta, estrechamiento del maxilar superior, inclinación de los dientes frontales y paladar elevado.",
+            "Estas deformidades causan problemas estéticos y funcionales, incluyendo trastornos del habla y respiración bucal.",
+          ],
+        },
+        {
+          heading: "¿Cuándo Debe Detenerse?",
+          paragraphs: [
+            "Idealmente, debería detenerse antes de los 3-4 años. La continuación después de los 4 años puede causar deformidades permanentes.",
+            "La intensidad y frecuencia del hábito también son determinantes.",
+          ],
+        },
+        {
+          heading: "Estrategias para los Padres",
+          paragraphs: [
+            "El refuerzo positivo es el método más efectivo. Recompense a su hijo por los días sin succión. Nunca castigue ni avergüence.",
+            "Identifique los desencadenantes y ofrezca métodos alternativos de calma.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "La succión del pulgar es normal hasta los 3-4 años",
+        "Si continúa después de los 4, daña la estructura dental",
+        "El refuerzo positivo es el método de cese más efectivo",
+      ],
+      relatedSlugs: ["cuando-poner-brackets-ninos", "salud-dental-infantil"],
+    },
+  },
+  "invisalign-first-children": {
+    tr: {
+      slug: "invisalign-first-cocuklar-seffaf-plak",
+      title: "Invisalign First: Çocuklar İçin Şeffaf Plak Tedavisi",
+      category: "Ortodonti",
+      date: "29 Mart 2026",
+      readTime: "6 dk",
+      intro: "Invisalign First, 6-10 yaş arası çocuklar için özel olarak tasarlanmış şeffaf plak sistemidir. Geleneksel tel tedavisine konforlu ve estetik bir alternatif sunan bu yenilikçi yöntem hakkında merak edilen her şey.",
+      sections: [
+        {
+          heading: "Invisalign First Nedir?",
+          paragraphs: [
+            "Invisalign First, Align Technology tarafından çocukların büyüyen çeneleri ve sürmekte olan dişleri için özel olarak tasarlanmış şeffaf aparey sistemidir. Geleneksel braketlerin aksine, görünmez ve çıkarılabilir plaklar kullanılır.",
+            "Bu sistem, karışık dişlenme döneminde (hem süt hem de kalıcı dişlerin bir arada olduğu dönemde) çene genişletme, dişlerin doğru pozisyona yönlendirilmesi ve yer kazanılması amacıyla kullanılır.",
+          ],
+        },
+        {
+          heading: "Hangi Yaştaki Çocuklara Uygulanabilir?",
+          paragraphs: [
+            "Invisalign First, 6-10 yaş arası çocuklar için tasarlanmıştır. Bu yaş grubunda karışık dişlenme dönemi aktiftir: süt dişleri hâlâ mevcutken kalıcı dişler sürmeye başlamıştır.",
+            "Her çocuk bu tedaviye uygun değildir. Detaylı muayene ve dijital tarama sonrasında tedavinin uygunluğu değerlendirilir. Ciddi iskeletsel sorunlarda geleneksel apareyler daha uygun olabilir.",
+          ],
+        },
+        {
+          heading: "Invisalign First'ün Avantajları",
+          paragraphs: [
+            "Estetik görünüm: Şeffaf plaklar neredeyse görünmezdir. Çocuğunuzun sosyal hayatı ve özgüveni olumsuz etkilenmez. Çıkarılabilir olması: Yemek yeme ve diş fırçalama sırasında çıkarılabilir, ağız hijyeni kolayca sürdürülür.",
+            "Konfor: Metal tel ve braket olmadığından ağız içi yaralanma riski minimumdir. Spor aktiviteleri sırasında da kullanılabilir. Ayrıca tedavi süreci dijital olarak planlanır ve 3D simülasyonla önceden sonuçlar görülebilir.",
+          ],
+        },
+        {
+          heading: "Tedavi Süreci Nasıl İşler?",
+          paragraphs: [
+            "İlk adım detaylı muayene ve dijital ağız içi taramadır. 3D modelleme ile tedavi planı oluşturulur ve her aşamada dişlerin nasıl hareket edeceği önceden belirlenir.",
+            "Her 1-2 haftada bir yeni plak setine geçilir. Ortalama tedavi süresi 6-18 ay arasında değişir. Plaklar günde en az 20-22 saat takılmalıdır; yalnızca yemek ve fırçalama sırasında çıkarılır.",
+          ],
+        },
+        {
+          heading: "Invisalign First mı, Geleneksel Tel mi?",
+          paragraphs: [
+            "Her iki yöntemin de kendine özgü avantajları vardır. Invisalign First estetik ve konfor açısından üstünken, geleneksel tel tedavisi daha geniş kapsamlı sorunlarda daha etkili olabilir.",
+            "Seçim, çocuğunuzun ortodontik durumu, yaşı, uyum kapasitesi ve aile tercihlerine göre yapılmalıdır. Muayene sonrasında size en uygun yöntemi birlikte belirleriz.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Invisalign First 6-10 yaş arası çocuklar için tasarlanmıştır",
+        "Şeffaf, çıkarılabilir ve konforlu bir tedavi yöntemidir",
+        "Günde 20-22 saat takılmalıdır",
+        "Tedavi süresi ortalama 6-18 aydır",
+        "Her çocuk bu tedaviye uygun olmayabilir — muayene gereklidir",
+      ],
+      relatedSlugs: ["cocuklarda-dis-teli-ne-zaman", "pedodonti-ortodonti-ipuclari"],
+    },
+    en: {
+      slug: "invisalign-first-children-clear-aligners",
+      title: "Invisalign First: Clear Aligner Treatment for Children",
+      category: "Orthodontics",
+      date: "March 29, 2026",
+      readTime: "6 min",
+      intro: "Invisalign First is a clear aligner system specially designed for children ages 6-10. Everything you need to know about this innovative method that offers a comfortable and aesthetic alternative to traditional braces.",
+      sections: [
+        {
+          heading: "What Is Invisalign First?",
+          paragraphs: [
+            "Invisalign First is a clear appliance system designed by Align Technology specifically for children's growing jaws and erupting teeth. Unlike traditional brackets, invisible and removable aligners are used.",
+            "This system is used during the mixed dentition period for jaw expansion, guiding teeth to the correct position, and creating space.",
+          ],
+        },
+        {
+          heading: "What Age Is It Suitable For?",
+          paragraphs: [
+            "Invisalign First is designed for children ages 6-10. During this age group, the mixed dentition period is active: baby teeth are still present while permanent teeth have begun erupting.",
+            "Not every child is suitable for this treatment. Suitability is evaluated after detailed examination and digital scanning.",
+          ],
+        },
+        {
+          heading: "Advantages of Invisalign First",
+          paragraphs: [
+            "Aesthetic appearance: Clear aligners are nearly invisible. Removable: Can be removed during eating and tooth brushing, maintaining oral hygiene easily.",
+            "Comfort: No metal wires or brackets means minimal risk of mouth injuries. The treatment process is digitally planned with 3D simulation preview of results.",
+          ],
+        },
+        {
+          heading: "How Does the Treatment Process Work?",
+          paragraphs: [
+            "The first step is detailed examination and digital intraoral scanning. Treatment plan is created with 3D modeling, predetermining how teeth will move at each stage.",
+            "New aligner sets are switched every 1-2 weeks. Average treatment duration ranges from 6-18 months. Aligners must be worn at least 20-22 hours per day.",
+          ],
+        },
+        {
+          heading: "Invisalign First or Traditional Braces?",
+          paragraphs: [
+            "Both methods have unique advantages. Invisalign First is superior in aesthetics and comfort, while traditional braces may be more effective for more complex issues.",
+            "The choice should be made based on your child's orthodontic condition, age, compliance capacity, and family preferences.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Invisalign First is designed for children ages 6-10",
+        "Clear, removable, and comfortable treatment method",
+        "Must be worn 20-22 hours per day",
+        "Treatment duration averages 6-18 months",
+      ],
+      relatedSlugs: ["when-should-children-get-braces", "pedodontics-orthodontics-tips"],
+    },
+    es: {
+      slug: "invisalign-first-ninos-alineadores",
+      title: "Invisalign First: Tratamiento con Alineadores Transparentes para Niños",
+      category: "Ortodoncia",
+      date: "29 de marzo de 2026",
+      readTime: "6 min",
+      intro: "Invisalign First es un sistema de alineadores transparentes diseñado especialmente para niños de 6 a 10 años. Todo lo que necesita saber sobre este método innovador.",
+      sections: [
+        {
+          heading: "¿Qué Es Invisalign First?",
+          paragraphs: [
+            "Invisalign First es un sistema de aparatos transparentes diseñado por Align Technology específicamente para los maxilares en crecimiento y los dientes en erupción de los niños.",
+            "Este sistema se utiliza durante el período de dentición mixta para la expansión maxilar, guiar los dientes a la posición correcta y crear espacio.",
+          ],
+        },
+        {
+          heading: "¿Para Qué Edad Es Adecuado?",
+          paragraphs: [
+            "Invisalign First está diseñado para niños de 6 a 10 años. No todos los niños son aptos para este tratamiento; se evalúa tras un examen detallado.",
+          ],
+        },
+        {
+          heading: "Ventajas de Invisalign First",
+          paragraphs: [
+            "Apariencia estética: Los alineadores transparentes son casi invisibles. Removibles: Se pueden quitar para comer y cepillarse los dientes.",
+            "Comodidad: Sin alambres ni brackets metálicos. El proceso de tratamiento se planifica digitalmente con simulación 3D.",
+          ],
+        },
+        {
+          heading: "¿Cómo Funciona el Proceso de Tratamiento?",
+          paragraphs: [
+            "El primer paso es un examen detallado y escaneo digital intraoral. Se crean nuevos juegos de alineadores cada 1-2 semanas.",
+            "La duración promedio del tratamiento varía de 6 a 18 meses. Los alineadores deben usarse al menos 20-22 horas al día.",
+          ],
+        },
+      ],
+      keyPoints: [
+        "Invisalign First está diseñado para niños de 6 a 10 años",
+        "Método de tratamiento transparente, removible y cómodo",
+        "Debe usarse 20-22 horas al día",
+        "La duración del tratamiento promedia 6-18 meses",
+      ],
+      relatedSlugs: ["cuando-poner-brackets-ninos", "consejos-odontopediatria-ortodoncia"],
+    },
+  },
 };
 
 export const blogPostIds = Object.keys(blogPosts);

@@ -66,6 +66,11 @@ export const blogSlugMap: Record<string, string> = {
   "child-afraid-of-dentist": "cocugum-disciden-korkuyor",
   "childhood-cavity-treatment": "cocuklarda-dis-curugu-tedavisi",
   "general-anesthesia-child-dental": "genel-anestezi-cocuk-dis-tedavisi",
+  "when-should-children-get-braces": "cocuklarda-dis-teli-ne-zaman",
+  "childhood-bruxism-teeth-grinding": "cocuklarda-bruksizm-dis-sikma",
+  "baby-tooth-fell-permanent-not-coming": "sut-disi-dustu-kalici-dis-cikmiyor",
+  "thumb-sucking-dental-effects": "parmak-emme-dis-yapisina-etkileri",
+  "invisalign-first-children-clear-aligners": "invisalign-first-cocuklar-seffaf-plak",
 };
 
 // ES slug -> TR slug
@@ -76,6 +81,11 @@ export const blogSlugMapES: Record<string, string> = {
   "nino-miedo-al-dentista": "cocugum-disciden-korkuyor",
   "tratamiento-caries-infantil": "cocuklarda-dis-curugu-tedavisi",
   "anestesia-general-odontologia-infantil": "genel-anestezi-cocuk-dis-tedavisi",
+  "cuando-poner-brackets-ninos": "cocuklarda-dis-teli-ne-zaman",
+  "bruxismo-infantil": "cocuklarda-bruksizm-dis-sikma",
+  "diente-leche-cayo-permanente-no-sale": "sut-disi-dustu-kalici-dis-cikmiyor",
+  "succion-pulgar-efectos-dentales": "parmak-emme-dis-yapisina-etkileri",
+  "invisalign-first-ninos-alineadores": "invisalign-first-cocuklar-seffaf-plak",
 };
 
 export const blogSlugMapReverse: Record<string, string> = Object.fromEntries(
