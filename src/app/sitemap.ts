@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { locations } from "@/data/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.gayeustuner.com";
@@ -90,6 +91,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     { url: `${base}/iletisim`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
     { url: `${base}/sss`, lastModified: now, changeFrequency: "monthly", priority: 0.7, alternates: { languages: langs(`${base}/sss`, `${base}/en/faq`, `${base}/es/faq`) } },
+
+    // --- Location pages ---
+    ...locations.map((loc) => ({
+      url: `${base}/bolge/${loc.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
 
     // --- EN pages ---
     { url: `${base}/en`, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
