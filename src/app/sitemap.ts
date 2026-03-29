@@ -74,6 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: langs(`${base}/blog/${slug}`, `${base}/en/blog/${enBlogs[i]}`, `${base}/es/blog/${esBlogs[i]}`) },
     })),
     { url: `${base}/iletisim`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
+    { url: `${base}/sss`, lastModified: now, changeFrequency: "monthly", priority: 0.7, alternates: { languages: langs(`${base}/sss`, `${base}/en/faq`, `${base}/es/faq`) } },
 
     // --- EN pages ---
     { url: `${base}/en`, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
@@ -89,6 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: langs(`${base}/blog/${trBlogs[i]}`, `${base}/en/blog/${slug}`, `${base}/es/blog/${esBlogs[i]}`) },
     })),
     { url: `${base}/en/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
+    { url: `${base}/en/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7, alternates: { languages: langs(`${base}/sss`, `${base}/en/faq`, `${base}/es/faq`) } },
 
     // --- ES pages ---
     { url: `${base}/es`, lastModified: now, changeFrequency: "monthly", priority: 1, alternates: { languages: langs(base, `${base}/en`, `${base}/es`) } },
@@ -104,5 +106,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: langs(`${base}/blog/${trBlogs[i]}`, `${base}/en/blog/${enBlogs[i]}`, `${base}/es/blog/${slug}`) },
     })),
     { url: `${base}/es/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6, alternates: { languages: langs(`${base}/iletisim`, `${base}/en/contact`, `${base}/es/contact`) } },
+    { url: `${base}/es/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7, alternates: { languages: langs(`${base}/sss`, `${base}/en/faq`, `${base}/es/faq`) } },
   ];
 }
