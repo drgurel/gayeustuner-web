@@ -762,6 +762,140 @@ const services: Record<string, Record<Locale, ServiceData>> = {
         "Tecnología moderna que ofrece una experiencia anestésica indolora y confortable con dosificación precisa controlada por ordenador.",
     },
   },
+  "braces-treatment": {
+    tr: {
+      slug: "tel-tedavisi",
+      title: "Çocuklarda Tel Tedavisi (Braket Tedavisi)",
+      subtitle: "Ortodonti Hizmeti",
+      description: [
+        "Tel tedavisi (braket tedavisi), çocuklarda ve gençlerde çapraşık dişler, kapanış bozuklukları ve çene uyumsuzluklarının düzeltilmesinde en yaygın kullanılan ortodontik yöntemdir. Metal veya seramik braketler dişlerin üzerine yapıştırılarak, özel teller aracılığıyla dişler yavaşça doğru konumlarına yönlendirilir.",
+        "Çocuklarda tel tedavisine genellikle tüm kalıcı dişler çıktıktan sonra, 11-14 yaş aralığında başlanır. Ancak bazı durumlarda erken dönem ortodontik müdahale (Faz 1 tedavisi) ile 7-10 yaş arasında da tel tedavisi uygulanabilir. Erken değerlendirme, tedavi zamanlamasının doğru belirlenmesi açısından kritik önem taşır.",
+        "Modern braket sistemleri eski nesil tellere göre çok daha konforlu, estetik ve etkilidir. Seramik (şeffaf) braketler, lingual (iç yüzey) teller ve mini braketler gibi seçenekler ile çocuğunuzun sosyal hayatı olumsuz etkilenmeden tedavi sürdürülebilir.",
+        "Tel tedavisi süresi genellikle 12-24 ay arasında değişir. Tedavi süresince düzenli kontrol randevuları ile tellerin ayarlanması ve tedavi sürecinin izlenmesi sağlanır. Tedavi sonrasında pekiştirme (retansiyon) dönemi ile elde edilen sonuçların kalıcılığı güvence altına alınır.",
+      ],
+      benefits: [
+        "Çapraşık dişlerin düzeltilmesi",
+        "Kapanış bozukluklarının giderilmesi",
+        "Çene uyumsuzluklarının tedavisi",
+        "Estetik ve fonksiyonel iyileşme",
+        "Diş temizliğinin kolaylaşması",
+        "Özgüvenin artması",
+      ],
+      faq: [
+        {
+          question: "Çocuğuma kaç yaşında tel takılabilir?",
+          answer:
+            "Genellikle tüm kalıcı dişler çıktıktan sonra, 11-14 yaş aralığında tel tedavisine başlanır. Ancak bazı çene ve kapanış sorunlarında 7-10 yaş arasında erken müdahale gerekebilir. İlk ortodontik değerlendirme 7 yaşında yapılmalıdır.",
+        },
+        {
+          question: "Tel tedavisi ağrılı mıdır?",
+          answer:
+            "Tel takıldıktan sonra ilk birkaç gün hafif hassasiyet ve rahatsızlık hissedilebilir. Bu durum tamamen normal olup, birkaç gün içinde geçer. Ağrı kesiciler ve yumuşak gıdalarla bu süreç kolayca yönetilebilir.",
+        },
+        {
+          question: "Tel tedavisi ne kadar sürer?",
+          answer:
+            "Tedavi süresi sorunun ciddiyetine göre 12-24 ay arasında değişir. Düzenli kontrol randevularına gelmek ve hekim önerilerine uymak tedavi süresini kısaltır.",
+        },
+        {
+          question: "Metal tel mi yoksa şeffaf braket mi tercih etmeliyiz?",
+          answer:
+            "Her iki seçeneğin de avantajları vardır. Metal braketler daha dayanıklı ve uygun fiyatlıdır. Seramik (şeffaf) braketler ise estetik açıdan daha az dikkat çeker. Çocuğunuzun yaşı, ihtiyaçları ve tercihleri doğrultusunda birlikte karar veririz.",
+        },
+      ],
+      canonicalSlug: "tel-tedavisi",
+      shortDescription:
+        "Çocuklarda ve gençlerde çapraşık dişler ve kapanış bozukluklarının metal veya seramik braketlerle tedavisi.",
+    },
+    en: {
+      slug: "braces-treatment",
+      title: "Braces Treatment for Children",
+      subtitle: "Orthodontic Service",
+      description: [
+        "Braces treatment is the most commonly used orthodontic method for correcting crooked teeth, bite disorders, and jaw discrepancies in children and adolescents. Metal or ceramic brackets are bonded to the teeth, and special wires gradually guide the teeth to their correct positions.",
+        "Braces treatment in children usually begins after all permanent teeth have erupted, typically between ages 11-14. However, in some cases, early orthodontic intervention (Phase 1 treatment) can be applied between ages 7-10. Early evaluation is critically important for determining the right timing for treatment.",
+        "Modern bracket systems are much more comfortable, aesthetic, and effective compared to older generation braces. Options such as ceramic (clear) brackets, lingual (inner surface) braces, and mini brackets allow treatment to continue without negatively affecting your child's social life.",
+        "Braces treatment duration typically ranges from 12-24 months. Regular check-up appointments during treatment ensure wire adjustments and monitoring of the treatment process. A retention period following treatment ensures the permanence of the results achieved.",
+      ],
+      benefits: [
+        "Correction of crooked teeth",
+        "Resolution of bite disorders",
+        "Treatment of jaw discrepancies",
+        "Aesthetic and functional improvement",
+        "Easier dental cleaning",
+        "Improved self-confidence",
+      ],
+      faq: [
+        {
+          question: "At what age can my child get braces?",
+          answer:
+            "Braces treatment typically begins after all permanent teeth have erupted, between ages 11-14. However, some jaw and bite issues may require early intervention between ages 7-10. The first orthodontic evaluation should be done at age 7.",
+        },
+        {
+          question: "Is braces treatment painful?",
+          answer:
+            "Mild sensitivity and discomfort may be felt for the first few days after braces are placed. This is completely normal and subsides within a few days. Pain relievers and soft foods can easily manage this period.",
+        },
+        {
+          question: "How long does braces treatment take?",
+          answer:
+            "Treatment duration varies from 12-24 months depending on the severity of the issue. Attending regular check-up appointments and following the dentist's recommendations shortens the treatment period.",
+        },
+        {
+          question: "Should we choose metal or clear braces?",
+          answer:
+            "Both options have their advantages. Metal brackets are more durable and affordable. Ceramic (clear) brackets are less noticeable aesthetically. We will decide together based on your child's age, needs, and preferences.",
+        },
+      ],
+      canonicalSlug: "braces-treatment",
+      shortDescription:
+        "Treatment of crooked teeth and bite disorders in children and adolescents with metal or ceramic brackets.",
+    },
+    es: {
+      slug: "tratamiento-brackets",
+      title: "Tratamiento de Brackets para Niños",
+      subtitle: "Servicio de Ortodoncia",
+      description: [
+        "El tratamiento con brackets es el método ortodóntico más utilizado para corregir dientes torcidos, trastornos de mordida y discrepancias maxilares en niños y adolescentes. Los brackets metálicos o cerámicos se adhieren a los dientes y los alambres especiales guían gradualmente los dientes a sus posiciones correctas.",
+        "El tratamiento con brackets en niños generalmente comienza después de que han erupcionado todos los dientes permanentes, típicamente entre los 11 y 14 años. Sin embargo, en algunos casos, la intervención ortodóntica temprana (tratamiento de Fase 1) puede aplicarse entre los 7 y 10 años. La evaluación temprana es críticamente importante para determinar el momento adecuado del tratamiento.",
+        "Los sistemas de brackets modernos son mucho más cómodos, estéticos y efectivos en comparación con los brackets de generaciones anteriores. Opciones como brackets cerámicos (transparentes), brackets linguales (en la superficie interna) y mini brackets permiten que el tratamiento continúe sin afectar negativamente la vida social de su hijo.",
+        "La duración del tratamiento con brackets generalmente varía de 12 a 24 meses. Las citas de control regulares durante el tratamiento aseguran los ajustes de los alambres y el seguimiento del proceso. Un período de retención después del tratamiento asegura la permanencia de los resultados obtenidos.",
+      ],
+      benefits: [
+        "Corrección de dientes torcidos",
+        "Resolución de trastornos de mordida",
+        "Tratamiento de discrepancias maxilares",
+        "Mejora estética y funcional",
+        "Limpieza dental más fácil",
+        "Mayor confianza en sí mismo",
+      ],
+      faq: [
+        {
+          question: "¿A qué edad puede mi hijo ponerse brackets?",
+          answer:
+            "El tratamiento con brackets generalmente comienza después de que han erupcionado todos los dientes permanentes, entre los 11 y 14 años. Sin embargo, algunos problemas maxilares y de mordida pueden requerir intervención temprana entre los 7 y 10 años.",
+        },
+        {
+          question: "¿Es doloroso el tratamiento con brackets?",
+          answer:
+            "Se puede sentir una ligera sensibilidad y molestia durante los primeros días después de colocar los brackets. Esto es completamente normal y desaparece en pocos días.",
+        },
+        {
+          question: "¿Cuánto dura el tratamiento con brackets?",
+          answer:
+            "La duración del tratamiento varía de 12 a 24 meses según la gravedad del problema. Asistir a las citas de control regulares y seguir las recomendaciones del dentista acorta el período de tratamiento.",
+        },
+        {
+          question: "¿Debemos elegir brackets metálicos o transparentes?",
+          answer:
+            "Ambas opciones tienen sus ventajas. Los brackets metálicos son más duraderos y asequibles. Los brackets cerámicos (transparentes) son menos visibles estéticamente. Decidiremos juntos según la edad, necesidades y preferencias de su hijo.",
+        },
+      ],
+      canonicalSlug: "tratamiento-brackets",
+      shortDescription:
+        "Tratamiento de dientes torcidos y trastornos de mordida en niños y adolescentes con brackets metálicos o cerámicos.",
+    },
+  },
 };
 
 export const serviceIds = Object.keys(services);

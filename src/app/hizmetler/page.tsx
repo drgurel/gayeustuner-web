@@ -47,6 +47,13 @@ const services = [
     features: ["Görünmez tedavi", "Çıkarılabilir plaklar", "Konforlu kullanım", "Estetik görünüm"],
   },
   {
+    title: "Tel Tedavisi (Braket Tedavisi)",
+    description:
+      "Çocuklarda ve gençlerde çapraşık dişler, kapanış bozuklukları ve çene uyumsuzluklarının metal veya seramik braketlerle düzeltilmesi. Modern braket sistemleri ile konforlu, estetik ve etkili tedavi. Tedavi süresi genellikle 12-24 ay arasında değişir.",
+    href: "/hizmetler/tel-tedavisi",
+    features: ["Çapraşık diş düzeltme", "Kapanış bozukluğu tedavisi", "Metal ve seramik seçenekleri", "12-24 ay tedavi süresi"],
+  },
+  {
     title: "Dijital Anestezi",
     description:
       "Bilgisayar kontrollü lokal anestezi sistemi ile geleneksel enjeksiyona göre çok daha az ağrılı ve korkutucu bir deneyim sunar. İğne korkusu olan çocuklar için ideal çözümdür. Kontrollü basınç ve hız sayesinde anestezi uygulaması neredeyse hissedilmez.",

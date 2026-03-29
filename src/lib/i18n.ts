@@ -34,6 +34,7 @@ export const serviceSlugMap: Record<string, string> = {
   "stainless-steel-crowns": "paslanmaz-celik-kronlar",
   "clear-aligners": "seffaf-plaklar-ortodonti",
   "digital-anesthesia": "dijital-anestezi",
+  "braces-treatment": "tel-tedavisi",
 };
 
 // ES slug -> TR slug
@@ -44,6 +45,7 @@ export const serviceSlugMapES: Record<string, string> = {
   "coronas-acero-inoxidable": "paslanmaz-celik-kronlar",
   "alineadores-transparentes": "seffaf-plaklar-ortodonti",
   "anestesia-digital": "dijital-anestezi",
+  "tratamiento-brackets": "tel-tedavisi",
 };
 
 // TR slug -> EN slug (reverse)

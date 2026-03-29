@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "paslanmaz-celik-kronlar",
     "seffaf-plaklar-ortodonti",
     "dijital-anestezi",
+    "tel-tedavisi",
   ];
   const enServices = [
     "early-orthodontics",
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "stainless-steel-crowns",
     "clear-aligners",
     "digital-anesthesia",
+    "braces-treatment",
   ];
   const esServices = [
     "ortodoncia-temprana",
@@ -27,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "coronas-acero-inoxidable",
     "alineadores-transparentes",
     "anestesia-digital",
+    "tratamiento-brackets",
   ];
 
   const trBlogs = [

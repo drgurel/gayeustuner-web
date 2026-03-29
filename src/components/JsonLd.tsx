@@ -32,6 +32,10 @@ const localBusinessTexts = {
         name: "Şeffaf Plaklarla Ortodonti (Invisalign)",
         description: "Görünmez plaklar ile estetik diş düzeltme tedavisi.",
       },
+      {
+        name: "Tel Tedavisi (Braket Tedavisi)",
+        description: "Çocuklarda ve gençlerde çapraşık dişler ve kapanış bozukluklarının braketlerle düzeltilmesi.",
+      },
     ],
   },
   en: {
@@ -63,6 +67,10 @@ const localBusinessTexts = {
         name: "Clear Aligners (Invisalign)",
         description: "Aesthetic teeth straightening treatment with invisible aligners.",
       },
+      {
+        name: "Braces Treatment",
+        description: "Correction of crooked teeth and bite disorders in children and adolescents with brackets.",
+      },
     ],
   },
   es: {
@@ -93,6 +101,10 @@ const localBusinessTexts = {
       {
         name: "Alineadores Transparentes (Invisalign)",
         description: "Tratamiento estético de alineación dental con alineadores invisibles.",
+      },
+      {
+        name: "Tratamiento de Brackets",
+        description: "Corrección de dientes torcidos y trastornos de mordida en niños y adolescentes con brackets.",
       },
     ],
   },

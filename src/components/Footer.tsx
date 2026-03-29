@@ -56,6 +56,7 @@ const serviceLinksMap = {
     { href: "/hizmetler/rubber-dam-izolasyonu", label: "Rubber Dam İzolasyonu" },
     { href: "/hizmetler/paslanmaz-celik-kronlar", label: "Paslanmaz Çelik Kronlar" },
     { href: "/hizmetler/seffaf-plaklar-ortodonti", label: "Şeffaf Plaklarla Ortodonti" },
+    { href: "/hizmetler/tel-tedavisi", label: "Tel Tedavisi (Braket)" },
     { href: "/hizmetler/dijital-anestezi", label: "Dijital Anestezi" },
   ],
   en: [
@@ -64,6 +65,7 @@ const serviceLinksMap = {
     { href: "/en/services/rubber-dam-isolation", label: "Rubber Dam Isolation" },
     { href: "/en/services/stainless-steel-crowns", label: "Stainless Steel Crowns" },
     { href: "/en/services/clear-aligners", label: "Clear Aligners (Invisalign)" },
+    { href: "/en/services/braces-treatment", label: "Braces Treatment" },
     { href: "/en/services/digital-anesthesia", label: "Digital Anesthesia" },
   ],
   es: [
@@ -72,6 +74,7 @@ const serviceLinksMap = {
     { href: "/es/services/aislamiento-dique-goma", label: "Aislamiento con Dique de Goma" },
     { href: "/es/services/coronas-acero-inoxidable", label: "Coronas de Acero Inoxidable" },
     { href: "/es/services/alineadores-transparentes", label: "Alineadores Transparentes" },
+    { href: "/es/services/tratamiento-brackets", label: "Tratamiento de Brackets" },
     { href: "/es/services/anestesia-digital", label: "Anestesia Digital" },
   ],
 } as const;
