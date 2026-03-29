@@ -163,8 +163,53 @@ export default function HakkimdaPage() {
           </div>
         </section>
 
-        {/* Languages */}
+        {/* Why Choose Me - E-E-A-T */}
         <section className="py-16 lg:py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[var(--color-secondary)] mb-8">
+                Neden Dt. Gaye Üstüner?
+              </h2>
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Akademik Uzmanlık",
+                    text: "Marmara Üniversitesi Diş Hekimliği mezunu, Yeditepe Üniversitesi'nde pedodonti doktora araştırmacısı. Bilimsel kanıta dayalı tedavi yaklaşımı.",
+                  },
+                  {
+                    title: "Çocuk Odaklı Yaklaşım",
+                    text: "Her çocuğun bireysel ihtiyaçlarına uygun, korkusuz ve pozitif bir tedavi deneyimi sunuyorum. Tell-Show-Do yöntemi ve dijital anestezi ile ağrısız tedavi.",
+                  },
+                  {
+                    title: "Kapsamlı Tedavi Yelpazesi",
+                    text: "Erken dönem ortodonti, tel tedavisi, şeffaf plak (Invisalign), genel anestezi altında tedavi ve koruyucu diş hekimliği dahil geniş hizmet yelpazesi.",
+                  },
+                  {
+                    title: "Modern Teknoloji",
+                    text: "Dijital anestezi, rubber dam izolasyonu ve güncel tedavi protokolleri ile çocuğunuza en konforlu ve güvenli tedavi ortamını sağlıyorum.",
+                  },
+                  {
+                    title: "Çok Dilli Hizmet",
+                    text: "Türkçe, İngilizce ve İspanyolca dillerinde hizmet sunarak uluslararası ailelere de destek sağlıyorum.",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="flex gap-4 p-5 rounded-xl border border-[var(--color-border)] hover:border-[var(--color-primary)]/30 transition-colors">
+                    <svg className="w-6 h-6 text-[var(--color-primary)] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                    </svg>
+                    <div>
+                      <h3 className="font-semibold text-[var(--color-secondary)] mb-1">{item.title}</h3>
+                      <p className="text-sm text-[var(--color-text-light)] leading-relaxed">{item.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Languages */}
+        <section className="py-16 lg:py-24 bg-[var(--color-surface-alt)]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h2 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-[var(--color-secondary)] mb-8">
